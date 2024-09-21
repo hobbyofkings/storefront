@@ -1,3 +1,5 @@
+from django.core.exceptions import ImproperlyConfigured
+
 from .common import *
 
 import os
@@ -10,17 +12,18 @@ SECRET_KEY = os.environ['SECRET_KEY']
 
 ALLOWED_HOSTS = ['amadesa-prod.herokuapp.com']
 
-# Database settings
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',  # Explicitly define the ENGINE
-        # Include all other settings from DATABASE_URL
-        **dj_database_url.config(
-            conn_max_age=600,
-            ssl_require=True
-        )
+DATABASE_URL = os.environ.get('DATABASE_URL')
+
+# Explicit database engine specification along with database URL
+if DATABASE_URL:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',  # Explicitly specify PostgreSQL engine
+            **dj_database_url.parse(DATABASE_URL, conn_max_age=600, ssl_require=True),
+        }
     }
-}
+else:
+    raise ImproperlyConfigured("DATABASE_URL environment variable not set.")
 
 # Redis settings
 REDIS_URL = os.environ.get('REDIS_URL')
