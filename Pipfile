@@ -17,6 +17,7 @@ django-cors-headers = "*"
 django-silk = "*"
 django-redis = "*"
 whitenoise = "*"
+dj-database-url = "*"
 
 [dev-packages]
 autopep8 = "*"
