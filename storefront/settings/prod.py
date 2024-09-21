@@ -11,13 +11,14 @@ SECRET_KEY = os.environ['SECRET_KEY']
 ALLOWED_HOSTS = ['amadesa-prod.herokuapp.com']
 
 # Database settings
-# Database
-# Database settings
 DATABASES = {
-    'default': dj_database_url.config(
-        conn_max_age=600,
-        ssl_require=True
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',  # Explicitly define the ENGINE
+        **dj_database_url.config(
+            conn_max_age=600,
+            ssl_require=True
+        )
+    }
 }
 
 # Redis settings
