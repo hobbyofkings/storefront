@@ -13,9 +13,13 @@ django-filter = "*"
 djoser = "*"
 djangorestframework-simplejwt = "*"
 celery = "*"
+django-cors-headers = "*"
+django-silk = "*"
+django-redis = "*"
+whitenoise = "*"
 
 [dev-packages]
 autopep8 = "*"
 
 [requires]
-python_version = "3.9"
+python_version = "3.10"
