@@ -8,12 +8,12 @@ import dj_database_url
 
 SECRET_KEY = os.environ['SECRET_KEY']
 
-ALLOWED_HOSTS = ['amadesa-prod-1b5472657019.herokuapp.com']\
-
+ALLOWED_HOSTS = ['amadesa-prod-1b5472657019.herokuapp.com']
 
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.environ.get('CLEARDB_DATABASE_URL')
+        default=os.environ.get('DATABASE_URL'),
+        engine='django.db.backends.mysql'  # Explicitly set MySQL as the engine
     )
 }
 
