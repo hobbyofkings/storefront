@@ -14,14 +14,16 @@ ALLOWED_HOSTS = ['amadesa-prod.herokuapp.com']
 
 # Database settings
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',  # Explicitly set the PostgreSQL engine
-        **dj_database_url.config(
-            conn_max_age=600,
-            ssl_require=True
-        ),
-    }
+    'default': dj_database_url.config(
+        conn_max_age=600,
+        ssl_require=True
+    )
 }
+
+
+
+
+
 # Redis settings
 REDIS_URL = os.environ.get('REDIS_URL')
 
