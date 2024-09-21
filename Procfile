@@ -1,3 +1,3 @@
+web: gunicorn storefront.wsgi --log-file -
 release: python manage.py migrate
-web: gunicorn storefront.wsgi
 worker: celery -A storefront worker -l info
