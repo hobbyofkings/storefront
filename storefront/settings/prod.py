@@ -7,12 +7,15 @@ import dj_database_url
 
 SECRET_KEY = os.environ['SECRET_KEY']
 
-ALLOWED_HOSTS = ['amadesa-prod-1b5472657019.herokuapp.com']
+ALLOWED_HOSTS = ['amadesa-prod.herokuapp.com']
 
+# Database settings
 DATABASES = {
-    'default': dj_database_url.config(
-        default=os.environ.get('DATABASE_URL')  # Heroku automatically sets DATABASE_URL for PostgreSQL
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        # dj_database_url will automatically configure the rest
+        **dj_database_url.config(conn_max_age=600, ssl_require=True)
+    }
 }
 
 REDIS_URL = os.environ.get('REDIS_URL')
