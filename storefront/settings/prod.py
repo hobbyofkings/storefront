@@ -5,15 +5,13 @@ import os
 DEBUG = False
 import dj_database_url
 
-
 SECRET_KEY = os.environ['SECRET_KEY']
 
 ALLOWED_HOSTS = ['amadesa-prod-1b5472657019.herokuapp.com']
 
 DATABASES = {
     'default': dj_database_url.config(
-        default=os.environ.get('DATABASE_URL'),
-        engine='django.db.backends.mysql'  # Explicitly set MySQL as the engine
+        default=os.environ.get('DATABASE_URL')  # Heroku automatically sets DATABASE_URL for PostgreSQL
     )
 }
 

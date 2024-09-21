@@ -18,6 +18,7 @@ django-silk = "*"
 django-redis = "*"
 whitenoise = "*"
 dj-database-url = "*"
+psycopg2 = "*"
 
 [dev-packages]
 autopep8 = "*"
