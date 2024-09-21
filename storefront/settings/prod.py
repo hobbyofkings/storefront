@@ -12,7 +12,9 @@ ALLOWED_HOSTS = ['amadesa-prod-1b5472657019.herokuapp.com']\
 
 
 DATABASES = {
-    'default': dj_database_url.config()
+    'default': dj_database_url.config(
+        default=os.environ.get('CLEARDB_DATABASE_URL')
+    )
 }
 
 REDIS_URL = os.environ.get('REDIS_URL')
