@@ -1,7 +1,4 @@
-from django.core.exceptions import ImproperlyConfigured
-
 from .common import *
-
 import os
 import dj_database_url
 
@@ -12,21 +9,18 @@ SECRET_KEY = os.environ['SECRET_KEY']
 
 ALLOWED_HOSTS = ['amadesa-prod.herokuapp.com']
 
-# Database settings
+# Database configuration
 DATABASES = {
     'default': dj_database_url.config(
+        default=os.environ.get('DATABASE_URL'),
+        engine='django.db.backends.postgresql',
         conn_max_age=600,
         ssl_require=True
     )
 }
 
-
-
-
-
 # Redis settings
 REDIS_URL = os.environ.get('REDIS_URL')
-
 CELERY_BROKER_URL = REDIS_URL
 
 # Cache settings
@@ -34,7 +28,7 @@ CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
         "LOCATION": REDIS_URL,
-        'TIMEOUT': 600,  # 10 minutes
+        "TIMEOUT": 600,  # 10 minutes
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
