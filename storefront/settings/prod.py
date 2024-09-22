@@ -9,14 +9,15 @@ SECRET_KEY = os.environ['SECRET_KEY']
 
 ALLOWED_HOSTS = ['amadesa-prod.herokuapp.com']
 
-# Database configuration
 DATABASES = {
-    'default': dj_database_url.config(
-        default=os.environ.get('DATABASE_URL'),
-        engine='django.db.backends.postgresql',
-        conn_max_age=600,
-        ssl_require=True
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.getenv('DB_NAME', 'Amadesa'),  # The name of your database on RDS
+        'USER': os.getenv('DB_USER', 'postgres'),  # The username for your RDS instance
+        'PASSWORD': os.getenv('DB_PASSWORD', ''),  # The password for your RDS instance
+        'HOST': os.getenv('DB_HOST', 'amadesa-db.cp8a808oguxu.us-east-1.rds.amazonaws.com'),  # Your RDS endpoint
+        'PORT': os.getenv('DB_PORT', '5432'),  # Default PostgreSQL port
+    }
 }
 
 # Redis settings
@@ -35,8 +36,8 @@ CACHES = {
     }
 }
 
-# Email settings using Mailgun
-EMAIL_HOST = os.environ['MAILGUN_SMTP_SERVER']
-EMAIL_HOST_USER = os.environ['MAILGUN_SMTP_LOGIN']
-EMAIL_HOST_PASSWORD = os.environ['MAILGUN_SMTP_PASSWORD']
-EMAIL_PORT = os.environ['MAILGUN_SMTP_PORT']
+# # Email settings using Mailgun
+# EMAIL_HOST = os.environ['MAILGUN_SMTP_SERVER']
+# EMAIL_HOST_USER = os.environ['MAILGUN_SMTP_LOGIN']
+# EMAIL_HOST_PASSWORD = os.environ['MAILGUN_SMTP_PASSWORD']
+# EMAIL_PORT = os.environ['MAILGUN_SMTP_PORT']
