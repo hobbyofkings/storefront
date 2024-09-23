@@ -42,25 +42,16 @@ bash
 Copy code
 sudo ln -s /etc/nginx/sites-available/amadesa.com /etc/nginx/sites-enabled/
 4. Test the Nginx configuration for syntax errors:
-bash
-Copy code
+
+
 sudo nginx -t
-If everything looks good, you will see an output like this:
 
-bash
 
-nginx: configuration file /etc/nginx/nginx.conf test is successful
-5. Restart Nginx to apply the changes:
-bash
 
 sudo systemctl restart nginx
 6. Run Gunicorn as a Background Service
-Since running Gunicorn from the command line will block the terminal, we will use systemd to run Gunicorn as a service:
 
 Create a systemd service file for Gunicorn:
-
-bash
-Copy code
 sudo nano /etc/systemd/system/gunicorn.service
 Add the following content:
 
@@ -79,9 +70,8 @@ ExecStart=/home/ubuntu/storefront/env/bin/gunicorn --workers 3 --bind unix:/home
 [Install]
 WantedBy=multi-user.target
 Start and enable the Gunicorn service:
+sudo systemctl status nginx
 
-bash
-Copy code
 sudo systemctl start gunicorn
 sudo systemctl enable gunicorn
 Now, Nginx will forward all requests to Gunicorn, which will handle running the Django application. You can access your site by visiting http://amadesa.com.

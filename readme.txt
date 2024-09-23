@@ -35,5 +35,54 @@ sudo nano /etc/nginx/sites-available/amadesa.com
 
 
 
+Check Gunicorn Status Check if Gunicorn is running:
+sudo systemctl status gunicorn
+
+Restart Gunicorn:
+sudo systemctl restart gunicorn
+Reload the systemd configuration:
+
+sudo systemctl daemon-reload
+Check Nginx Status
+Check if Nginx is running:
+
+sudo systemctl status nginx
+Restart Nginx:
+
+sudo systemctl restart nginx
+Test Nginx configuration:
+
+sudo nginx -t
+Check Active Connections
+Check open ports and listening services:
+
+sudo netstat -tuln
+Check Logs
+View Gunicorn logs:
+
+sudo journalctl -u gunicorn
+View Nginx error logs:
+
+sudo tail -f /var/log/nginx/error.log
+
+
+Test HTTP Response
+Test Nginx server response locally:
+curl http://127.0.0.1
+Test the public IP or domain:
+curl http://<your-public-ip>
+
+
+Check Firewall Rules
+Check firewall status:
+sudo ufw status
+
+List running services:
+sudo systemctl list-units --type=service
+
+View the status of all system services:
+sudo systemctl --failed
+
+
 
 
