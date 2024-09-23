@@ -49,7 +49,6 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'djoser',
-    'silk',
     'playground',
     'debug_toolbar',
     'store',
@@ -74,8 +73,8 @@ MIDDLEWARE = [
 DEBUG = env('DEBUG')  # This will be overridden in dev.py and prod.py
 
 if DEBUG:
+    INSTALLED_APPS += ['silk']
     MIDDLEWARE += ['silk.middleware.SilkyMiddleware']
-
 
 
 INTERNAL_IPS = [
