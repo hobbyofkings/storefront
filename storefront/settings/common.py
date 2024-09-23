@@ -22,7 +22,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 
+# Initialize environment variables
+env = os.environ.Env(
+    DEBUG=(bool, False)
+)
 
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
+
+# Read the .env file
+os.environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
 
 
@@ -61,7 +70,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-DEBUG = True
+DEBUG = env('DEBUG')  # This will be overridden in dev.py and prod.py
 
 if DEBUG:
     MIDDLEWARE += ['silk.middleware.SilkyMiddleware']

@@ -4,18 +4,18 @@ import os
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-SECRET_KEY = os.environ['SECRET_KEY']
+SECRET_KEY = env('SECRET_KEY')
 
 ALLOWED_HOSTS = ['amadesa.com', 'www.amadesa.com']
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'amadesa-db',  # Your RDS database name
-        'USER': 'postgres',  # Your RDS database user
-        'PASSWORD': 'Respublika10!',  # Your RDS database password
-        'HOST': 'amadesa-db.cp8a808oguxu.us-east-1.rds.amazonaws.com',  # Your RDS endpoint
-        'PORT': '5432',  # PostgreSQL default port
+        'ENGINE': env('DATABASE_ENGINE', default='django.db.backends.postgresql'),
+        'NAME': env('DATABASE_NAME', default='amadesa-db'),
+        'USER': env('DATABASE_USER', default='postgres'),
+        'PASSWORD': env('DATABASE_PASSWORD', default='Respublika10!'),
+        'HOST': env('DATABASE_HOST', default='amadesa-db.cp8a808oguxu.us-east-1.rds.amazonaws.com'),
+        'PORT': env('DATABASE_PORT', default='5432'),
     }
 }
 
@@ -36,9 +36,9 @@ DATABASES = {
 # }
 
 # Static and media files on S3 (if using)
-AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
+AWS_ACCESS_KEY_ID = env('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = env('AWS_SECRET_ACCESS_KEY')
+AWS_STORAGE_BUCKET_NAME = env('AWS_STORAGE_BUCKET_NAME')
 AWS_S3_REGION_NAME = 'us-east-1'
 AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = None
