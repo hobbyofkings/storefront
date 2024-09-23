@@ -1,15 +1,12 @@
 from .common import *
 import os
-
+import environ
 # SECURITY WARNING: don't run with debug turned on in production!
 
-import environ
-env = environ.Env(
-    DEBUG=(bool, False)
-)
+env = environ.Env()
 
-# Reading the .env file
-environ.Env.read_env()
+# Read the .env file
+environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
 # Load the SECRET_KEY from .env
 SECRET_KEY = env('SECRET_KEY')
