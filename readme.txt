@@ -3,8 +3,18 @@
 # # psql -h amadesa-db.cp8a808oguxu.us-east-1.rds.amazonaws.com -U postgres -d postgres -W
 
 #  ssh -i C:/Users/Kompiuteris/Desktop/SSH/amadesa.pem ubuntu@54.226.195.254
-# source env/bin/activate
-
+# linux: source env/bin/activate
+# in home pc: .\env\Scripts\Activate.ps1
 # git
 # go to pjrocect 'cd storefront'
 # git pull origin amazon
+
+# stash git if shiwing merge:
+
+git stash
+git pull origin amazon
+git stash pop
+
+
+#migrate
+python manage.py migrate
