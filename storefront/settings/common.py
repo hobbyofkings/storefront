@@ -30,8 +30,8 @@ env = os.environ.Env(
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
-# Read the .env file
-os.environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
+# Read the .env file, os.environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
+env.read_env(os.path.join(BASE_DIR, '.env'))
 
 
 
