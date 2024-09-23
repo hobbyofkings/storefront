@@ -11,7 +11,7 @@ ALLOWED_HOSTS = ['amadesa.com', 'www.amadesa.com']
 DATABASES = {
     'default': {
         'ENGINE': env('DATABASE_ENGINE', default='django.db.backends.postgresql'),
-        'NAME': env('DATABASE_NAME', default='amadesa-db'),
+        'NAME': env('DATABASE_NAME', default='postgres'),
         'USER': env('DATABASE_USER', default='postgres'),
         'PASSWORD': env('DATABASE_PASSWORD', default='Respublika10!'),
         'HOST': env('DATABASE_HOST', default='amadesa-db.cp8a808oguxu.us-east-1.rds.amazonaws.com'),
