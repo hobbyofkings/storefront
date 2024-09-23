@@ -18,3 +18,12 @@ git stash pop
 
 #migrate
 python manage.py migrate
+
+
+
+date
+sudo apt install ntp
+sudo service ntp restart
+psql "host=amadesa-db.cp8a808oguxu.us-east-1.rds.amazonaws.com port=5432 dbname=amadesa user=postgres password=Respublika10! sslmode=disable"
+wget https://truststore.pki.rds.amazonaws.com/global/global-bundle.pem -O ~/storefront/rds-ca-bundle.pem
+psql "host=amadesa-db.cp8a808oguxu.us-east-1.rds.amazonaws.com port=5432 dbname=amadesa user=postgres password=Respublika10! sslmode=require sslrootcert=rds-ca-bundle.pem"
