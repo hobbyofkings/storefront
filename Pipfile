@@ -20,6 +20,7 @@ whitenoise = "*"
 dj-database-url = "*"
 psycopg2 = "*"
 django-environ = "*"
+load-dotenv = "*"
 
 [dev-packages]
 autopep8 = "*"

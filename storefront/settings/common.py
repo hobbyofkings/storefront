@@ -1,14 +1,48 @@
-from pathlib import Path
 from datetime import timedelta
+from pathlib import Path
 import os
-import environ
+from dotenv import load_dotenv
+from django.core.exceptions import ImproperlyConfigured
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent  # Points to storefront3/storefront/
 
-# Initialize environment variables
-env = environ.Env()
-environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
+# Load the .env file
+load_dotenv(os.path.join(BASE_DIR, 'settings', '.env'))
+
+
+
+def get_env_variable(var_name):
+    value = os.getenv(var_name)
+    if not value:
+        error_msg = f"Set the {var_name} environment variable"
+        raise ImproperlyConfigured(error_msg)
+    return value
+
+
+SECRET_KEY = get_env_variable('DJANGO_SECRET_KEY')
+print("DJANGO_SECRET_KEY in common.py:", os.getenv('DJANGO_SECRET_KEY'))
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': get_env_variable('DATABASE_NAME'),
+        'USER': get_env_variable('DATABASE_USER'),
+        'PASSWORD': get_env_variable('DATABASE_PASSWORD'),
+        'HOST': get_env_variable('DATABASE_HOST'),
+        'PORT': get_env_variable('DATABASE_PORT'),
+    }
+}
+
+DEBUG = get_env_variable('DEBUG') == 'True'
+
+# Retrieve the SECRET_KEY and DEBUG
+# SECRET_KEY = env('SECRET_KEY')
+# DEBUG = env('DEBUG', default=False)  # Set a default if not defined
+
+# print(f"common.py SECRET_KEY: {SECRET_KEY}")
+print(f"common.py DEBUG: {DEBUG}")
 
 
 # Application definition
@@ -24,13 +58,14 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'djoser',
+    'silk',
+    'storages',
     'playground',
     'debug_toolbar',
     'store',
     'tags',
     'likes',
     'core',
-
 ]
 
 MIDDLEWARE = [
@@ -44,35 +79,28 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'silk.middleware.SilkyMiddleware'
 ]
-DEBUG = env('DEBUG')  # This will be overridden in dev.py and prod.py
 
-if DEBUG:
-    INSTALLED_APPS += ['silk']
-    MIDDLEWARE += ['silk.middleware.SilkyMiddleware']
 
+
+
+# if DEBUG:
+#     INSTALLED_APPS += ['silk']
+#     MIDDLEWARE += ['silk.middleware.SilkyMiddleware']
 
 INTERNAL_IPS = [
-    # ...
     '127.0.0.1',
-    # ...
 ]
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8001",
-
 ]
-
-
 
 DEFAULT_FROM_EMAIL = 'listingas@gmail.com'
 ADMINS = [
-    ('Admin', 'listingas@gmail.com')]
-
-
-
-
-
+    ('Admin', 'listingas@gmail.com'),
+]
 
 ROOT_URLCONF = 'storefront.urls'
 
@@ -206,3 +234,22 @@ LOGGING = {
         },
     },
 }
+
+# Amazon S3 settings
+# AWS_ACCESS_KEY_ID = 'AKIAW7GCJAKSWFLLJQTQ'
+# AWS_SECRET_ACCESS_KEY = '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'
+
+AWS_ACCESS_KEY_ID = get_env_variable('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = get_env_variable('AWS_SECRET_ACCESS_KEY')
+AWS_STORAGE_BUCKET_NAME = 'amadesa'
+if DEBUG:
+    print("DJANGO_SECRET_KEY in common.py:", SECRET_KEY)
+    print(f"common.py DEBUG: {DEBUG}")
+
+# Static and media files on S3
+STORAGES = {'staticfiles': {'BACKEND': 'storages.backends.s3boto3.S3Boto3Storage'}}
+
+
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+
+ADDMIN_MEDIA_PREFIX = '/static/admin/'

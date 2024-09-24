@@ -1,42 +1,54 @@
 from .common import *
 import os
-import environ
-# SECURITY WARNING: don't run with debug turned on in production!
-
-env = environ.Env()
-
-# Read the .env file
-environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
-
-# Load the SECRET_KEY from .env
-SECRET_KEY = env('SECRET_KEY')
+from pathlib import Path
 
 
-DEBUG = False
 
 
-ALLOWED_HOSTS = ['amadesa.com', 'www.amadesa.com']
+# Override DEBUG setting
+DEBUG = get_env_variable('DEBUG') == 'False'
+
+
+
+print("DJANGO_SECRET_KEY in common.py:", SECRET_KEY)
+print(f"common.py DEBUG: {DEBUG}")
+
+
+ALLOWED_HOSTS = ['amadesa.com', 'www.amadesa.com', '127.0.0.1', 'localhost']
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',  # Make sure this line is correct
-        'NAME': env('DATABASE_NAME', default='amadesa'),
-        'USER': env('DATABASE_USER', default='postgres'),
-        'PASSWORD': env('DATABASE_PASSWORD', default='Respublika10!'),
-        'HOST': env('DATABASE_HOST', default='amadesa-db.cp8a808oguxu.us-east-1.rds.amazonaws.com'),
-        'PORT': env('DATABASE_PORT', default='5432'),
-        'OPTIONS': {
-    'sslmode': 'require',  # Enable SSL
-    'sslrootcert': os.path.join(BASE_DIR, 'rds-ca-bundle.pem'),  # Path to the certificate
-        }
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': get_env_variable('DATABASE_NAME'),
+        'USER': get_env_variable('DATABASE_USER'),
+        'PASSWORD': get_env_variable('DATABASE_PASSWORD'),
+        'HOST': get_env_variable('DATABASE_HOST'),
+        'PORT': get_env_variable('DATABASE_PORT'),
     }
 }
 
 
-print(f"SECRET_KEY: {env('SECRET_KEY')}")
-print(f"DATABASE_NAME: {env('DATABASE_NAME')}")
-print(f"DATABASE_USER: {env('DATABASE_USER')}")
-print(f"DATABASE_HOST: {env('DATABASE_HOST')}")
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',  # Make sure this line is correct
+#         'NAME': env('DATABASE_NAME', default='amadesa'),
+#         'USER': env('DATABASE_USER', default='postgres'),
+#         'PASSWORD': env('DATABASE_PASSWORD', default='Respublika10!'),
+#         'HOST': env('DATABASE_HOST', default='amadesa-db.cp8a808oguxu.us-east-1.rds.amazonaws.com'),
+#         'PORT': env('DATABASE_PORT', default='5432'),
+#         'OPTIONS': {
+#     'sslmode': 'require',  # Enable SSL
+#     'sslrootcert': os.path.join(BASE_DIR, 'rds-ca-bundle.pem'),  # Path to the certificate
+#         }
+#     }
+# }
+
+
+
+
+
 
 # Store static files locally
 STATIC_URL = '/static/'

@@ -1,19 +1,37 @@
-#psql "host=amadesa-db.cp8a808oguxu.us-east-1.rds.amazonaws.com port=5432 dbname=postgres user=postgres password=Respublika10! sslmode=require sslrootcert=rds-ca-bundle.pem"
-# psql -h amadesa-db.cp8a808oguxu.us-east-1.rds.amazonaws.com -U postgres -d Amadesa -W
-# # psql -h amadesa-db.cp8a808oguxu.us-east-1.rds.amazonaws.com -U postgres -d postgres -W
+
+
+https://www.udemy.com/course/deploy-a-django-web-app-with-nginx-and-amazon-ecs-2022/learn/lecture/38244788#overview
+
+{"instance": {"Id": "amadesadb", "Location": "us-east-1d", "SecurityGroupId": "sg-0f488a27668ed60c4", "Hostname": "amadesadb.cp8a808oguxu.us-east-1.rds.amazonaws.com", "Port": 5432, "Database": "amadesadb", "Username": "amadesa"}}
+
+Test db connection
+Test-NetConnection -ComputerName database-1.cp8a808oguxu.us-east-1.rds.amazonaws.com -Port 5432
+
+
+psql -h database-1.cp8a808oguxu.us-east-1.rds.amazonaws.com -U arnoldas -d amadesa -W -p 5432
+
+psql host=database-1.cp8a808oguxu.us-east-1.rds.amazonaws.com port=5432 dbname=amadesa user=arnoldas password=Respublika10! sslmode=require sslrootcert=rds-ca-bundle.pem
+psql -h database-1.cp8a808oguxu.us-east-1.rds.amazonaws.com -U postgres -d amadesa -W
+psql -h database-1.cp8a808oguxu.us-east-1.rds.amazonaws.com -U postgres -d postgres -W
 
 ssh -i C:/Users/Kompiuteris/Desktop/SSH/amadesa.pem ubuntu@54.226.195.254
+# 34.233.154.89 elastic
+ssh -i C:/Users/Kompiuteris/Desktop/SSH/amadesa.pem ubuntu@34.233.154.89
+
+
+cd storefront
 # linux: source env/bin/activate
 # in home pc: .\env\Scripts\Activate.ps1
 # git
-# go to pjrocect 'cd storefront'
-# git pull origin amazon
+
+git pull origin amazon
 
 # stash git if shiwing merge:
 
 git stash
 git pull origin amazon
 git stash pop
+pip install psycopg2-binary
 
 
 #migrate
@@ -26,13 +44,15 @@ sudo apt install ntp
 sudo service ntp restart
 psql "host=amadesa-db.cp8a808oguxu.us-east-1.rds.amazonaws.com port=5432 dbname=amadesa user=postgres password=Respublika10! sslmode=disable"
 wget https://truststore.pki.rds.amazonaws.com/global/global-bundle.pem -O ~/storefront/rds-ca-bundle.pem
-psql "host=amadesa-db.cp8a808oguxu.us-east-1.rds.amazonaws.com port=5432 dbname=amadesa user=postgres password=Respublika10! sslmode=require sslrootcert=rds-ca-bundle.pem"
+psql amadesa-db.cp8a808oguxu.us-east-1.rds.amazonaws.com port=5432 dbname=amadesa user=postgres password=Respublika10! sslmode=require sslrootcert=rds-ca-bundle.pem
 
 
 
 gunicorn --workers 3 storefront.wsgi:application
 sudo nano /etc/nginx/sites-available/amadesa.com
 
+# what is that?
+curl --unix-socket /home/ubuntu/storefront/storefront.sock localhost
 
 
 Check Gunicorn Status Check if Gunicorn is running:
@@ -48,7 +68,6 @@ Check if Nginx is running:
 
 sudo systemctl status nginx
 Restart Nginx:
-
 sudo systemctl restart nginx
 Test Nginx configuration:
 
