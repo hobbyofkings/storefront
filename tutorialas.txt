@@ -64,7 +64,7 @@ docker images
 tag images like
 
 
-docker tag nginx:latest 479296291493.dkr.ecr.us-east-1.amazonaws.com/nginx2
+docker tag nginx_container:latest 479296291493.dkr.ecr.us-east-1.amazonaws.com/nginx2
 docker push 479296291493.dkr.ecr.us-east-1.amazonaws.com/nginx2:latest
 
 docker tag app:latest 479296291493.dkr.ecr.us-east-1.amazonaws.com/django2:latest

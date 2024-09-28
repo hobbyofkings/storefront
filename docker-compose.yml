@@ -1,20 +1,26 @@
 version: "3.8"
 services:
   app:
-    build: .
-    ports:
-      - "8000:8000"
-    environment:
-      - DJANGO_SETTINGS_MODULE=storefront.settings.prod
-    image: app
+    image: 479296291493.dkr.ecr.us-east-1.amazonaws.com/django2:latest
     container_name: django_container
     command: gunicorn storefront.wsgi:application --bind 0.0.0.0:8000 --timeout=5 --threads=10
+    ports:
+      - "8000:8000"  # Expose port 8000 for testing purposes, not strictly required
+    environment:
+      - DJANGO_SETTINGS_MODULE=storefront.settings.prod
+    networks:
+      - storefront_network
 
   nginx:
-    build: ./nginx
+    image: 479296291493.dkr.ecr.us-east-1.amazonaws.com/nginx2:latest
+    container_name: nginx_container
     ports:
-      - "80:80"
-    image: nginx:latest  # Use a custom image name to avoid conflicts
+      - "80:80"  # Map port 80 to host for public access
     depends_on:
       - app
-    # Removed 'links' as it's deprecated
+    networks:
+      - storefront_network
+
+networks:
+  storefront_network:
+    driver: bridge
