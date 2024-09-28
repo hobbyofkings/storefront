@@ -3,9 +3,9 @@
 /static/
 general.log
 
-env/
-venv/
-ENV/
-env_new/
-.venv/
-.env
+#env/
+#venv/
+#ENV/
+#env_new/
+#.venv/
+#.env
