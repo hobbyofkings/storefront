@@ -1,0 +1,5 @@
+
+to connect to the server:
+scp -i "C:\Users\Kompiuteris\Desktop\SSH\amadesa.pem" "C:\Users\Kompiuteris\Desktop\SSH\amadesa.pem" ubuntu@54.166.109.181:~
+ssh -i "C:\Users\Kompiuteris\Desktop\SSH\amadesa.pem" ubuntu@54.166.109.181
+
