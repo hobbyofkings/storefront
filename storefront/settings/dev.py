@@ -1,10 +1,5 @@
-from .common import *
 
-# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-# (venv) ubuntu@ip-172-31-39-33:~/storefront$ python -c 'import secrets; print(secrets.token_urlsafe())'
-# pNsEJHemPEb70E3sEw9prAclVDcw5NhK6470XJxazL0
 
 
 CELERY_BROKER_URL = 'redis://localhost:6379/1'  # or your chosen broker

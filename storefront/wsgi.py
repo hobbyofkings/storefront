@@ -14,3 +14,5 @@ from django.core.wsgi import get_wsgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'storefront.settings.prod')
 
 application = get_wsgi_application()
+
+print('WSGI loaded. name of the settings module:', os.environ.get('DJANGO_SETTINGS_MODULE'))

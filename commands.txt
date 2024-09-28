@@ -1,18 +1,27 @@
 
 
-https://www.udemy.com/course/deploy-a-django-web-app-with-nginx-and-amazon-ecs-2022/learn/lecture/38244788#overview
+Summary
+Do not use manage.py runserver in production.
+Use Gunicorn as the WSGI server.
+Use Nginx as a reverse proxy to handle static files and forward requests to Gunicorn
+# after update from git, linux does not have NGINX FILES INFO
+
+
+
+
+
+https://www.udemy.com/course/deploy-a-django-web-app-with-nginx-and-amazon-ecs-2022/learn/lecture/38244906#content
+
 
 {"instance": {"Id": "amadesadb", "Location": "us-east-1d", "SecurityGroupId": "sg-0f488a27668ed60c4", "Hostname": "amadesadb.cp8a808oguxu.us-east-1.rds.amazonaws.com", "Port": 5432, "Database": "amadesadb", "Username": "amadesa"}}
 
+psql -h amadesadb.cp8a808oguxu.us-east-1.rds.amazonaws.com -U amadesa -d amadesadb -p 5432
+
+
 Test db connection
-Test-NetConnection -ComputerName database-1.cp8a808oguxu.us-east-1.rds.amazonaws.com -Port 5432
+Test-NetConnection -ComputerName amadesadb.cp8a808oguxu.us-east-1.rds.amazonaws.com -Port 5432
 
-
-psql -h database-1.cp8a808oguxu.us-east-1.rds.amazonaws.com -U arnoldas -d amadesa -W -p 5432
-
-psql host=database-1.cp8a808oguxu.us-east-1.rds.amazonaws.com port=5432 dbname=amadesa user=arnoldas password=Respublika10! sslmode=require sslrootcert=rds-ca-bundle.pem
-psql -h database-1.cp8a808oguxu.us-east-1.rds.amazonaws.com -U postgres -d amadesa -W
-psql -h database-1.cp8a808oguxu.us-east-1.rds.amazonaws.com -U postgres -d postgres -W
+ sudo ufw allow 5432/tcp
 
 ssh -i C:/Users/Kompiuteris/Desktop/SSH/amadesa.pem ubuntu@54.226.195.254
 # 34.233.154.89 elastic
@@ -39,6 +48,15 @@ python manage.py migrate
 python3 manage.py makemigrations
 
 
+to run server
+gunicorn --workers 3 storefront.wsgi:application
+
+
+docker
+docker-compose down # to stop the project
+docker-compose up # to run the project
+docker-compose up --build  # Rebuilds and starts the containers
+
 date
 sudo apt install ntp
 sudo service ntp restart
@@ -56,21 +74,24 @@ curl --unix-socket /home/ubuntu/storefront/storefront.sock localhost
 
 
 Check Gunicorn Status Check if Gunicorn is running:
-sudo systemctl status gunicorn
 
 Restart Gunicorn:
 sudo systemctl restart gunicorn
 Reload the systemd configuration:
 
 sudo systemctl daemon-reload
+
+
+
+
+Open the Nginx configuration file
+sudo nano /etc/nginx/sites-available/storefront
 Check Nginx Status
 Check if Nginx is running:
-
 sudo systemctl status nginx
 Restart Nginx:
 sudo systemctl restart nginx
 Test Nginx configuration:
-
 sudo nginx -t
 Check Active Connections
 Check open ports and listening services:

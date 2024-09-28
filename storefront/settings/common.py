@@ -21,7 +21,7 @@ def get_env_variable(var_name):
 
 
 SECRET_KEY = get_env_variable('DJANGO_SECRET_KEY')
-print("DJANGO_SECRET_KEY in common.py:", os.getenv('DJANGO_SECRET_KEY'))
+# print("DJANGO_SECRET_KEY in common.py:", os.getenv('DJANGO_SECRET_KEY'))
 
 
 DATABASES = {
@@ -36,12 +36,6 @@ DATABASES = {
 }
 
 DEBUG = get_env_variable('DEBUG') == 'True'
-
-# Retrieve the SECRET_KEY and DEBUG
-# SECRET_KEY = env('SECRET_KEY')
-# DEBUG = env('DEBUG', default=False)  # Set a default if not defined
-
-# print(f"common.py SECRET_KEY: {SECRET_KEY}")
 print(f"common.py DEBUG: {DEBUG}")
 
 
@@ -91,6 +85,7 @@ MIDDLEWARE = [
 
 INTERNAL_IPS = [
     '127.0.0.1',
+
 ]
 
 CORS_ALLOWED_ORIGINS = [
@@ -121,13 +116,9 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'storefront.wsgi.application'
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 
-
-
-
-# Password validation
-# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -235,16 +226,14 @@ LOGGING = {
     },
 }
 
-# Amazon S3 settings
-# AWS_ACCESS_KEY_ID = 'AKIAW7GCJAKSWFLLJQTQ'
-# AWS_SECRET_ACCESS_KEY = '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'
+
 
 AWS_ACCESS_KEY_ID = get_env_variable('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = get_env_variable('AWS_SECRET_ACCESS_KEY')
 AWS_STORAGE_BUCKET_NAME = 'amadesa'
-if DEBUG:
-    print("DJANGO_SECRET_KEY in common.py:", SECRET_KEY)
-    print(f"common.py DEBUG: {DEBUG}")
+# if DEBUG:
+#     print("DJANGO_SECRET_KEY in common.py:", SECRET_KEY)
+#     print(f"common.py DEBUG: {DEBUG}")
 
 # Static and media files on S3
 STORAGES = {'staticfiles': {'BACKEND': 'storages.backends.s3boto3.S3Boto3Storage'}}

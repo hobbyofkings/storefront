@@ -1,0 +1,73 @@
+
+Dockerizing Django with Postgres, Gunicorn, and Nginx
+1. make sure that psycopg2 is installed but mute it in requirements.txt
+
+2. Create a Dockerfile
+Create a Dockerfile in the root of the project
+Dockerfile
+
+3. Create a docker-compose.yml file
+Create a docker-compose.yml file in the root of the project
+docker-compose.yml
+
+4. setup Nginx
+Create a new folder named nginx in the root of the project
+Create a new file named default.conf in the nginx folder
+nginx.conf
+Docerfile
+add to Dockerfile these two lines
+FROM nginx
+COPY ./nginx.conf /etc/nginx/nginx.conf
+
+5. Build the project
+before making images make sure no docker files are in docker and no images. then rune
+then delete all images and containers:  and write this line:
+docker system prune
+Build the project with docker-compose
+docker-compose build # to build the project emages
+docker-compose up # to run the project (not neeed for amazon aws)
+
+
+
+d. Manually Authenticate Using get-authorization-token
+If the get-login-password method fails, try manually retrieving and using the authorization token.
+i. Retrieve the Authorization Token
+powershell
+
+$token = aws ecr get-authorization-token --region us-east-1 --output text --query 'authorizationData[].authorizationToken'
+ii. Decode the Token
+The token is Base64-encoded and contains the format username:password. Decode it using PowerShell.
+
+powershell
+Copy code
+$decodedToken = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($token))
+iii. Extract Username and Password
+powershell Copy code
+
+$credentials = $decodedToken.Split(':')
+$username = $credentials[0]
+$password = $credentials[1]
+
+iv. Authenticate Docker with ECR
+powershell
+Copy code
+docker login --username $username --password $password 479296291493.dkr.ecr.us-east-1.amazonaws.com
+
+
+
+
+
+
+
+check dcker images
+docker images
+tag images like
+
+
+docker tag nginx:latest 479296291493.dkr.ecr.us-east-1.amazonaws.com/nginx2
+docker push 479296291493.dkr.ecr.us-east-1.amazonaws.com/nginx2:latest
+
+docker tag app:latest 479296291493.dkr.ecr.us-east-1.amazonaws.com/django2:latest
+docker push 479296291493.dkr.ecr.us-east-1.amazonaws.com/django2:latest
+
+

@@ -19,6 +19,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 import debug_toolbar
+from storefront.views import health_check
 
 admin.site.site_header = 'Storefront Admin'
 admin.site.index_title = 'Admin'
@@ -32,6 +33,7 @@ urlpatterns = [
     path('auth/', include('djoser.urls.jwt')),
     path('__debug__/', include(debug_toolbar.urls)),
     # path('silk/', include('silk.urls', namespace='silk'))
+    path('health/', health_check, name='health_check'),
 ]
 
 if settings.DEBUG:
