@@ -14,7 +14,7 @@ DEBUG = get_env_variable('DEBUG') == 'False'
 # print(f"common.py DEBUG: {DEBUG}")
 
 
-ALLOWED_HOSTS = ['amadesa.com', 'www.amadesa.com', '67.202.22.239', 'localhost', '*']
+ALLOWED_HOSTS = ['amadesa.com', 'www.amadesa.com', '67.202.22.239', '127.0.0.1', 'localhost', '*']
 CSRF_TRUSTED_ORIGINS = ['https://amadesa.com', 'https://www.amadesa.com']
 
 

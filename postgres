@@ -1,0 +1,3 @@
+sudo apt-get update
+sudo apt-get install postgresql-client
+psql -h amadesadb.cp8a808oguxu.us-east-1.rds.amazonaws.com -p 5432 -U amadesa -d amadesadb
