@@ -11,6 +11,22 @@ git stash apply
 
 
 # tmux (for the session, tmux is an open-source terminal multiplexer for Unix-like operating systems. It allows multiple terminal sessions to be accessed simultaneously in a single window
+tmux new-session
+sudo tmux list
+tmux a -t 0
+tmux attach-session -t 0
+ctr +b D (to detach)
+allow to mark the text and copy it with ctr + c
+ctr + b [ (to enter the scroll mode) and then ctr + b ] (to exit the scroll mode)
+
+
+to run server with gunicorn:
+gunicorn --env DJANGO_SETTINGS_MODULE=storefront.settings.prod storefront.wsgi:application --bind 0.0.0.0:8000
+
+
+
+
+
 # certbot (for the ssl)
 # python3-certbot-nginx (for nginx, to install ssl)
 sudo certbot --nginx -d amadesa.com -d www.amadesa.com

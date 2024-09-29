@@ -60,3 +60,26 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # If you want to store media files locally instead of S3, use these settings:
 # MEDIA_URL = '/media/'
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'WARNING',
+            'class': 'logging.FileHandler',
+            'filename': '/var/log/django/error.log',
+        },
+    },
+    'root': {
+        'handlers': ['file'],
+        'level': 'WARNING',
+    },
+    'django': {
+        'handlers': ['file'],
+        'level': 'WARNING',
+        'propagate': False,
+    },
+}
