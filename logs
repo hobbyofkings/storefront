@@ -1,0 +1,15 @@
+1. Check Supervisor Log File Location
+sudo tail -f /var/log/supervisor/supervisord.log
+2. Confirming Gunicorn is Managed by Supervisor
+sudo supervisorctl status
+
+
+
+
+ Check Gunicorn Logs Location in Supervisor Configuration
+ sudo nano /etc/supervisor/conf.d/gunicorn.conf
+
+
+ Check Gunicorn Log Files Manually
+    errorlog = '/var/log/gunicorn/gunicorn.err.log'
+    accesslog = '/var/log/gunicorn/gunicorn.access.log' < - command to check the logs
