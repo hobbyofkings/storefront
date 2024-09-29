@@ -63,6 +63,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
 
+LOG_DIR = os.getenv('LOG_DIR', default=BASE_DIR / 'logs')
+
+# Create the log directory if it does not exist
+Path(LOG_DIR).mkdir(parents=True, exist_ok=True)
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -70,7 +75,7 @@ LOGGING = {
         'file': {
             'level': 'WARNING',
             'class': 'logging.FileHandler',
-            'filename': '/var/log/django/error.log',
+            'filename': os.path.join(LOG_DIR, 'error.log'),
         },
     },
     'root': {
