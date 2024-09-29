@@ -156,7 +156,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'  # Remove the brackets
 
-MEDIA_URL = '/media/'
+MEDIA_URL = '/media/' #my own server (pc, with x 6 HDD 20 TB, NAS)
 MEDIA_ROOT = BASE_DIR / 'media'
 
 # Default primary key field type

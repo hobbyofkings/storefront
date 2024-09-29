@@ -8,3 +8,13 @@ source venv/bin/activate
 git pull origin amazon
 git stash
 git stash apply
+
+
+# tmux (for the session, tmux is an open-source terminal multiplexer for Unix-like operating systems. It allows multiple terminal sessions to be accessed simultaneously in a single window
+# certbot (for the ssl)
+# python3-certbot-nginx (for nginx, to install ssl)
+sudo certbot --nginx -d amadesa.com -d www.amadesa.com
+
+# for the logs:
+grafana
+datadogs (for the logs)
