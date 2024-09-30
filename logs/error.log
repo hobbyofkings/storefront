@@ -274,3 +274,1100 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'home' not found. 'home' is n
 2024-09-30 17:16:33,934 (WARNING) - django.request - Not Found: /cart.json
 2024-09-30 17:16:43,673 (WARNING) - silk.model_factory - Response to request with pk 1df0699c-7504-4a15-873d-4f844116255a has content type text/javascript but was unable to parse it
 2024-09-30 17:16:43,794 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 22:52:21,830 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 22:52:29,878 (WARNING) - django.request - Not Found: /favicon.ico
+2024-09-30 23:08:30,720 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 23:08:35,429 (WARNING) - django.request - Not Found: /favicon.ico
+2024-09-30 23:19:15,512 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-09-30 23:19:16,337 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 23:19:33,375 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-09-30 23:19:34,221 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 23:20:04,113 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-09-30 23:20:05,002 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 23:20:27,412 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-09-30 23:20:28,192 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 23:20:54,950 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-09-30 23:20:55,692 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 23:23:00,751 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-09-30 23:23:01,523 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 23:25:25,512 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-09-30 23:25:26,217 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 23:26:45,333 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-09-30 23:26:46,140 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 23:27:22,524 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\serializers.py changed, reloading.
+2024-09-30 23:27:23,346 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 23:27:35,098 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\serializers.py changed, reloading.
+2024-09-30 23:27:35,893 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 23:29:52,225 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\serializers.py changed, reloading.
+2024-09-30 23:29:53,000 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 23:30:22,935 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\views.py changed, reloading.
+2024-09-30 23:30:23,747 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 23:30:39,672 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\urls.py changed, reloading.
+2024-09-30 23:30:40,420 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 23:30:52,141 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\urls.py changed, reloading.
+2024-09-30 23:30:52,914 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 23:32:45,061 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\serializers.py changed, reloading.
+2024-09-30 23:32:45,855 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 23:33:51,094 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-09-30 23:33:51,870 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 23:48:32,004 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-09-30 23:48:32,773 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 23:49:21,251 (WARNING) - django.request - Not Found: /favicon.ico
+2024-09-30 23:51:08,575 (WARNING) - silk.model_factory - Response to request with pk 08b5113b-ce68-4d44-be08-bac6ee9766e4 has content type text/javascript but was unable to parse it
+2024-09-30 23:51:14,750 (WARNING) - silk.model_factory - Response to request with pk e5589218-42a4-454e-b556-c2f09b6746cf has content type text/javascript but was unable to parse it
+2024-09-30 23:51:20,087 (WARNING) - silk.model_factory - Response to request with pk 88117a75-0b67-4957-8a6b-71ade540a7cc has content type text/javascript but was unable to parse it
+2024-09-30 23:52:36,126 (WARNING) - silk.model_factory - Response to request with pk 491b3b60-375c-4bee-9023-9f9cb97a46ba has content type text/javascript but was unable to parse it
+2024-09-30 23:53:02,286 (WARNING) - silk.model_factory - Response to request with pk da7e7a78-594e-42fa-9b8c-7bfdb324d8fd has content type text/javascript but was unable to parse it
+2024-09-30 23:54:31,163 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-09-30 23:54:31,976 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 23:54:56,615 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-09-30 23:54:57,374 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 23:55:52,885 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-09-30 23:55:53,616 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 23:56:44,922 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-09-30 23:56:45,705 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 23:57:20,929 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-09-30 23:57:21,715 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 23:57:29,197 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-09-30 23:57:29,961 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 23:58:11,594 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-09-30 23:58:12,321 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 23:58:59,347 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-09-30 23:59:00,091 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 00:00:09,272 (WARNING) - silk.model_factory - Response to request with pk 6d286603-984f-4ba7-8cd3-3d53a843c46f has content type text/javascript but was unable to parse it
+2024-10-01 00:00:12,906 (WARNING) - silk.model_factory - Response to request with pk 4bb85f88-0898-459c-ac52-3741d15fa16f has content type text/javascript but was unable to parse it
+2024-10-01 00:00:17,775 (WARNING) - silk.model_factory - Response to request with pk ab8203ce-da8b-4631-860f-44294f0090f5 has content type text/javascript but was unable to parse it
+2024-10-01 00:02:25,552 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 00:02:26,422 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 00:02:29,803 (WARNING) - silk.model_factory - Response to request with pk d9fbece9-a97f-4904-9c63-1e0e526980bd has content type text/javascript but was unable to parse it
+2024-10-01 00:02:32,560 (WARNING) - silk.model_factory - Response to request with pk e5bc0704-864a-4e5f-8ee5-b439a9eed9a3 has content type text/javascript but was unable to parse it
+2024-10-01 00:02:34,675 (WARNING) - silk.model_factory - Response to request with pk bc1b6898-b87a-4b59-a10b-f03f87e55a79 has content type text/javascript but was unable to parse it
+2024-10-01 00:02:45,398 (WARNING) - silk.model_factory - Response to request with pk a6435a7f-08f1-4f19-b30b-1c2f920cf080 has content type text/javascript but was unable to parse it
+2024-10-01 00:02:48,151 (WARNING) - silk.model_factory - Response to request with pk a69d6526-6e14-4f78-b598-e39a1adbc101 has content type text/javascript but was unable to parse it
+2024-10-01 00:02:53,661 (WARNING) - silk.model_factory - Response to request with pk c8aec6ab-cdef-4eb7-ab8a-579ffc525408 has content type text/javascript but was unable to parse it
+2024-10-01 00:02:56,066 (WARNING) - silk.model_factory - Response to request with pk 31a97423-3061-47d4-9ab5-9b2711f94bd7 has content type text/javascript but was unable to parse it
+2024-10-01 00:03:02,009 (WARNING) - silk.model_factory - Response to request with pk 88a26430-0eff-4741-b189-d767d424cd7c has content type text/javascript but was unable to parse it
+2024-10-01 00:03:10,208 (WARNING) - silk.model_factory - Response to request with pk dcd99481-6c43-4d5a-8478-66737d98c22c has content type text/javascript but was unable to parse it
+2024-10-01 00:04:05,254 (WARNING) - silk.model_factory - Response to request with pk 5c54f12a-a0ab-4e5c-b025-8d1d7a10c044 has content type text/javascript but was unable to parse it
+2024-10-01 00:04:11,853 (WARNING) - silk.model_factory - Response to request with pk 2ddec9b6-23cf-415e-8609-d526235d0a6d has content type text/javascript but was unable to parse it
+2024-10-01 00:04:26,143 (WARNING) - silk.model_factory - Response to request with pk c62ecf78-c9c1-4c01-9027-fbe8480967c1 has content type text/javascript but was unable to parse it
+2024-10-01 00:04:28,319 (WARNING) - silk.model_factory - Response to request with pk 2d2ee93d-50aa-45e1-9944-0f750786c0b1 has content type text/javascript but was unable to parse it
+2024-10-01 00:06:53,059 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 00:06:53,906 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 00:06:59,986 (WARNING) - silk.model_factory - Response to request with pk dde15347-7c1c-4ff7-ba9a-fb5d93cf08f1 has content type text/javascript but was unable to parse it
+2024-10-01 00:07:02,285 (WARNING) - silk.model_factory - Response to request with pk 45537464-409e-4f5d-946a-c850bd7bf227 has content type text/javascript but was unable to parse it
+2024-10-01 00:07:04,608 (WARNING) - silk.model_factory - Response to request with pk d6e83bfc-5b2c-4baa-92df-4586090c409f has content type text/javascript but was unable to parse it
+2024-10-01 00:07:07,498 (WARNING) - silk.model_factory - Response to request with pk f4bea519-8783-441e-8cb0-7f6cb38000ec has content type text/javascript but was unable to parse it
+2024-10-01 00:07:09,944 (WARNING) - silk.model_factory - Response to request with pk 3048c158-6756-4cbb-bb6e-4f1fb4cb2a53 has content type text/javascript but was unable to parse it
+2024-10-01 00:07:16,275 (WARNING) - silk.model_factory - Response to request with pk d7dad324-71c9-4f07-87cd-efbe67811d28 has content type text/javascript but was unable to parse it
+2024-10-01 00:07:20,573 (WARNING) - silk.model_factory - Response to request with pk 1aaef767-0df5-4a43-b1ca-2541d2ff5854 has content type text/javascript but was unable to parse it
+2024-10-01 00:07:24,451 (WARNING) - silk.model_factory - Response to request with pk ef25ed27-3027-4e8f-bee6-d3bf067d56a4 has content type text/javascript but was unable to parse it
+2024-10-01 00:07:26,313 (WARNING) - silk.model_factory - Response to request with pk 5424bd22-cca6-4e24-916e-6d1ca2fbf65a has content type text/javascript but was unable to parse it
+2024-10-01 00:07:56,445 (WARNING) - silk.model_factory - Response to request with pk 432703ad-0d18-461e-b45f-99838b1edc74 has content type text/javascript but was unable to parse it
+2024-10-01 00:08:12,512 (WARNING) - silk.model_factory - Response to request with pk 3ab445cb-8bd5-4849-8304-d317f1ac2888 has content type text/javascript but was unable to parse it
+2024-10-01 00:08:15,638 (WARNING) - silk.model_factory - Response to request with pk 67b9439a-1506-48b3-aa65-efc92f15215d has content type text/javascript but was unable to parse it
+2024-10-01 00:09:12,797 (WARNING) - silk.model_factory - Response to request with pk 45ad8c9e-70ae-4995-b474-3c28cc5b316b has content type text/javascript but was unable to parse it
+2024-10-01 00:10:34,555 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 00:10:35,403 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 00:12:00,479 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 00:12:28,180 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\views.py changed, reloading.
+2024-10-01 00:12:28,973 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 00:13:08,581 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 00:13:09,357 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 00:13:38,178 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 00:13:38,908 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 00:14:01,251 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 00:14:02,016 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 00:14:45,852 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 00:14:46,614 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 00:15:22,360 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 00:15:23,075 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 00:15:51,587 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 00:15:52,314 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 00:15:59,695 (WARNING) - silk.model_factory - Response to request with pk 9b50a25e-b690-40b3-808a-d7d6b6baa834 has content type text/javascript but was unable to parse it
+2024-10-01 00:16:01,004 (ERROR) - django.request - Internal Server Error: /admin/foundation/language/2/change/
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column foundation_alternativename.language_id does not exist
+LINE 1: SELECT "foundation_alternativename"."id", "foundation_altern...
+                                                  ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 89, in execute_sql
+    return self._execute_sql(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column foundation_alternativename.language_id does not exist
+LINE 1: SELECT "foundation_alternativename"."id", "foundation_altern...
+                                                  ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1964, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1919, in _changeform_view
+    media += inline_formset.media
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\helpers.py", line 465, in media
+    media = self.opts.media + self.formset.media
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\formsets.py", line 521, in media
+    if self.forms:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\formsets.py", line 207, in forms
+    for i in range(self.total_form_count())
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\formsets.py", line 182, in total_form_count
+    initial_forms = self.initial_form_count()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 1123, in initial_form_count
+    return super().initial_form_count()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 697, in initial_form_count
+    return len(self.get_queryset())
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 96, in execute_sql
+    query_dict['analysis'] = _explain_query(self.connection, q, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 58, in _explain_query
+    cur.execute(prefixed_query, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.InternalError: current transaction is aborted, commands ignored until end of transaction block
+
+2024-10-01 00:21:56,731 (ERROR) - django.request - Internal Server Error: /admin/foundation/language/2/change/
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column foundation_alternativename.language_id does not exist
+LINE 1: SELECT "foundation_alternativename"."id", "foundation_altern...
+                                                  ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 89, in execute_sql
+    return self._execute_sql(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column foundation_alternativename.language_id does not exist
+LINE 1: SELECT "foundation_alternativename"."id", "foundation_altern...
+                                                  ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1964, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1919, in _changeform_view
+    media += inline_formset.media
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\helpers.py", line 465, in media
+    media = self.opts.media + self.formset.media
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\formsets.py", line 521, in media
+    if self.forms:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\formsets.py", line 207, in forms
+    for i in range(self.total_form_count())
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\formsets.py", line 182, in total_form_count
+    initial_forms = self.initial_form_count()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 1123, in initial_form_count
+    return super().initial_form_count()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 697, in initial_form_count
+    return len(self.get_queryset())
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 96, in execute_sql
+    query_dict['analysis'] = _explain_query(self.connection, q, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 58, in _explain_query
+    cur.execute(prefixed_query, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.InternalError: current transaction is aborted, commands ignored until end of transaction block
+
+2024-10-01 00:22:00,462 (WARNING) - silk.model_factory - Response to request with pk a3f4aed2-2a1f-4fb0-8527-1348a4f24be6 has content type text/javascript but was unable to parse it
+2024-10-01 00:22:03,227 (ERROR) - django.request - Internal Server Error: /admin/foundation/language/1/change/
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column foundation_alternativename.language_id does not exist
+LINE 1: SELECT "foundation_alternativename"."id", "foundation_altern...
+                                                  ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 89, in execute_sql
+    return self._execute_sql(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column foundation_alternativename.language_id does not exist
+LINE 1: SELECT "foundation_alternativename"."id", "foundation_altern...
+                                                  ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1964, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1919, in _changeform_view
+    media += inline_formset.media
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\helpers.py", line 465, in media
+    media = self.opts.media + self.formset.media
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\formsets.py", line 521, in media
+    if self.forms:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\formsets.py", line 207, in forms
+    for i in range(self.total_form_count())
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\formsets.py", line 182, in total_form_count
+    initial_forms = self.initial_form_count()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 1123, in initial_form_count
+    return super().initial_form_count()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 697, in initial_form_count
+    return len(self.get_queryset())
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 96, in execute_sql
+    query_dict['analysis'] = _explain_query(self.connection, q, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 58, in _explain_query
+    cur.execute(prefixed_query, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.InternalError: current transaction is aborted, commands ignored until end of transaction block
+
+2024-10-01 00:23:45,647 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 00:23:46,475 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 00:24:00,592 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 00:24:01,331 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 00:24:06,411 (WARNING) - silk.model_factory - Response to request with pk 4cc46643-2e4f-4031-a8d0-bc76718ad006 has content type text/javascript but was unable to parse it
+2024-10-01 00:24:07,780 (ERROR) - django.request - Internal Server Error: /admin/foundation/language/2/change/
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column foundation_alternativename.language_id does not exist
+LINE 1: SELECT "foundation_alternativename"."id", "foundation_altern...
+                                                  ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 89, in execute_sql
+    return self._execute_sql(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column foundation_alternativename.language_id does not exist
+LINE 1: SELECT "foundation_alternativename"."id", "foundation_altern...
+                                                  ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1964, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1919, in _changeform_view
+    media += inline_formset.media
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\helpers.py", line 465, in media
+    media = self.opts.media + self.formset.media
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\formsets.py", line 521, in media
+    if self.forms:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\formsets.py", line 207, in forms
+    for i in range(self.total_form_count())
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\formsets.py", line 182, in total_form_count
+    initial_forms = self.initial_form_count()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 1123, in initial_form_count
+    return super().initial_form_count()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 697, in initial_form_count
+    return len(self.get_queryset())
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 96, in execute_sql
+    query_dict['analysis'] = _explain_query(self.connection, q, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 58, in _explain_query
+    cur.execute(prefixed_query, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.InternalError: current transaction is aborted, commands ignored until end of transaction block
+
+2024-10-01 00:26:01,087 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 00:26:01,930 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 00:26:14,775 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 00:26:15,538 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 00:26:43,334 (ERROR) - django.request - Internal Server Error: /admin/foundation/language/2/change/
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column foundation_alternativename.language_id does not exist
+LINE 1: SELECT "foundation_alternativename"."id", "foundation_altern...
+                                                  ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 89, in execute_sql
+    return self._execute_sql(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column foundation_alternativename.language_id does not exist
+LINE 1: SELECT "foundation_alternativename"."id", "foundation_altern...
+                                                  ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py", line 21, in change_view
+    return super().change_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1964, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1919, in _changeform_view
+    media += inline_formset.media
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\helpers.py", line 465, in media
+    media = self.opts.media + self.formset.media
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\formsets.py", line 521, in media
+    if self.forms:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\formsets.py", line 207, in forms
+    for i in range(self.total_form_count())
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\formsets.py", line 182, in total_form_count
+    initial_forms = self.initial_form_count()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 1123, in initial_form_count
+    return super().initial_form_count()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 697, in initial_form_count
+    return len(self.get_queryset())
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 96, in execute_sql
+    query_dict['analysis'] = _explain_query(self.connection, q, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 58, in _explain_query
+    cur.execute(prefixed_query, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.InternalError: current transaction is aborted, commands ignored until end of transaction block
+
+2024-10-01 00:26:49,070 (WARNING) - silk.model_factory - Response to request with pk fbf70214-45f4-4c14-b0d7-51a6ecf59d91 has content type text/javascript but was unable to parse it
+2024-10-01 00:27:05,920 (ERROR) - django.request - Internal Server Error: /admin/foundation/language/add/
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column "language_id" of relation "foundation_alternativename" does not exist
+LINE 1: INSERT INTO "foundation_alternativename" ("language_id", "na...
+                                                  ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1961, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1872, in _changeform_view
+    self.save_related(request, form, formsets, not add)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1322, in save_related
+    self.save_formset(request, form, formset, change=change)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1310, in save_formset
+    formset.save()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 796, in save
+    return self.save_existing_objects(commit) + self.save_new_objects(commit)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 959, in save_new_objects
+    self.new_objects.append(self.save_new(form, commit=commit))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 1157, in save_new
+    return super().save_new(form, commit=commit)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 769, in save_new
+    return form.save(commit=commit)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 554, in save
+    self.instance.save()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column "language_id" of relation "foundation_alternativename" does not exist
+LINE 1: INSERT INTO "foundation_alternativename" ("language_id", "na...
+                                                  ^
+
+2024-10-01 00:27:11,203 (ERROR) - django.request - Internal Server Error: /admin/foundation/language/2/change/
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column foundation_alternativename.language_id does not exist
+LINE 1: SELECT "foundation_alternativename"."id", "foundation_altern...
+                                                  ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 89, in execute_sql
+    return self._execute_sql(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column foundation_alternativename.language_id does not exist
+LINE 1: SELECT "foundation_alternativename"."id", "foundation_altern...
+                                                  ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py", line 21, in change_view
+    return super().change_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1964, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1919, in _changeform_view
+    media += inline_formset.media
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\helpers.py", line 465, in media
+    media = self.opts.media + self.formset.media
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\formsets.py", line 521, in media
+    if self.forms:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\formsets.py", line 207, in forms
+    for i in range(self.total_form_count())
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\formsets.py", line 182, in total_form_count
+    initial_forms = self.initial_form_count()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 1123, in initial_form_count
+    return super().initial_form_count()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 697, in initial_form_count
+    return len(self.get_queryset())
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 96, in execute_sql
+    query_dict['analysis'] = _explain_query(self.connection, q, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 58, in _explain_query
+    cur.execute(prefixed_query, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.InternalError: current transaction is aborted, commands ignored until end of transaction block
+
+2024-10-01 00:27:18,699 (WARNING) - silk.model_factory - Response to request with pk 259045f5-75ac-4a2d-a5bc-ab902b1d5ed6 has content type text/javascript but was unable to parse it
+2024-10-01 00:27:21,070 (WARNING) - silk.model_factory - Response to request with pk 4c7bcdfc-77e8-4fb4-b850-e07047828cb9 has content type text/javascript but was unable to parse it
+2024-10-01 00:27:27,835 (ERROR) - django.request - Internal Server Error: /admin/foundation/language/add/
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column "language_id" of relation "foundation_alternativename" does not exist
+LINE 1: INSERT INTO "foundation_alternativename" ("language_id", "na...
+                                                  ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1961, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1872, in _changeform_view
+    self.save_related(request, form, formsets, not add)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1322, in save_related
+    self.save_formset(request, form, formset, change=change)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1310, in save_formset
+    formset.save()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 796, in save
+    return self.save_existing_objects(commit) + self.save_new_objects(commit)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 959, in save_new_objects
+    self.new_objects.append(self.save_new(form, commit=commit))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 1157, in save_new
+    return super().save_new(form, commit=commit)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 769, in save_new
+    return form.save(commit=commit)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 554, in save
+    self.instance.save()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column "language_id" of relation "foundation_alternativename" does not exist
+LINE 1: INSERT INTO "foundation_alternativename" ("language_id", "na...
+                                                  ^
+
+2024-10-01 00:28:09,987 (ERROR) - django.request - Internal Server Error: /admin/foundation/language/add/
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column "language_id" of relation "foundation_alternativename" does not exist
+LINE 1: INSERT INTO "foundation_alternativename" ("language_id", "na...
+                                                  ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1961, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1872, in _changeform_view
+    self.save_related(request, form, formsets, not add)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1322, in save_related
+    self.save_formset(request, form, formset, change=change)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1310, in save_formset
+    formset.save()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 796, in save
+    return self.save_existing_objects(commit) + self.save_new_objects(commit)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 959, in save_new_objects
+    self.new_objects.append(self.save_new(form, commit=commit))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 1157, in save_new
+    return super().save_new(form, commit=commit)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 769, in save_new
+    return form.save(commit=commit)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 554, in save
+    self.instance.save()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\base.py", line 891, in save
+    self.save_base(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\base.py", line 997, in save_base
+    updated = self._save_table(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\base.py", line 1160, in _save_table
+    results = self._do_insert(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\base.py", line 1201, in _do_insert
+    return manager._insert(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\sql\compiler.py", line 1836, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column "language_id" of relation "foundation_alternativename" does not exist
+LINE 1: INSERT INTO "foundation_alternativename" ("language_id", "na...
+                                                  ^
+
+2024-10-01 00:30:09,326 (WARNING) - silk.model_factory - Response to request with pk 8a54b008-c7ae-4a5b-99e9-793be2cc4ed2 has content type text/javascript but was unable to parse it
+2024-10-01 00:30:13,536 (WARNING) - silk.model_factory - Response to request with pk a40d4ea5-7c8f-412b-bfbf-446de32c1590 has content type text/javascript but was unable to parse it
+2024-10-01 00:30:22,768 (WARNING) - silk.model_factory - Response to request with pk 6f22401e-b36d-489c-ad48-e35f2f512dc7 has content type text/javascript but was unable to parse it
+2024-10-01 00:30:25,609 (WARNING) - silk.model_factory - Response to request with pk 11a119e8-3662-4be0-b9ed-159873ced4ac has content type text/javascript but was unable to parse it
+2024-10-01 00:30:29,625 (WARNING) - silk.model_factory - Response to request with pk 12389ffa-d4f2-4528-9144-0aa20d71f01b has content type text/javascript but was unable to parse it
+2024-10-01 00:30:30,984 (WARNING) - silk.model_factory - Response to request with pk bd226e34-259d-40d5-8dd3-3f2da989d6b9 has content type text/javascript but was unable to parse it
+2024-10-01 00:30:34,509 (WARNING) - silk.model_factory - Response to request with pk 00899cf0-b9cd-4755-bfdd-feb26db7dde5 has content type text/javascript but was unable to parse it
+2024-10-01 00:30:38,191 (WARNING) - silk.model_factory - Response to request with pk 82b389ad-6bff-41ea-b5f6-a396dde9eef3 has content type text/javascript but was unable to parse it
+2024-10-01 00:30:39,783 (WARNING) - silk.model_factory - Response to request with pk 96c23328-4cab-476e-8cd6-75f7ca429b1c has content type text/javascript but was unable to parse it
+2024-10-01 00:30:41,434 (WARNING) - silk.model_factory - Response to request with pk 975d1d9c-4ce3-4270-961a-40475d9f3ed2 has content type text/javascript but was unable to parse it
+2024-10-01 00:30:42,931 (WARNING) - silk.model_factory - Response to request with pk a4b6dfa7-9d18-4bcc-a3dd-b7fa00034724 has content type text/javascript but was unable to parse it
+2024-10-01 00:31:17,260 (WARNING) - silk.model_factory - Response to request with pk 3dbbce30-bdd7-499b-bb07-d3793bed412a has content type text/javascript but was unable to parse it
+2024-10-01 00:31:25,799 (WARNING) - silk.model_factory - Response to request with pk c1f35c0a-86f8-4a73-ac50-f3c5b3692999 has content type text/javascript but was unable to parse it
+2024-10-01 00:34:55,341 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\migrations\0004_alter_alternativename_options_and_more.py changed, reloading.
+2024-10-01 00:34:56,171 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader

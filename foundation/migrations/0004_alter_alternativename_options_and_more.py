@@ -22,7 +22,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='alternativename',
             name='language',
-            field=models.ForeignKey(default='Language', on_delete=django.db.models.deletion.CASCADE, related_name='alternative_names', to='foundation.language'),
+            field=models.ForeignKey(default='1', on_delete=django.db.models.deletion.CASCADE, related_name='alternative_names', to='foundation.language'),
             preserve_default=False,
         ),
         migrations.AlterField(
