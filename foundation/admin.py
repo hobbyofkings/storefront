@@ -9,8 +9,8 @@ class AlternativeNameInline(admin.TabularInline):
 
 @admin.register(Language)
 class LanguageAdmin(admin.ModelAdmin):
-    list_display = ['iso_name', 'iso2', 'iso3', 'native_name', 'created_at']
-    search_fields = ['iso_name', 'native_name', 'iso2', 'iso3']
+    list_display = ['name', 'iso2', 'iso3', 'native_name', 'created_at']
+    search_fields = ['name', 'native_name', 'iso2', 'iso3']
     list_filter = ['created_at']
     list_per_page = 25
     inlines = [AlternativeNameInline]

@@ -5,7 +5,7 @@ from django.db import models
 from django.db import models
 
 class Language(models.Model):
-    iso_name = models.CharField(max_length=100, unique=True)
+    name = models.CharField(max_length=100, unique=True)
     iso2 = models.CharField(max_length=2, unique=True, null=True, blank=True)
     iso3 = models.CharField(max_length=3, unique=True, null=True, blank=True)
     native_name = models.CharField(max_length=100, unique=True, null=True, blank=True)
@@ -14,10 +14,10 @@ class Language(models.Model):
     class Meta:
         verbose_name = "Language"
         verbose_name_plural = "Languages"
-        ordering = ['iso_name']
+        ordering = ['name']
 
     def __str__(self):
-        return self.iso_name
+        return self.name
 
 class AlternativeName(models.Model):
     language = models.ForeignKey(Language, on_delete=models.CASCADE, related_name='alternative_names')
