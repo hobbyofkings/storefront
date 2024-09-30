@@ -2,7 +2,7 @@
 /media/
 /static/
 general.log
-
+logs/
 #env/
 #venv/
 #ENV/
