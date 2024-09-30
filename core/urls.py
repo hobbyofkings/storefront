@@ -1,7 +1,6 @@
 from django.urls import path
-from django.views.generic import TemplateView
+from . import views
 
-# URLConf
 urlpatterns = [
-    path('', TemplateView.as_view(template_name='core/index.html')),
+    path('', views.index, name='index'),  # Root URL for the core app, serves the index view
 ]

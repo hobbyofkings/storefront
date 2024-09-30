@@ -1,0 +1,45 @@
+Summary Structure for Django Project
+1. Foundation App (foundation)
+Models: Country, Language, Period, Demonym, CountryPeriod, CountryLanguage
+Views: CountryListView, LanguageListView, PeriodListView
+URLs: /api/countries/, /api/languages/, /api/periods/
+2. Mint App (mint)
+Models: Mint, MintMark, MintMarkYear
+Views: MintListView, MintDetailView
+URLs: /api/mints/, /api/mintmarks/
+3. Collectibles App (collectibles)
+Models: Collectible, CollectibleType, CollectibleYear, CollectibleTheme
+Views: CollectibleListView, CollectibleDetailView
+URLs: /api/collectibles/, /api/collectibles/<id>/
+4. Currency App (currency)
+Models: Denomination, CurrencyCode, DenominationCountry
+Views: DenominationListView, CurrencyCodeView
+URLs: /api/denominations/, /api/currencycodes/
+5. Images App (images)
+Models: Image, ImageAnnotations, CollectibleImage
+Views: ImageUploadView, ImageAnnotationView
+URLs: /api/images/, /api/images/<id>/annotations/
+6. Catalogs App (catalogs)
+Models: Catalog, References
+Views: CatalogListView, ReferenceView
+URLs: /api/catalogs/, /api/references/
+7. People App (people)
+Models: Ruler, Designer, RulerCountry
+Views: RulerListView, DesignerListView
+URLs: /api/rulers/, /api/designers/
+8. Pricing App (pricing)
+Models: Price, Condition, CollectiblePrice, PriceReferenceLink
+Views: PriceListView, ConditionListView
+URLs: /api/prices/, /api/conditions/
+9. Metadata App (metadata)
+Models: Theme, Shape, Composition, Lettering, CollectibleLettering
+Views: ThemeListView, ShapeListView
+URLs: /api/themes/, /api/shapes/
+App Relationships Summary
+foundation: Contains foundational shared data, such as countries and periods.
+mint ↔ collectibles: Mint information relevant to collectibles.
+collectibles ↔ images, currency, people, pricing: Main collectible data with related information.
+metadata: Attributes like shape, theme, and composition of collectibles.
+
+
+

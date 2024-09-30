@@ -1,0 +1,243 @@
+2024-09-29 10:08:50,355 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-29 10:08:58,936 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 10:09:06,935 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 10:09:11,114 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 10:10:00,583 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-29 10:10:07,765 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 10:10:21,709 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 10:10:34,411 (WARNING) - silk.model_factory - Response to request with pk aef8375d-a969-47dc-b7a1-f044e55398c3 has content type text/javascript but was unable to parse it
+2024-09-29 10:10:38,081 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 10:11:08,785 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-29 10:11:43,330 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-29 10:12:11,622 (WARNING) - silk.model_factory - Response to request with pk bc7d2b77-78c6-4f24-a3bb-139e8a019abb has content type text/javascript but was unable to parse it
+2024-09-29 10:12:15,237 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 10:14:03,275 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-29 10:14:21,196 (WARNING) - silk.model_factory - Response to request with pk 5aaac97e-2575-4de1-82ee-10334ae549e5 has content type text/javascript but was unable to parse it
+2024-09-29 10:14:24,931 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 10:14:41,045 (WARNING) - silk.model_factory - Response to request with pk 868bdf15-583c-4c69-b585-229ff0bbeaf8 has content type text/javascript but was unable to parse it
+2024-09-29 10:14:44,944 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 10:15:10,989 (WARNING) - silk.model_factory - Response to request with pk b89a3330-dd52-4cb1-9d33-c2931d2da55d has content type text/javascript but was unable to parse it
+2024-09-29 10:15:14,802 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 10:16:38,748 (INFO) - django.utils.autoreload - /Users/arnoldaskaralius/PycharmProjects/amadesa/storefront/storefront/settings/dev.py changed, reloading.
+2024-09-29 10:16:39,147 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-29 10:17:03,567 (INFO) - django.utils.autoreload - /Users/arnoldaskaralius/PycharmProjects/amadesa/storefront/storefront/settings/dev.py changed, reloading.
+2024-09-29 10:17:03,883 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-29 10:19:16,353 (INFO) - django.utils.autoreload - /Users/arnoldaskaralius/PycharmProjects/amadesa/storefront/storefront/settings/dev.py changed, reloading.
+2024-09-29 10:19:16,751 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-29 10:19:25,904 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 10:19:33,029 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 10:19:38,250 (WARNING) - silk.model_factory - Response to request with pk 9f0fd9b3-0734-4f63-80d2-edac050de87d has content type text/javascript but was unable to parse it
+2024-09-29 10:19:41,925 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 10:21:00,696 (INFO) - django.utils.autoreload - /Users/arnoldaskaralius/PycharmProjects/amadesa/storefront/storefront/settings/common.py changed, reloading.
+2024-09-29 10:21:01,123 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-29 10:21:08,763 (INFO) - django.utils.autoreload - /Users/arnoldaskaralius/PycharmProjects/amadesa/storefront/storefront/settings/common.py changed, reloading.
+2024-09-29 10:21:09,145 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-29 10:21:31,066 (INFO) - django.utils.autoreload - /Users/arnoldaskaralius/PycharmProjects/amadesa/storefront/storefront/settings/dev.py changed, reloading.
+2024-09-29 10:21:31,454 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-29 10:21:40,098 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 10:21:44,588 (WARNING) - silk.model_factory - Response to request with pk dd5a6f0f-498d-4006-89ff-d73601e9138e has content type text/javascript but was unable to parse it
+2024-09-29 10:21:48,783 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 10:21:52,647 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 10:21:57,838 (WARNING) - silk.model_factory - Response to request with pk db2034a0-55f5-4c99-b85d-c337487a316e has content type text/javascript but was unable to parse it
+2024-09-29 10:22:01,857 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 10:24:20,491 (INFO) - django.utils.autoreload - /Users/arnoldaskaralius/PycharmProjects/amadesa/storefront/storefront/urls.py changed, reloading.
+2024-09-29 10:24:20,966 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-29 10:24:27,481 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-29 10:24:49,304 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 10:24:55,065 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 10:25:01,023 (WARNING) - silk.model_factory - Response to request with pk 9c2da280-99df-456a-b551-c69baf4e6db9 has content type text/javascript but was unable to parse it
+2024-09-29 10:25:04,977 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 10:36:36,542 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-29 10:36:48,136 (WARNING) - silk.model_factory - Response to request with pk b2704cae-fab3-4ff3-b331-f4e2a04f2670 has content type text/javascript but was unable to parse it
+2024-09-29 10:36:52,243 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 10:37:05,376 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 10:37:12,080 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 10:37:16,724 (WARNING) - silk.model_factory - Response to request with pk a51da46f-3d06-43d0-aa76-a53534f2b49e has content type text/javascript but was unable to parse it
+2024-09-29 10:37:20,872 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 10:37:49,349 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-29 10:38:11,237 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 10:38:23,701 (WARNING) - django.request - Not Found: /favicon.ico
+2024-09-29 10:41:46,923 (INFO) - django.utils.autoreload - /Users/arnoldaskaralius/PycharmProjects/amadesa/storefront/storefront/settings/dev.py changed, reloading.
+2024-09-29 10:41:47,353 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-29 10:42:06,018 (WARNING) - silk.model_factory - Response to request with pk e0f425c0-0ddf-4f5c-b0df-ec984fb1d326 has content type text/javascript but was unable to parse it
+2024-09-29 10:42:56,949 (INFO) - django.utils.autoreload - /Users/arnoldaskaralius/PycharmProjects/amadesa/storefront/storefront/settings/dev.py changed, reloading.
+2024-09-29 10:42:57,398 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-29 10:44:34,803 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-29 10:44:44,758 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 10:44:53,035 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 10:46:19,487 (INFO) - django.utils.autoreload - /Users/arnoldaskaralius/PycharmProjects/amadesa/storefront/storefront/settings/dev.py changed, reloading.
+2024-09-29 10:46:19,970 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-29 10:46:52,590 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 10:47:39,665 (WARNING) - silk.model_factory - Response to request with pk 62bf6ab8-e7ec-464f-9ee1-39e58109e3a1 has content type text/javascript but was unable to parse it
+2024-09-29 11:02:03,348 (WARNING) - silk.model_factory - Response to request with pk 1fbd368e-87bb-4a10-a4c8-9b89906ba1d5 has content type text/javascript but was unable to parse it
+2024-09-29 11:02:07,736 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 11:16:29,039 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 11:16:29,155 (WARNING) - django.request - Not Found: /favicon.ico
+2024-09-29 11:35:09,216 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 11:35:55,087 (WARNING) - django.request - Not Found: /cart.json
+2024-09-29 11:36:15,955 (WARNING) - django.request - Not Found: /favicon.ico
+2024-09-29 12:28:08,098 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-29 12:28:17,644 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 05:46:40,273 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 05:46:44,974 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 05:46:45,026 (WARNING) - django.request - Not Found: /favicon.ico
+2024-09-30 15:58:19,308 (ERROR) - django.request - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/arnoldaskaralius/PycharmProjects/amadesa/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/arnoldaskaralius/PycharmProjects/amadesa/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/Users/arnoldaskaralius/PycharmProjects/amadesa/venv/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/Users/arnoldaskaralius/PycharmProjects/amadesa/venv/lib/python3.10/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "/Users/arnoldaskaralius/PycharmProjects/amadesa/venv/lib/python3.10/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+  File "/Users/arnoldaskaralius/PycharmProjects/amadesa/venv/lib/python3.10/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/Users/arnoldaskaralius/PycharmProjects/amadesa/venv/lib/python3.10/site-packages/django/test/utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/Users/arnoldaskaralius/PycharmProjects/amadesa/venv/lib/python3.10/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/arnoldaskaralius/PycharmProjects/amadesa/venv/lib/python3.10/site-packages/django/template/base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/Users/arnoldaskaralius/PycharmProjects/amadesa/venv/lib/python3.10/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+  File "/Users/arnoldaskaralius/PycharmProjects/amadesa/venv/lib/python3.10/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/Users/arnoldaskaralius/PycharmProjects/amadesa/venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/arnoldaskaralius/PycharmProjects/amadesa/venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+2024-09-30 15:58:20,176 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:01:12,615 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:01:14,828 (WARNING) - django.request - Method Not Allowed (POST): /
+2024-09-30 16:01:14,843 (WARNING) - django.request - Method Not Allowed: /
+2024-09-30 16:01:21,166 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:01:25,413 (WARNING) - django.request - Method Not Allowed (POST): /
+2024-09-30 16:01:25,427 (WARNING) - django.request - Method Not Allowed: /
+2024-09-30 16:02:45,893 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:02:46,966 (WARNING) - django.request - Method Not Allowed (POST): /
+2024-09-30 16:02:46,980 (WARNING) - django.request - Method Not Allowed: /
+2024-09-30 16:02:53,089 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:03:14,139 (WARNING) - django.request - Method Not Allowed (POST): /
+2024-09-30 16:03:14,153 (WARNING) - django.request - Method Not Allowed: /
+2024-09-30 16:07:40,815 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:07:41,936 (WARNING) - django.request - Method Not Allowed (POST): /
+2024-09-30 16:07:41,950 (WARNING) - django.request - Method Not Allowed: /
+2024-09-30 16:07:46,064 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:07:47,720 (WARNING) - django.request - Method Not Allowed (POST): /
+2024-09-30 16:07:47,735 (WARNING) - django.request - Method Not Allowed: /
+2024-09-30 16:07:51,664 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:10:26,025 (WARNING) - django.request - Method Not Allowed (POST): /
+2024-09-30 16:10:26,040 (WARNING) - django.request - Method Not Allowed: /
+2024-09-30 16:12:30,238 (WARNING) - django.request - Method Not Allowed (POST): /
+2024-09-30 16:12:30,253 (WARNING) - django.request - Method Not Allowed: /
+2024-09-30 16:12:42,691 (WARNING) - django.request - Method Not Allowed (POST): /
+2024-09-30 16:12:42,705 (WARNING) - django.request - Method Not Allowed: /
+2024-09-30 16:12:58,278 (WARNING) - django.request - Method Not Allowed (POST): /
+2024-09-30 16:12:58,292 (WARNING) - django.request - Method Not Allowed: /
+2024-09-30 16:13:55,257 (INFO) - django.utils.autoreload - /Users/arnoldaskaralius/PycharmProjects/amadesa/storefront/core/urls.py changed, reloading.
+2024-09-30 16:13:55,809 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 16:14:05,482 (INFO) - django.utils.autoreload - /Users/arnoldaskaralius/PycharmProjects/amadesa/storefront/core/views.py changed, reloading.
+2024-09-30 16:14:05,963 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 16:14:20,851 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:14:22,718 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:14:26,796 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:14:27,949 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:14:29,246 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:14:30,400 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:15:04,232 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:15:06,197 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:15:10,295 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:16:53,414 (INFO) - django.utils.autoreload - /Users/arnoldaskaralius/PycharmProjects/amadesa/storefront/core/views.py changed, reloading.
+2024-09-30 16:16:53,902 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 16:17:20,602 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:17:22,768 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:17:24,505 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:18:01,099 (WARNING) - django.request - Not Found: /favicon.ico
+2024-09-30 16:18:44,737 (INFO) - django.utils.autoreload - /Users/arnoldaskaralius/PycharmProjects/amadesa/storefront/core/views.py changed, reloading.
+2024-09-30 16:18:45,215 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 16:18:58,274 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:19:00,125 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:19:14,084 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:19:17,110 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:20:53,600 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:21:01,382 (ERROR) - django.request - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/arnoldaskaralius/PycharmProjects/amadesa/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/arnoldaskaralius/PycharmProjects/amadesa/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/arnoldaskaralius/PycharmProjects/amadesa/storefront/core/views.py", line 15, in index
+    return redirect('home')  # Replace 'home' with the actual URL you want to redirect to
+  File "/Users/arnoldaskaralius/PycharmProjects/amadesa/venv/lib/python3.10/site-packages/django/shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/Users/arnoldaskaralius/PycharmProjects/amadesa/venv/lib/python3.10/site-packages/django/shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/Users/arnoldaskaralius/PycharmProjects/amadesa/venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/arnoldaskaralius/PycharmProjects/amadesa/venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'home' not found. 'home' is not a valid view function or pattern name.
+2024-09-30 16:21:01,576 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:21:14,634 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:21:16,199 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:21:23,747 (ERROR) - django.request - Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/arnoldaskaralius/PycharmProjects/amadesa/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/arnoldaskaralius/PycharmProjects/amadesa/venv/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/arnoldaskaralius/PycharmProjects/amadesa/storefront/core/views.py", line 15, in index
+    return redirect('home')  # Replace 'home' with the actual URL you want to redirect to
+  File "/Users/arnoldaskaralius/PycharmProjects/amadesa/venv/lib/python3.10/site-packages/django/shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+  File "/Users/arnoldaskaralius/PycharmProjects/amadesa/venv/lib/python3.10/site-packages/django/shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+  File "/Users/arnoldaskaralius/PycharmProjects/amadesa/venv/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/Users/arnoldaskaralius/PycharmProjects/amadesa/venv/lib/python3.10/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'home' not found. 'home' is not a valid view function or pattern name.
+2024-09-30 16:21:23,935 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:22:13,956 (INFO) - django.utils.autoreload - /Users/arnoldaskaralius/PycharmProjects/amadesa/storefront/core/urls.py changed, reloading.
+2024-09-30 16:22:14,426 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 16:27:18,893 (INFO) - django.utils.autoreload - /Users/arnoldaskaralius/PycharmProjects/amadesa/storefront/core/urls.py changed, reloading.
+2024-09-30 16:27:19,337 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 16:27:23,635 (INFO) - django.utils.autoreload - /Users/arnoldaskaralius/PycharmProjects/amadesa/storefront/core/urls.py changed, reloading.
+2024-09-30 16:27:24,056 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 16:27:33,531 (INFO) - django.utils.autoreload - /Users/arnoldaskaralius/PycharmProjects/amadesa/storefront/core/views.py changed, reloading.
+2024-09-30 16:27:34,025 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 16:28:19,089 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:28:21,279 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:28:26,116 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:29:17,517 (INFO) - django.utils.autoreload - /Users/arnoldaskaralius/PycharmProjects/amadesa/storefront/core/views.py changed, reloading.
+2024-09-30 16:29:17,984 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 16:29:53,059 (INFO) - django.utils.autoreload - /Users/arnoldaskaralius/PycharmProjects/amadesa/storefront/core/urls.py changed, reloading.
+2024-09-30 16:29:53,491 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-09-30 16:30:15,106 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:30:16,973 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:30:21,939 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:38:32,654 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:38:34,799 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:38:37,102 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:38:39,011 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:39:18,672 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:41:11,395 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:41:17,444 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:41:27,729 (WARNING) - silk.model_factory - Response to request with pk 2441595e-777a-4b78-b451-1fda0d2f38d1 has content type text/javascript but was unable to parse it
+2024-09-30 16:41:28,792 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:41:31,075 (WARNING) - silk.model_factory - Response to request with pk ca69b758-4fda-4924-bdd8-d6d66f59a39b has content type text/javascript but was unable to parse it
+2024-09-30 16:41:31,319 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:43:04,570 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:43:05,933 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:43:09,125 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:43:15,262 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:43:16,881 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:43:26,280 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:43:32,142 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:49:10,169 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:53:18,755 (WARNING) - django.request - Not Found: /cart.json
+2024-09-30 16:53:26,359 (WARNING) - django.request - Not Found: /cart.json

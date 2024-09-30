@@ -11,13 +11,11 @@ $env:DJANGO_ENV = "production"
 echo $env:DJANGO_ENV
 python manage.py runserver
 
-In cmd:
-cd "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3"
-env\Scripts\Activate
-set DJANGO_ENV=development
-set DJANGO_ENV=production
-echo %DJANGO_ENV%
-python manage.py runserver
+In iMc
+export DJANGO_ENV=production
+export DJANGO_ENV=development
+echo $DJANGO_ENV
+
 
 
 On Your Linux Server for Production: Set DJANGO_ENV=production:

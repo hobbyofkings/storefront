@@ -55,7 +55,7 @@ INSTALLED_APPS = [
     'silk',
     'storages',
     'playground',
-    'debug_toolbar',
+    # 'debug_toolbar',
     'store',
     'tags',
     'likes',
@@ -64,7 +64,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
+    # 'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -196,10 +196,21 @@ CELERY_BEAT_SCHEDULE = {
 }
 
 
+LOG_DIR = os.getenv('LOG_DIR', default=os.path.join(BASE_DIR, 'logs'))
+log_path = Path(LOG_DIR)
+
+# Create the log directory if it does not exist
+if not log_path.exists():
+    try:
+        log_path.mkdir(parents=True, exist_ok=True)
+    except PermissionError:
+        print(f"Permission denied when creating log directory: {LOG_DIR}")
+
+# LOGGING configuration
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
-    'formatters': {  # Moved this outside of 'loggers'
+    'formatters': {
         'verbose': {
             'format': '{asctime} ({levelname}) - {name} - {message}',
             'style': '{',
@@ -207,24 +218,64 @@ LOGGING = {
     },
     'handlers': {
         'console': {
-            'level': 'DEBUG',  # Uncomment this if you want to log DEBUG messages to the console
+            'level': 'DEBUG',
             'class': 'logging.StreamHandler',
         },
         'file': {
-            'level': 'DEBUG',  # Uncomment this if you want to log DEBUG messages to a file
+            'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': 'general.log',
-            'formatter': 'verbose',  # Use the verbose formatter for file logs
+            'filename': str(log_path / 'error.log'),  # Use the Path object for cleaner path handling
+            'formatter': 'verbose',
         },
     },
     'loggers': {
-        '': {  # Root logger; captures all logs
+        '': {
             'handlers': ['console', 'file'],
-            'level': os.environ.get('DJANGO_LOG_LEVEL', 'INFO'),  # Default to INFO
-            'propagate': True,  # Ensures logs propagate to parent loggers
+            'level': os.environ.get('DJANGO_LOG_LEVEL', 'INFO'),
+            'propagate': True,
         },
     },
 }
+
+
+
+
+
+
+
+
+#
+#
+#
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'formatters': {  # Moved this outside of 'loggers'
+#         'verbose': {
+#             'format': '{asctime} ({levelname}) - {name} - {message}',
+#             'style': '{',
+#         },
+#     },
+#     'handlers': {
+#         'console': {
+#             'level': 'DEBUG',  # Uncomment this if you want to log DEBUG messages to the console
+#             'class': 'logging.StreamHandler',
+#         },
+#         'file': {
+#             'level': 'DEBUG',  # Uncomment this if you want to log DEBUG messages to a file
+#             'class': 'logging.FileHandler',
+#             'filename': 'general.log',
+#             'formatter': 'verbose',  # Use the verbose formatter for file logs
+#         },
+#     },
+#     'loggers': {
+#         '': {  # Root logger; captures all logs
+#             'handlers': ['console', 'file'],
+#             'level': os.environ.get('DJANGO_LOG_LEVEL', 'INFO'),  # Default to INFO
+#             'propagate': True,  # Ensures logs propagate to parent loggers
+#         },
+#     },
+# }
 
 
 

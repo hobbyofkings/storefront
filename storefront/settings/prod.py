@@ -61,30 +61,76 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # MEDIA_URL = '/media/'
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+# Set up the log directory
 
 
-LOG_DIR = os.getenv('LOG_DIR', default=BASE_DIR / 'logs')
+LOG_DIR = os.getenv('LOG_DIR', default=os.path.join(BASE_DIR, 'logs'))
+log_path = Path(LOG_DIR)
 
 # Create the log directory if it does not exist
-Path(LOG_DIR).mkdir(parents=True, exist_ok=True)
+if not log_path.exists():
+    try:
+        log_path.mkdir(parents=True, exist_ok=True)
+    except PermissionError:
+        print(f"Permission denied when creating log directory: {LOG_DIR}")
 
+# LOGGING configuration
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
-    'handlers': {
-        'file': {
-            'level': 'WARNING',
-            'class': 'logging.FileHandler',
-            'filename': os.path.join(LOG_DIR, 'error.log'),
+    'formatters': {
+        'verbose': {
+            'format': '{asctime} ({levelname}) - {name} - {message}',
+            'style': '{',
         },
     },
-    'root': {
-        'handlers': ['file'],
-        'level': 'WARNING',
+    'handlers': {
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+        },
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': str(log_path / 'error.log'),  # Use the Path object for cleaner path handling
+            'formatter': 'verbose',
+        },
     },
-    'django': {
-        'handlers': ['file'],
-        'level': 'WARNING',
-        'propagate': False,
+    'loggers': {
+        '': {
+            'handlers': ['console', 'file'],
+            'level': os.environ.get('DJANGO_LOG_LEVEL', 'INFO'),
+            'propagate': True,
+        },
     },
 }
+
+
+
+
+
+# LOG_DIR = os.getenv('LOG_DIR', default=BASE_DIR / 'logs')
+#
+# # Create the log directory if it does not exist
+# Path(LOG_DIR).mkdir(parents=True, exist_ok=True)
+#
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'handlers': {
+#         'file': {
+#             'level': 'WARNING',
+#             'class': 'logging.FileHandler',
+#             'filename': os.path.join(LOG_DIR, 'error.log'),
+#         },
+#     },
+#     'root': {
+#         'handlers': ['file'],
+#         'level': 'WARNING',
+#     },
+#     'django': {
+#         'handlers': ['file'],
+#         'level': 'WARNING',
+#         'propagate': False,
+#     },
+# }
