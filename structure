@@ -1,0 +1,37 @@
+
+https://dbdiagram.io/d/66f94cab3430cb846cf8bee0
+
+'Project Structure Summary
+* amadesa/
+* core (for users, admin page, index page)
+    * static/
+        * core/
+            * favicon.ico
+            * logo.svg
+            * styles.css
+    * templates/
+        * core/
+            * base.html
+            * index.html
+
+* settings.py
+* urls.py
+* foundation/
+* mint/
+* collectibles/
+* currency/
+* images/
+* catalogs/
+* people/
+* pricing/
+* metadata/
+* storefront
+    * settings/
+        * .env
+        * .env.dev
+        * common.py
+        * dev.py
+        * prod.py
+    * staticfiles
+    * wsgi.py
+    * urls.py'

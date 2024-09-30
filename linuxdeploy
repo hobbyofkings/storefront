@@ -3,6 +3,10 @@ to connect to the server:
 scp -i "C:\Users\Kompiuteris\Desktop\SSH\amadesa.pem" "C:\Users\Kompiuteris\Desktop\SSH\amadesa.pem" ubuntu@67.202.22.239:~
 ssh -i "C:\Users\Kompiuteris\Desktop\SSH\amadesa.pem" ubuntu@67.202.22.239
 
+set DJANGO_ENV=production
+
+
+
 source venv/bin/activate
 
 git pull origin amazon
@@ -12,8 +16,8 @@ git stash apply
 
 # tmux (for the session, tmux is an open-source terminal multiplexer for Unix-like operating systems. It allows multiple terminal sessions to be accessed simultaneously in a single window
 tmux new-session
-sudo tmux list
-tmux a -t 0
+tmux list-sessions
+tmux a -t gunicornas
 tmux attach-session -t 0
 ctr +b D (to detach)
 allow to mark the text and copy it with ctr + c
@@ -30,8 +34,8 @@ pkill gunicorn
 sudo lsof -i :8000
 sudo kill -9 <PID>
 
-
-
+source venv/bin/activate
+git pull origin amazon
 
 # certbot (for the ssl)
 # python3-certbot-nginx (for nginx, to install ssl)

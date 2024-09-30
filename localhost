@@ -11,7 +11,7 @@ $env:DJANGO_ENV = "production"
 echo $env:DJANGO_ENV
 python manage.py runserver
 
-In iMc
+In iMc / linux
 export DJANGO_ENV=production
 export DJANGO_ENV=development
 echo $DJANGO_ENV

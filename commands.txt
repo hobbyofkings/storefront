@@ -23,9 +23,6 @@ Test-NetConnection -ComputerName amadesadb.cp8a808oguxu.us-east-1.rds.amazonaws.
 
  sudo ufw allow 5432/tcp
 
-ssh -i C:/Users/Kompiuteris/Desktop/SSH/amadesa.pem ubuntu@54.226.195.254
-# 34.233.154.89 elastic
-ssh -i C:/Users/Kompiuteris/Desktop/SSH/amadesa.pem ubuntu@34.233.154.89
 
 
 cd storefront
