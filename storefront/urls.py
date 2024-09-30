@@ -31,6 +31,7 @@ urlpatterns = [
     path('auth/', include('djoser.urls')),
     path('auth/', include('djoser.urls.jwt')),
     path('health/', health_check, name='health_check'),
+    path('api/', include('foundation.urls')),
 ]
 
 # Only include the following URLs if DEBUG is True
