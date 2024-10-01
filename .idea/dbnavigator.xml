@@ -6,7 +6,7 @@
   </component>
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -16,8 +16,8 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="c31b31a4-18b9-4538-983f-fe506d7a3c21">
-      <console name="Connection" type="STANDARD" schema="" session="Main" />
+    <connection id="f7996838-8c9d-47cd-b6d6-ea055ee2ab37">
+      <console name="Connection 1" type="STANDARD" schema="public" session="Main"><![CDATA[SELECT * FROM store_product;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -27,33 +27,49 @@
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="c31b31a4-18b9-4538-983f-fe506d7a3c21" />
+    <connection id="f7996838-8c9d-47cd-b6d6-ea055ee2ab37" />
+  </component>
+  <component name="DBNavigator.Project.ExecutionManager">
+    <retain-sticky-names value="false" />
+  </component>
+  <component name="DBNavigator.Project.MethodExecutionManager">
+    <method-browser />
+    <execution-history>
+      <group-entries value="true" />
+      <execution-inputs />
+    </execution-history>
+    <argument-values-cache />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
     <filters />
   </component>
+  <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
+    <recently-used-interfaces>
+      <mapping database-type="POSTGRES" interface-id="DEFAULT" />
+    </recently-used-interfaces>
+  </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="c31b31a4-18b9-4538-983f-fe506d7a3c21" active="true" signed="true">
+      <connection id="f7996838-8c9d-47cd-b6d6-ea055ee2ab37" active="true" signed="true">
         <database>
-          <name value="Connection" />
-          <description value="" />
-          <database-type value="MYSQL" />
+          <name value="Connection 1" />
+          <description value="amadesadb.cp8a808oguxu.us-east-1.rds.amazonaws.com" />
+          <database-type value="POSTGRES" />
           <config-type value="BASIC" />
-          <database-version value="9999.0" />
+          <database-version value="16.3" />
           <driver-source value="BUNDLED" />
           <driver-library value="" />
           <driver value="" />
           <url-type value="DATABASE" />
-          <host value="localhost" />
-          <port value="3306" />
-          <database value="mysql" />
+          <host value="amadesadb.cp8a808oguxu.us-east-1.rds.amazonaws.com" />
+          <port value="5432" />
+          <database value="amadesadb" />
           <tns-folder value="" />
           <tns-profile value="" />
           <type value="USER_PASSWORD" />
-          <user value="" />
-          <deprecated-pwd value="" />
+          <user value="amadesa" />
+          <deprecated-pwd value="UmVzcHVibGlrYTEw" />
         </database>
         <properties>
           <auto-commit value="false" />

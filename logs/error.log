@@ -1371,3 +1371,1007 @@ LINE 1: INSERT INTO "foundation_alternativename" ("language_id", "na...
 2024-10-01 00:31:25,799 (WARNING) - silk.model_factory - Response to request with pk c1f35c0a-86f8-4a73-ac50-f3c5b3692999 has content type text/javascript but was unable to parse it
 2024-10-01 00:34:55,341 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\migrations\0004_alter_alternativename_options_and_more.py changed, reloading.
 2024-10-01 00:34:56,171 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 00:41:28,394 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 00:41:29,226 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 00:42:58,255 (WARNING) - silk.model_factory - Response to request with pk 4900c59a-c48f-48b8-a03f-de82ca66a4ea has content type text/javascript but was unable to parse it
+2024-10-01 00:44:08,927 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 00:44:09,707 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 00:46:59,290 (WARNING) - silk.model_factory - Response to request with pk 39dc879f-a85d-4fa0-b7d5-c04464848739 has content type text/javascript but was unable to parse it
+2024-10-01 00:47:00,586 (WARNING) - silk.model_factory - Response to request with pk daef1b1f-5436-4fd5-a9d0-4dbb8a42aed1 has content type text/javascript but was unable to parse it
+2024-10-01 00:47:02,871 (WARNING) - silk.model_factory - Response to request with pk e56e9d9f-ea17-428f-bccc-d2ff06bee804 has content type text/javascript but was unable to parse it
+2024-10-01 00:47:10,412 (WARNING) - silk.model_factory - Response to request with pk 200a0b84-4cdf-4c6c-aac4-a336ebe6850d has content type text/javascript but was unable to parse it
+2024-10-01 00:47:13,568 (WARNING) - silk.model_factory - Response to request with pk f6b9c582-7a44-41ae-bdaf-7734cc4b2286 has content type text/javascript but was unable to parse it
+2024-10-01 00:47:15,088 (WARNING) - silk.model_factory - Response to request with pk 4a1f4e2c-a265-495d-9e34-cce0f389821a has content type text/javascript but was unable to parse it
+2024-10-01 00:47:17,187 (WARNING) - silk.model_factory - Response to request with pk 39f79de9-0154-42b5-8bc6-3f4165351dd8 has content type text/javascript but was unable to parse it
+2024-10-01 00:47:20,099 (WARNING) - silk.model_factory - Response to request with pk b88cfae7-fcdb-4140-84c7-3400ca7e354b has content type text/javascript but was unable to parse it
+2024-10-01 00:47:26,084 (WARNING) - silk.model_factory - Response to request with pk 26eb8fc5-154d-4ecb-be04-f855bc9049cc has content type text/javascript but was unable to parse it
+2024-10-01 00:47:30,758 (WARNING) - silk.model_factory - Response to request with pk 9bd9be74-33bf-41fa-a6b6-f455e94c5a5c has content type text/javascript but was unable to parse it
+2024-10-01 08:13:33,068 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 08:13:33,885 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 08:13:52,894 (WARNING) - django.request - Not Found: /favicon.ico
+2024-10-01 08:14:02,151 (WARNING) - silk.model_factory - Response to request with pk 7b9c1d6a-5294-4914-b6a2-02eaf36f2875 has content type text/javascript but was unable to parse it
+2024-10-01 08:14:07,655 (WARNING) - silk.model_factory - Response to request with pk 37aa9e95-f976-497e-8f0e-7bb699c1b57a has content type text/javascript but was unable to parse it
+2024-10-01 08:16:12,890 (WARNING) - silk.model_factory - Response to request with pk 3b81e850-2d47-41db-afb6-c443360b0f68 has content type text/javascript but was unable to parse it
+2024-10-01 08:16:15,629 (WARNING) - silk.model_factory - Response to request with pk 4fc04c10-cc10-4c59-a7b3-f1324787fc7d has content type text/javascript but was unable to parse it
+2024-10-01 08:18:18,726 (WARNING) - silk.model_factory - Response to request with pk bdf574d7-2e63-4f92-9e1a-f34191e0c0ae has content type text/javascript but was unable to parse it
+2024-10-01 08:18:25,279 (WARNING) - silk.model_factory - Response to request with pk 8399d894-4570-41a4-95d3-bd377fc9c289 has content type text/javascript but was unable to parse it
+2024-10-01 08:18:43,246 (WARNING) - silk.model_factory - Response to request with pk b4c16096-6243-4bcf-8b58-4117e6cf7f87 has content type text/javascript but was unable to parse it
+2024-10-01 08:18:45,321 (WARNING) - silk.model_factory - Response to request with pk 34e1de19-1328-4662-9c09-bbc498a31387 has content type text/javascript but was unable to parse it
+2024-10-01 08:18:47,107 (WARNING) - silk.model_factory - Response to request with pk f9591e90-8390-44fd-90ff-c057548b4355 has content type text/javascript but was unable to parse it
+2024-10-01 08:20:19,095 (WARNING) - silk.model_factory - Response to request with pk 2a066c84-c91b-4538-b991-a39cd588e00a has content type text/javascript but was unable to parse it
+2024-10-01 08:20:23,551 (WARNING) - silk.model_factory - Response to request with pk b1b5c4bd-7ba0-4c7d-a1c8-b6c4baee2df0 has content type text/javascript but was unable to parse it
+2024-10-01 08:20:28,238 (WARNING) - silk.model_factory - Response to request with pk a32298ab-8d47-42c6-a85f-f62d350acc92 has content type text/javascript but was unable to parse it
+2024-10-01 08:20:34,487 (WARNING) - silk.model_factory - Response to request with pk 3626d09a-6b89-437e-9a2a-4d1cbdeefec7 has content type text/javascript but was unable to parse it
+2024-10-01 08:20:40,417 (WARNING) - silk.model_factory - Response to request with pk 96be1a4e-dc55-477f-a6b7-22d20b5cdad3 has content type text/javascript but was unable to parse it
+2024-10-01 08:23:44,944 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 08:23:45,764 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 08:24:14,693 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 08:24:15,445 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 08:24:41,120 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 08:24:41,909 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 08:25:09,761 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 08:25:10,547 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 08:25:37,389 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 08:25:38,174 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 08:25:51,238 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 08:25:54,008 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 08:27:31,800 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 08:27:36,988 (WARNING) - django.request - Not Found: /admin/foundation/countrylanguage/add/
+2024-10-01 08:27:38,010 (WARNING) - django.request - Not Found: /admin/foundation/countrylanguage/
+2024-10-01 08:27:41,321 (WARNING) - silk.model_factory - Response to request with pk 84557c79-da4c-4a0f-897c-4199d3494193 has content type text/javascript but was unable to parse it
+2024-10-01 08:27:42,714 (WARNING) - silk.model_factory - Response to request with pk 128f4282-2bae-4442-837e-10ebf8dea7ba has content type text/javascript but was unable to parse it
+2024-10-01 08:27:44,516 (WARNING) - silk.model_factory - Response to request with pk d5063bd8-8308-4ae5-a4c7-0d4e4ae89354 has content type text/javascript but was unable to parse it
+2024-10-01 08:27:49,596 (WARNING) - silk.model_factory - Response to request with pk 9b5e4c1d-3fed-4eda-ac79-08911eb3cac3 has content type text/javascript but was unable to parse it
+2024-10-01 08:32:08,965 (WARNING) - silk.model_factory - Response to request with pk 4d17b1f5-abcf-4749-bee7-85be58180156 has content type text/javascript but was unable to parse it
+2024-10-01 08:32:10,899 (WARNING) - silk.model_factory - Response to request with pk ee58a85f-ec47-4528-a964-0f1a4bff7527 has content type text/javascript but was unable to parse it
+2024-10-01 08:32:17,156 (WARNING) - silk.model_factory - Response to request with pk 694aa53b-8174-48db-bc1d-26c8c1c53cf1 has content type text/javascript but was unable to parse it
+2024-10-01 08:32:19,294 (WARNING) - silk.model_factory - Response to request with pk a8bf66db-cc11-4fff-b82b-c9d4820014da has content type text/javascript but was unable to parse it
+2024-10-01 08:32:22,629 (WARNING) - silk.model_factory - Response to request with pk 562e8b2e-5a4e-4358-a9be-0aef5064167f has content type text/javascript but was unable to parse it
+2024-10-01 08:32:25,739 (WARNING) - silk.model_factory - Response to request with pk 6db30f1e-c9f6-4a1c-8ca0-97507246d43a has content type text/javascript but was unable to parse it
+2024-10-01 08:34:22,617 (WARNING) - silk.model_factory - Response to request with pk 751bbee3-65cd-491d-b194-931579ea3f83 has content type text/javascript but was unable to parse it
+2024-10-01 08:34:28,658 (WARNING) - silk.model_factory - Response to request with pk 3c41ed3d-4c01-45d3-a933-7ffb8633c2ee has content type text/javascript but was unable to parse it
+2024-10-01 08:34:34,397 (WARNING) - silk.model_factory - Response to request with pk 0ac71716-dd08-4b42-be28-3f2f8c81b090 has content type text/javascript but was unable to parse it
+2024-10-01 08:34:36,309 (WARNING) - silk.model_factory - Response to request with pk f688cf98-4906-411f-bf33-a7d4604080c1 has content type text/javascript but was unable to parse it
+2024-10-01 08:34:39,372 (WARNING) - silk.model_factory - Response to request with pk 495a0f2f-2f03-4dcc-82a8-e787e2dfc221 has content type text/javascript but was unable to parse it
+2024-10-01 08:34:40,194 (WARNING) - silk.model_factory - Response to request with pk 1db28068-6795-4e52-acb0-cac0b47e1eba has content type text/javascript but was unable to parse it
+2024-10-01 08:34:42,372 (WARNING) - silk.model_factory - Response to request with pk 3e8cf766-5c67-4b50-b379-65d54e1eb10d has content type text/javascript but was unable to parse it
+2024-10-01 08:34:50,037 (WARNING) - silk.model_factory - Response to request with pk 045de36a-23fb-412a-8373-621e279e9be9 has content type text/javascript but was unable to parse it
+2024-10-01 08:34:52,019 (WARNING) - silk.model_factory - Response to request with pk e1559b6c-352c-442b-b7a2-d313419ce108 has content type text/javascript but was unable to parse it
+2024-10-01 08:34:54,332 (WARNING) - silk.model_factory - Response to request with pk 5be83263-bc76-45c1-938e-7ed35986dbca has content type text/javascript but was unable to parse it
+2024-10-01 08:34:56,338 (WARNING) - silk.model_factory - Response to request with pk 29a91970-6300-47c2-995f-1e7a3d344121 has content type text/javascript but was unable to parse it
+2024-10-01 08:34:59,307 (WARNING) - silk.model_factory - Response to request with pk 77f825db-da27-49ad-88cc-8d9165562fcc has content type text/javascript but was unable to parse it
+2024-10-01 08:35:05,772 (WARNING) - silk.model_factory - Response to request with pk f7cb0a52-b837-4e4c-b251-942e904b0db7 has content type text/javascript but was unable to parse it
+2024-10-01 08:35:08,760 (WARNING) - silk.model_factory - Response to request with pk c814ce51-9e13-4250-90a1-9b791aa56f15 has content type text/javascript but was unable to parse it
+2024-10-01 08:35:10,845 (WARNING) - silk.model_factory - Response to request with pk 079abc59-de0f-430e-8269-21df197378e1 has content type text/javascript but was unable to parse it
+2024-10-01 08:35:35,091 (WARNING) - silk.model_factory - Response to request with pk 3796d2c7-5bff-4859-ae55-99e436305190 has content type text/javascript but was unable to parse it
+2024-10-01 08:35:41,035 (WARNING) - silk.model_factory - Response to request with pk b53db2d3-0095-46d0-8752-4d5284490ba3 has content type text/javascript but was unable to parse it
+2024-10-01 08:35:42,361 (WARNING) - silk.model_factory - Response to request with pk f0924970-e3c5-4398-bfe0-d836b8be4cff has content type text/javascript but was unable to parse it
+2024-10-01 08:38:36,079 (WARNING) - silk.model_factory - Response to request with pk 6c57f62a-0992-4d82-aa78-f2b1a89cf5fd has content type text/javascript but was unable to parse it
+2024-10-01 08:49:53,983 (WARNING) - silk.model_factory - Response to request with pk 16ce495f-40e8-44eb-892e-839d55f38961 has content type text/javascript but was unable to parse it
+2024-10-01 08:49:59,956 (WARNING) - silk.model_factory - Response to request with pk 6ab1a27e-50f9-4046-8487-54eaf44831c9 has content type text/javascript but was unable to parse it
+2024-10-01 08:50:23,216 (WARNING) - silk.model_factory - Response to request with pk 86278230-2138-43a1-893c-ebf872a36114 has content type text/javascript but was unable to parse it
+2024-10-01 08:50:24,443 (WARNING) - silk.model_factory - Response to request with pk b6648be8-b54a-42e2-8983-cbdc2019ac59 has content type text/javascript but was unable to parse it
+2024-10-01 08:51:03,942 (WARNING) - silk.model_factory - Response to request with pk ee853029-7ccc-4ff7-9bdc-59b801e19c5f has content type text/javascript but was unable to parse it
+2024-10-01 08:51:05,338 (WARNING) - silk.model_factory - Response to request with pk 825ba6df-ee37-4f35-b117-a02c32d277f8 has content type text/javascript but was unable to parse it
+2024-10-01 08:51:07,553 (WARNING) - silk.model_factory - Response to request with pk d5c8bdd9-ccfd-4a96-a4a6-50c866ff6c3d has content type text/javascript but was unable to parse it
+2024-10-01 09:34:48,428 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 09:34:49,329 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 09:35:39,676 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 09:35:40,508 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 09:37:11,480 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 09:37:12,284 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 09:39:23,904 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 09:39:24,679 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 09:40:09,642 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 09:40:10,451 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 09:41:01,802 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 09:41:02,532 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 09:41:48,591 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 09:41:49,338 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 09:44:23,409 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 09:44:24,199 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 09:45:10,183 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 09:45:10,945 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 09:45:14,165 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 09:45:14,931 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 09:45:47,057 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 09:45:47,783 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 09:46:23,104 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 09:46:23,902 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 09:46:30,362 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\serializers.py changed, reloading.
+2024-10-01 09:46:31,107 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 09:46:41,756 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\views.py changed, reloading.
+2024-10-01 09:46:42,580 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 09:46:53,337 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\views.py changed, reloading.
+2024-10-01 09:46:54,119 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 09:46:58,229 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\views.py changed, reloading.
+2024-10-01 09:46:58,934 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 09:47:11,245 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\views.py changed, reloading.
+2024-10-01 09:47:11,994 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 09:48:09,845 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\urls.py changed, reloading.
+2024-10-01 09:48:10,606 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 09:48:24,033 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\urls.py changed, reloading.
+2024-10-01 09:48:24,796 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 09:48:32,865 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\urls.py changed, reloading.
+2024-10-01 09:48:33,572 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 09:48:45,127 (WARNING) - silk.model_factory - Response to request with pk ca66b6f1-e60f-4beb-9ceb-4951cf5414d3 has content type text/javascript but was unable to parse it
+2024-10-01 09:48:48,152 (ERROR) - django.request - Internal Server Error: /admin/foundation/period/
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "foundation_period" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "foundation_period"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 89, in execute_sql
+    return self._execute_sql(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "foundation_period" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "foundation_period"
+                                          ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "foundation_period" does not exist
+LINE 1: EXPLAIN SELECT COUNT(*) AS "__count" FROM "foundation_period...
+                                                  ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 2001, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 866, in get_changelist_instance
+    return ChangeList(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\views\main.py", line 146, in __init__
+    self.get_results(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\views\main.py", line 313, in get_results
+    result_count = paginator.count
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\sql\query.py", line 630, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\sql\query.py", line 616, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 96, in execute_sql
+    query_dict['analysis'] = _explain_query(self.connection, q, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 58, in _explain_query
+    cur.execute(prefixed_query, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "foundation_period" does not exist
+LINE 1: EXPLAIN SELECT COUNT(*) AS "__count" FROM "foundation_period...
+                                                  ^
+
+2024-10-01 09:48:57,210 (WARNING) - silk.model_factory - Response to request with pk ef151018-8151-4cbe-83db-5be196264a0a has content type text/javascript but was unable to parse it
+2024-10-01 09:49:08,194 (WARNING) - silk.model_factory - Response to request with pk f704ab75-2525-46b7-b195-f0866fdfccee has content type text/javascript but was unable to parse it
+2024-10-01 09:49:15,962 (ERROR) - django.request - Internal Server Error: /admin/foundation/period/add/
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "foundation_period" does not exist
+LINE 1: SELECT 1 AS "a" FROM "foundation_period" WHERE "foundation_p...
+                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 89, in execute_sql
+    return self._execute_sql(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "foundation_period" does not exist
+LINE 1: SELECT 1 AS "a" FROM "foundation_period" WHERE "foundation_p...
+                             ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1961, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1865, in _changeform_view
+    form_validated = form.is_valid()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\forms.py", line 197, in is_valid
+    return self.is_bound and not self.errors
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\forms.py", line 192, in errors
+    self.full_clean()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\forms.py", line 327, in full_clean
+    self._post_clean()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 504, in _post_clean
+    self.validate_unique()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 513, in validate_unique
+    self.instance.validate_unique(exclude=exclude)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\base.py", line 1377, in validate_unique
+    errors = self._perform_unique_checks(unique_checks)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\base.py", line 1487, in _perform_unique_checks
+    if qs.exists():
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\query.py", line 1288, in exists
+    return self.query.has_results(using=self.db)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\sql\query.py", line 660, in has_results
+    return compiler.has_results()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\sql\compiler.py", line 1542, in has_results
+    return bool(self.execute_sql(SINGLE))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 96, in execute_sql
+    query_dict['analysis'] = _explain_query(self.connection, q, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 58, in _explain_query
+    cur.execute(prefixed_query, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.InternalError: current transaction is aborted, commands ignored until end of transaction block
+
+2024-10-01 09:49:22,102 (ERROR) - django.request - Internal Server Error: /admin/foundation/period/
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "foundation_period" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "foundation_period"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 89, in execute_sql
+    return self._execute_sql(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "foundation_period" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "foundation_period"
+                                          ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "foundation_period" does not exist
+LINE 1: EXPLAIN SELECT COUNT(*) AS "__count" FROM "foundation_period...
+                                                  ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 2001, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 866, in get_changelist_instance
+    return ChangeList(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\views\main.py", line 146, in __init__
+    self.get_results(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\views\main.py", line 313, in get_results
+    result_count = paginator.count
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\sql\query.py", line 630, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\sql\query.py", line 616, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 96, in execute_sql
+    query_dict['analysis'] = _explain_query(self.connection, q, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 58, in _explain_query
+    cur.execute(prefixed_query, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "foundation_period" does not exist
+LINE 1: EXPLAIN SELECT COUNT(*) AS "__count" FROM "foundation_period...
+                                                  ^
+
+2024-10-01 09:49:33,228 (WARNING) - silk.model_factory - Response to request with pk 2fdb2ece-b68f-423a-8f18-f64b347e2197 has content type text/javascript but was unable to parse it
+2024-10-01 09:49:35,618 (ERROR) - django.request - Internal Server Error: /admin/foundation/period/
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "foundation_period" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "foundation_period"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 89, in execute_sql
+    return self._execute_sql(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "foundation_period" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "foundation_period"
+                                          ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "foundation_period" does not exist
+LINE 1: EXPLAIN SELECT COUNT(*) AS "__count" FROM "foundation_period...
+                                                  ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 2001, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 866, in get_changelist_instance
+    return ChangeList(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\views\main.py", line 146, in __init__
+    self.get_results(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\views\main.py", line 313, in get_results
+    result_count = paginator.count
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\sql\query.py", line 630, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\sql\query.py", line 616, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 96, in execute_sql
+    query_dict['analysis'] = _explain_query(self.connection, q, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 58, in _explain_query
+    cur.execute(prefixed_query, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "foundation_period" does not exist
+LINE 1: EXPLAIN SELECT COUNT(*) AS "__count" FROM "foundation_period...
+                                                  ^
+
+2024-10-01 09:49:39,528 (ERROR) - django.request - Internal Server Error: /admin/foundation/period/
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "foundation_period" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "foundation_period"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 89, in execute_sql
+    return self._execute_sql(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "foundation_period" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "foundation_period"
+                                          ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "foundation_period" does not exist
+LINE 1: EXPLAIN SELECT COUNT(*) AS "__count" FROM "foundation_period...
+                                                  ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 2001, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 866, in get_changelist_instance
+    return ChangeList(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\views\main.py", line 146, in __init__
+    self.get_results(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\views\main.py", line 313, in get_results
+    result_count = paginator.count
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\sql\query.py", line 630, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\sql\query.py", line 616, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 96, in execute_sql
+    query_dict['analysis'] = _explain_query(self.connection, q, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 58, in _explain_query
+    cur.execute(prefixed_query, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "foundation_period" does not exist
+LINE 1: EXPLAIN SELECT COUNT(*) AS "__count" FROM "foundation_period...
+                                                  ^
+
+2024-10-01 09:49:44,175 (ERROR) - django.request - Internal Server Error: /admin/foundation/period/
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "foundation_period" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "foundation_period"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 89, in execute_sql
+    return self._execute_sql(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "foundation_period" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "foundation_period"
+                                          ^
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "foundation_period" does not exist
+LINE 1: EXPLAIN SELECT COUNT(*) AS "__count" FROM "foundation_period...
+                                                  ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 2001, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 866, in get_changelist_instance
+    return ChangeList(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\views\main.py", line 146, in __init__
+    self.get_results(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\views\main.py", line 313, in get_results
+    result_count = paginator.count
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\paginator.py", line 110, in count
+    return c()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\query.py", line 620, in count
+    return self.query.get_count(using=self.db)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\sql\query.py", line 630, in get_count
+    return obj.get_aggregation(using, {"__count": Count("*")})["__count"]
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\sql\query.py", line 616, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 96, in execute_sql
+    query_dict['analysis'] = _explain_query(self.connection, q, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\silk\sql.py", line 58, in _explain_query
+    cur.execute(prefixed_query, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 235, in execute
+    return self._record(super().execute, sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 160, in _record
+    return method(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "foundation_period" does not exist
+LINE 1: EXPLAIN SELECT COUNT(*) AS "__count" FROM "foundation_period...
+                                                  ^
+
+2024-10-01 09:50:32,871 (WARNING) - silk.model_factory - Response to request with pk 75ba98b0-a7bc-4acc-8dfc-1bad72aa56d1 has content type text/javascript but was unable to parse it
+2024-10-01 09:50:34,857 (WARNING) - silk.model_factory - Response to request with pk debcb29f-88fa-4de4-af47-65fd4f83022a has content type text/javascript but was unable to parse it
+2024-10-01 09:50:36,892 (WARNING) - silk.model_factory - Response to request with pk 57f86fd7-361d-439b-8037-72dc5b2cce88 has content type text/javascript but was unable to parse it
+2024-10-01 09:50:55,888 (WARNING) - silk.model_factory - Response to request with pk 344376a3-16f9-4f34-99a1-b2bf2c9ab90d has content type text/javascript but was unable to parse it
+2024-10-01 09:51:37,719 (WARNING) - silk.model_factory - Response to request with pk 0d4ae9c7-5103-4be3-9e4e-bf279da09fbc has content type text/javascript but was unable to parse it
+2024-10-01 09:56:46,708 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 09:56:47,617 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 09:59:35,734 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 09:59:36,547 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 09:59:48,256 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 09:59:49,015 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:01:02,700 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\serializers.py changed, reloading.
+2024-10-01 10:01:03,521 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:01:14,805 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\serializers.py changed, reloading.
+2024-10-01 10:01:15,530 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:01:36,866 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 10:01:37,631 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:01:56,807 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 10:01:57,585 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:02:05,030 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 10:02:05,814 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:02:50,664 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\views.py changed, reloading.
+2024-10-01 10:02:51,387 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:03:09,492 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\urls.py changed, reloading.
+2024-10-01 10:03:10,259 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:06:31,286 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\urls.py changed, reloading.
+2024-10-01 10:06:32,061 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:09:44,647 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 10:09:45,395 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:11:56,952 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 10:11:57,749 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:12:30,877 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 10:12:31,611 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:12:43,345 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 10:12:44,082 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:13:08,134 (WARNING) - silk.model_factory - Response to request with pk aead3b42-8517-4668-a383-ff67264427bc has content type text/javascript but was unable to parse it
+2024-10-01 10:13:10,438 (WARNING) - silk.model_factory - Response to request with pk 8514997a-274f-4ca1-b4dd-b9e257b72c3e has content type text/javascript but was unable to parse it
+2024-10-01 10:13:11,927 (WARNING) - silk.model_factory - Response to request with pk a0718e36-3275-4301-85c8-6dc42362272b has content type text/javascript but was unable to parse it
+2024-10-01 10:13:25,446 (WARNING) - silk.model_factory - Response to request with pk 42161e9f-9d28-43ef-beff-18e7e97d8bb4 has content type text/javascript but was unable to parse it
+2024-10-01 10:13:27,359 (WARNING) - silk.model_factory - Response to request with pk e2a4271d-4633-4e29-a6c1-8c6fb4309fa2 has content type text/javascript but was unable to parse it
+2024-10-01 10:13:29,417 (WARNING) - silk.model_factory - Response to request with pk 037f7629-5c09-4675-933a-f6d2283fec5e has content type text/javascript but was unable to parse it
+2024-10-01 10:13:39,631 (WARNING) - silk.model_factory - Response to request with pk 72089380-159c-430e-9859-188c611e9f04 has content type text/javascript but was unable to parse it
+2024-10-01 10:13:48,465 (WARNING) - silk.model_factory - Response to request with pk 57d605d9-0f81-4666-83f7-a97ee8ed5ffa has content type text/javascript but was unable to parse it
+2024-10-01 10:13:51,758 (WARNING) - silk.model_factory - Response to request with pk 48a2db60-4835-454f-b5bb-69389df4004a has content type text/javascript but was unable to parse it
+2024-10-01 10:13:57,080 (WARNING) - silk.model_factory - Response to request with pk 83c24bb5-135f-45d3-9a27-e7cb28dacf36 has content type text/javascript but was unable to parse it
+2024-10-01 10:13:58,685 (WARNING) - silk.model_factory - Response to request with pk 6f8c25fc-9510-41ef-91fe-e0303708db40 has content type text/javascript but was unable to parse it
+2024-10-01 10:14:23,346 (WARNING) - silk.model_factory - Response to request with pk 7f2dc25d-4aeb-4aa0-b67b-a4f115721d85 has content type text/javascript but was unable to parse it
+2024-10-01 10:14:27,285 (WARNING) - silk.model_factory - Response to request with pk e76af7ab-d05a-471a-9fac-1fbf7ecd2eed has content type text/javascript but was unable to parse it
+2024-10-01 10:14:40,047 (WARNING) - silk.model_factory - Response to request with pk 5632c0e5-af8d-4a32-bcb6-81ba8280acf5 has content type text/javascript but was unable to parse it
+2024-10-01 10:14:42,232 (WARNING) - silk.model_factory - Response to request with pk 635df2b4-560a-4d02-93c5-576de8201d6a has content type text/javascript but was unable to parse it
+2024-10-01 10:15:47,236 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 10:15:48,067 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:19:18,996 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 10:19:19,740 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:19:32,237 (WARNING) - silk.model_factory - Response to request with pk 980a9718-9922-4fb4-8a12-d3f1509ff608 has content type text/javascript but was unable to parse it
+2024-10-01 10:19:34,085 (WARNING) - silk.model_factory - Response to request with pk 75df343c-8458-45a6-9e8b-c58a9182805b has content type text/javascript but was unable to parse it
+2024-10-01 10:19:42,489 (WARNING) - silk.model_factory - Response to request with pk 2031d213-029e-48d7-a55b-bffa83cf2971 has content type text/javascript but was unable to parse it
+2024-10-01 10:19:44,254 (WARNING) - silk.model_factory - Response to request with pk cbaabfdd-8077-44a1-8c62-3dc5e76ed1a3 has content type text/javascript but was unable to parse it
+2024-10-01 10:19:46,306 (WARNING) - silk.model_factory - Response to request with pk a2a7691c-a544-4a62-a7f2-8cfab784301b has content type text/javascript but was unable to parse it
+2024-10-01 10:19:48,271 (WARNING) - silk.model_factory - Response to request with pk 1b26c01d-b7a7-4fcd-b050-352bf6b1aee7 has content type text/javascript but was unable to parse it
+2024-10-01 10:19:50,137 (WARNING) - silk.model_factory - Response to request with pk abbf9191-a26d-4d44-b41f-2bf5f7aa2255 has content type text/javascript but was unable to parse it
+2024-10-01 10:19:51,679 (WARNING) - silk.model_factory - Response to request with pk 42df19db-8b8d-4d6c-80bc-23533d429ca3 has content type text/javascript but was unable to parse it
+2024-10-01 10:19:53,780 (WARNING) - silk.model_factory - Response to request with pk 69aad75f-f1d5-40e4-aa7f-c2d5741dd86f has content type text/javascript but was unable to parse it
+2024-10-01 10:19:56,034 (WARNING) - silk.model_factory - Response to request with pk 594116a8-b61a-4fbd-ad0b-18de744a2141 has content type text/javascript but was unable to parse it
+2024-10-01 10:22:46,503 (WARNING) - silk.model_factory - Response to request with pk e369f873-3cac-4f9e-b76e-7efa5f6a1b48 has content type text/javascript but was unable to parse it
+2024-10-01 10:22:47,442 (WARNING) - silk.model_factory - Response to request with pk 64e0a07f-a56d-4d62-b122-46a4cfec41e7 has content type text/javascript but was unable to parse it
+2024-10-01 10:44:56,697 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 10:44:57,605 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:45:18,155 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 10:45:18,981 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:45:39,365 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 10:45:40,148 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:46:13,359 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 10:46:14,145 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:46:35,489 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 10:46:36,185 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:47:07,792 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 10:47:08,622 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:47:21,529 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 10:47:22,311 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:47:39,488 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 10:47:40,249 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:47:56,342 (WARNING) - silk.model_factory - Response to request with pk 92f8592c-530a-4bcb-850e-535213e6410b has content type text/javascript but was unable to parse it
+2024-10-01 10:47:59,457 (WARNING) - silk.model_factory - Response to request with pk e1143bb0-bffb-4712-a0da-779c376a221a has content type text/javascript but was unable to parse it
+2024-10-01 10:48:06,838 (WARNING) - silk.model_factory - Response to request with pk 0b526d74-3a6e-4b94-88e9-2923a0d25428 has content type text/javascript but was unable to parse it
+2024-10-01 10:48:21,315 (WARNING) - silk.model_factory - Response to request with pk 559cb41b-7d80-4b4b-9087-bf44d1b13a10 has content type text/javascript but was unable to parse it
+2024-10-01 10:48:47,625 (WARNING) - silk.model_factory - Response to request with pk 2b1f5383-a077-46ec-bce0-2e17a72bc4bd has content type text/javascript but was unable to parse it
+2024-10-01 10:48:49,460 (WARNING) - silk.model_factory - Response to request with pk 433dcbc4-43d8-4e11-a05e-cf7e7dffe5aa has content type text/javascript but was unable to parse it
+2024-10-01 10:49:01,813 (WARNING) - silk.model_factory - Response to request with pk 6f7bc6d5-48c8-43c5-9971-c536406b8045 has content type text/javascript but was unable to parse it
+2024-10-01 10:49:04,399 (WARNING) - silk.model_factory - Response to request with pk e3d5b24b-e221-4f34-96c8-fd990a41c4e6 has content type text/javascript but was unable to parse it
+2024-10-01 10:49:58,915 (WARNING) - silk.model_factory - Response to request with pk fa58a3cf-c8c9-4f9d-a966-692dd6281fa5 has content type text/javascript but was unable to parse it
+2024-10-01 10:50:00,359 (WARNING) - silk.model_factory - Response to request with pk 3b88cbd7-c821-4392-80ba-37f2fc574315 has content type text/javascript but was unable to parse it
+2024-10-01 10:51:01,402 (WARNING) - silk.model_factory - Response to request with pk 78cf8e94-4466-4182-9749-dbbf4c654fe9 has content type text/javascript but was unable to parse it
+2024-10-01 10:51:05,078 (WARNING) - silk.model_factory - Response to request with pk 3f6db986-3a7c-4681-a145-c7b67b9932b1 has content type text/javascript but was unable to parse it
+2024-10-01 10:51:21,553 (WARNING) - silk.model_factory - Response to request with pk 8a520f6c-8ca0-4d21-a58a-97afa1c69b7f has content type text/javascript but was unable to parse it
+2024-10-01 10:51:24,101 (WARNING) - silk.model_factory - Response to request with pk 32795150-67e9-47a8-8e2b-389c7a7545c2 has content type text/javascript but was unable to parse it
+2024-10-01 10:51:26,172 (WARNING) - silk.model_factory - Response to request with pk 46c1b6d0-7529-4ec3-a358-16488810c896 has content type text/javascript but was unable to parse it
+2024-10-01 10:51:32,564 (WARNING) - silk.model_factory - Response to request with pk e581355d-b7f5-4c68-b2af-644020228d50 has content type text/javascript but was unable to parse it
+2024-10-01 10:52:03,384 (WARNING) - silk.model_factory - Response to request with pk f3038908-aec4-4a1c-aa62-f9f8c05737e0 has content type text/javascript but was unable to parse it
+2024-10-01 10:52:04,992 (WARNING) - silk.model_factory - Response to request with pk 0db917bf-148e-41ba-bbec-93d7ec3c0ae0 has content type text/javascript but was unable to parse it
+2024-10-01 10:52:16,393 (WARNING) - silk.model_factory - Response to request with pk 5303211e-c032-4bd6-91b9-40f743ecb2f3 has content type text/javascript but was unable to parse it
+2024-10-01 10:52:19,215 (WARNING) - silk.model_factory - Response to request with pk 0f50bd21-7386-44fa-af54-c4886651a456 has content type text/javascript but was unable to parse it
+2024-10-01 10:52:30,699 (WARNING) - silk.model_factory - Response to request with pk 2e537bdf-1a07-4cc8-8e9a-4814b731208a has content type text/javascript but was unable to parse it
+2024-10-01 10:52:39,642 (WARNING) - silk.model_factory - Response to request with pk 9a91916b-fd17-4332-82da-c296fbf4622f has content type text/javascript but was unable to parse it
+2024-10-01 10:52:43,434 (WARNING) - silk.model_factory - Response to request with pk 8b56edd8-b9ff-4c2b-8fcf-9a5837c05ca3 has content type text/javascript but was unable to parse it
+2024-10-01 10:53:55,183 (WARNING) - silk.model_factory - Response to request with pk 538a9ba4-14d5-41b1-8e00-8f216fe85188 has content type text/javascript but was unable to parse it
+2024-10-01 10:56:39,268 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 10:56:40,173 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:56:49,855 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 10:56:50,623 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:56:56,979 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 10:56:57,724 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:58:21,118 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 10:58:21,917 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:58:42,288 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 10:58:43,053 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:59:21,485 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 10:59:22,206 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 10:59:53,222 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 10:59:53,985 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 11:00:00,440 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 11:00:01,226 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 11:01:25,782 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 11:01:26,522 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 11:01:47,957 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 11:01:48,700 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 11:01:51,864 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 11:01:52,626 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 11:03:34,396 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 11:03:35,154 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 11:04:11,597 (WARNING) - silk.model_factory - Response to request with pk e2540e2c-36eb-464a-a324-bccf185f274e has content type text/javascript but was unable to parse it
+2024-10-01 11:04:14,801 (WARNING) - silk.model_factory - Response to request with pk bdb4194c-2196-4bf5-aff9-5836bab02fb7 has content type text/javascript but was unable to parse it
+2024-10-01 11:04:16,423 (WARNING) - silk.model_factory - Response to request with pk 9bb890eb-b795-48ca-a1c7-982cd67e9014 has content type text/javascript but was unable to parse it
+2024-10-01 11:11:07,922 (WARNING) - silk.model_factory - Response to request with pk ff628210-427f-44d2-8986-eb29d4f97af2 has content type text/javascript but was unable to parse it
+2024-10-01 11:11:13,804 (WARNING) - silk.model_factory - Response to request with pk d9e35fb9-67f1-4613-bb48-c6f2a6cd0db8 has content type text/javascript but was unable to parse it
+2024-10-01 11:13:58,980 (WARNING) - silk.model_factory - Response to request with pk b9294021-7a92-4a41-bcb7-2c29ee42c91b has content type text/javascript but was unable to parse it
+2024-10-01 11:15:23,152 (WARNING) - silk.model_factory - Response to request with pk b9a16329-dc69-4154-9b45-0a6ed9b713e1 has content type text/javascript but was unable to parse it
+2024-10-01 11:16:12,986 (WARNING) - silk.model_factory - Response to request with pk 1d18332d-2bb6-4808-acb3-09958f960b1b has content type text/javascript but was unable to parse it
+2024-10-01 11:16:46,749 (WARNING) - silk.model_factory - Response to request with pk f3488c15-eb8b-4a83-8ea9-c7f3459fdcc3 has content type text/javascript but was unable to parse it
+2024-10-01 11:16:58,608 (WARNING) - silk.model_factory - Response to request with pk 3cec623b-fb8a-4bad-9cb1-6dd76e5fa430 has content type text/javascript but was unable to parse it
+2024-10-01 11:17:04,523 (WARNING) - silk.model_factory - Response to request with pk df139e3b-664b-4d6b-aca2-bcf83c3d4e84 has content type text/javascript but was unable to parse it
+2024-10-01 11:17:08,199 (WARNING) - silk.model_factory - Response to request with pk d25e28c2-e5ce-49bf-bf48-cc6975d55506 has content type text/javascript but was unable to parse it
+2024-10-01 11:17:26,561 (WARNING) - silk.model_factory - Response to request with pk 9d2ecd91-4163-4390-8900-ee328f1abf14 has content type text/javascript but was unable to parse it
+2024-10-01 11:17:31,529 (WARNING) - silk.model_factory - Response to request with pk a1d263cd-28fb-4eee-ba46-c116f4595d7b has content type text/javascript but was unable to parse it
+2024-10-01 11:17:57,714 (WARNING) - silk.model_factory - Response to request with pk 483b7829-a98a-4e85-ab93-57f72ed9462a has content type text/javascript but was unable to parse it
+2024-10-01 11:17:59,572 (WARNING) - silk.model_factory - Response to request with pk 65d7035f-f5e6-46ab-9674-a1d57ae5eda5 has content type text/javascript but was unable to parse it
+2024-10-01 11:18:10,957 (WARNING) - silk.model_factory - Response to request with pk 655d8772-d5ba-4892-a9b8-91bcb66de9c1 has content type text/javascript but was unable to parse it
+2024-10-01 11:18:27,657 (WARNING) - silk.model_factory - Response to request with pk 7e5fa34b-6825-46cf-a4d2-997d86748bcd has content type text/javascript but was unable to parse it
+2024-10-01 11:18:39,637 (WARNING) - silk.model_factory - Response to request with pk f8f136aa-ac3a-4d81-86ab-488d32206d25 has content type text/javascript but was unable to parse it
+2024-10-01 11:19:04,502 (WARNING) - silk.model_factory - Response to request with pk c6776f1b-b0c6-460f-ace1-3d742fa6897f has content type text/javascript but was unable to parse it
+2024-10-01 11:19:15,583 (WARNING) - silk.model_factory - Response to request with pk ccdf090d-5e1a-4c90-9577-fce193e146c0 has content type text/javascript but was unable to parse it
+2024-10-01 11:19:27,575 (WARNING) - silk.model_factory - Response to request with pk 30ebd138-9893-4b4b-9d03-688b4dca44cd has content type text/javascript but was unable to parse it
+2024-10-01 11:19:32,103 (WARNING) - silk.model_factory - Response to request with pk a1661c8d-4e15-46d9-a59a-e7bb60b7ed03 has content type text/javascript but was unable to parse it
+2024-10-01 11:19:43,969 (WARNING) - silk.model_factory - Response to request with pk f3b802a3-bbc1-4ce8-b212-c4bb8690b1ca has content type text/javascript but was unable to parse it
+2024-10-01 11:19:49,832 (WARNING) - silk.model_factory - Response to request with pk 0b449501-eac2-482a-a36d-afd86826046a has content type text/javascript but was unable to parse it
+2024-10-01 11:20:12,955 (WARNING) - silk.model_factory - Response to request with pk 20825f20-3324-4349-a2d3-faf35748d9b5 has content type text/javascript but was unable to parse it
+2024-10-01 11:21:56,052 (WARNING) - silk.model_factory - Response to request with pk c07d0ea1-1c6a-4d40-9bf4-9415d0e872b3 has content type text/javascript but was unable to parse it
+2024-10-01 11:22:10,010 (WARNING) - silk.model_factory - Response to request with pk 765c94a7-9637-4c8e-bf6a-7580c5626882 has content type text/javascript but was unable to parse it
+2024-10-01 11:22:12,724 (WARNING) - silk.model_factory - Response to request with pk 4285d531-f2a4-48d0-8ec5-4e40ae400e6d has content type text/javascript but was unable to parse it
+2024-10-01 11:22:13,809 (WARNING) - silk.model_factory - Response to request with pk 05f666b3-23bc-4dc4-b9e5-06925a1a77f3 has content type text/javascript but was unable to parse it
+2024-10-01 11:22:17,754 (WARNING) - silk.model_factory - Response to request with pk dfb45145-c7ee-421f-ba83-c72a7ce8fd85 has content type text/javascript but was unable to parse it
+2024-10-01 11:22:20,177 (WARNING) - silk.model_factory - Response to request with pk 4222f8c5-a103-4d7d-a8d2-b8014383659f has content type text/javascript but was unable to parse it
+2024-10-01 11:22:21,893 (WARNING) - silk.model_factory - Response to request with pk 9300bf70-8a79-491c-81b9-0f36425a0679 has content type text/javascript but was unable to parse it
+2024-10-01 11:22:25,141 (WARNING) - silk.model_factory - Response to request with pk f26c3253-2107-4d3e-9b41-5cd105c047ae has content type text/javascript but was unable to parse it
+2024-10-01 11:22:57,293 (WARNING) - silk.model_factory - Response to request with pk b7ecfd46-1faa-46e0-92c2-e94c0e5c979b has content type text/javascript but was unable to parse it
+2024-10-01 11:23:01,161 (WARNING) - silk.model_factory - Response to request with pk 5481959e-b23f-4afa-bab5-9d897130cfc1 has content type text/javascript but was unable to parse it
+2024-10-01 11:23:07,764 (WARNING) - silk.model_factory - Response to request with pk 1e89f6c4-9e36-40ee-8767-1ec83a14a506 has content type text/javascript but was unable to parse it
+2024-10-01 11:23:12,763 (WARNING) - silk.model_factory - Response to request with pk 354bf7ca-5375-46f7-a39c-c3244e63d683 has content type text/javascript but was unable to parse it
+2024-10-01 11:23:20,114 (WARNING) - silk.model_factory - Response to request with pk e4238bf0-3503-4872-b71d-f8baba7bdf36 has content type text/javascript but was unable to parse it
+2024-10-01 11:23:30,079 (WARNING) - silk.model_factory - Response to request with pk ff1ed74f-870e-4f0a-93a5-5feb8479ca52 has content type text/javascript but was unable to parse it
+2024-10-01 11:23:31,814 (WARNING) - silk.model_factory - Response to request with pk ca6b7d6e-d5f5-4b0d-a743-4bbafc2def4f has content type text/javascript but was unable to parse it
+2024-10-01 11:23:51,649 (WARNING) - silk.model_factory - Response to request with pk 76a62792-5293-4445-9d12-435f11e317f5 has content type text/javascript but was unable to parse it
+2024-10-01 11:23:54,243 (WARNING) - silk.model_factory - Response to request with pk 370e4d09-37a9-4ef3-8fd7-ddbef87cce5b has content type text/javascript but was unable to parse it
+2024-10-01 11:24:02,251 (WARNING) - silk.model_factory - Response to request with pk b54e9fe4-9b14-4a2c-a16f-04568a8b248e has content type text/javascript but was unable to parse it
+2024-10-01 11:24:04,778 (WARNING) - silk.model_factory - Response to request with pk 34a38b59-80e5-4f4c-a4b5-b3aeccd54ab3 has content type text/javascript but was unable to parse it
+2024-10-01 11:24:09,213 (WARNING) - silk.model_factory - Response to request with pk ac7f85af-e815-4d2f-aeb2-9fee720c2974 has content type text/javascript but was unable to parse it
+2024-10-01 11:24:13,881 (WARNING) - silk.model_factory - Response to request with pk 55f747d3-ea2f-416a-bf7b-c88f5c5fd632 has content type text/javascript but was unable to parse it
+2024-10-01 11:24:18,213 (WARNING) - silk.model_factory - Response to request with pk 56ef6282-b02a-4884-8feb-934d6da5aea8 has content type text/javascript but was unable to parse it
+2024-10-01 11:25:06,914 (WARNING) - silk.model_factory - Response to request with pk 1953c7c7-2b87-41e3-a4a9-d9166b3bea41 has content type text/javascript but was unable to parse it
+2024-10-01 11:26:37,759 (WARNING) - silk.model_factory - Response to request with pk cbaa4b98-1f5e-43d5-b875-b49ded70a84d has content type text/javascript but was unable to parse it
+2024-10-01 11:28:00,667 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 11:28:01,598 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 11:29:12,083 (WARNING) - silk.model_factory - Response to request with pk 3331f655-234d-4f27-9d9c-870a44317dad has content type text/javascript but was unable to parse it
+2024-10-01 11:29:16,454 (WARNING) - silk.model_factory - Response to request with pk 6c5c71a8-3901-4115-83a7-51eda8cf4eb3 has content type text/javascript but was unable to parse it
+2024-10-01 11:32:27,238 (WARNING) - silk.model_factory - Response to request with pk b5e84c5d-3b94-4c3f-8837-c20994fe06cf has content type text/javascript but was unable to parse it
+2024-10-01 11:32:32,925 (WARNING) - silk.model_factory - Response to request with pk d96c14fc-1af2-40fe-9950-b6fbd4b37bb3 has content type text/javascript but was unable to parse it
+2024-10-01 11:35:04,720 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 11:35:05,547 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 11:35:25,806 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 11:35:26,558 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 11:35:28,895 (WARNING) - silk.model_factory - Response to request with pk ce2487f4-7905-436d-888d-4cabceded33c has content type text/javascript but was unable to parse it
+2024-10-01 11:35:30,612 (WARNING) - silk.model_factory - Response to request with pk 69cf8664-9c96-4d17-9a4b-5c54a79c89b0 has content type text/javascript but was unable to parse it
+2024-10-01 11:35:49,493 (WARNING) - silk.model_factory - Response to request with pk 189bad50-be8f-4aa8-a0d7-b4a4093c457c has content type text/javascript but was unable to parse it
+2024-10-01 11:35:57,775 (WARNING) - silk.model_factory - Response to request with pk cf20b47b-d6c8-447c-8091-4cd8d90b02fc has content type text/javascript but was unable to parse it
+2024-10-01 11:36:05,401 (WARNING) - silk.model_factory - Response to request with pk c417749a-9899-4a62-90ff-41605f06a24a has content type text/javascript but was unable to parse it
+2024-10-01 11:37:37,836 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 11:37:38,734 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 11:37:43,044 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 11:37:43,830 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 11:37:57,665 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 11:37:58,454 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
