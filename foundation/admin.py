@@ -1,7 +1,7 @@
 from django.db import transaction, IntegrityError
 from django.contrib import admin
 from django.utils.html import format_html
-
+from django.urls import reverse
 from .models import Language, AlternativeName, Country, CountryLanguage, Period, CurrencyPeriod, CountryPeriod, Demonym
 
 
@@ -69,7 +69,7 @@ class LanguageAdmin(admin.ModelAdmin):
 
 @admin.register(Country)
 class CountryAdmin(admin.ModelAdmin):
-    list_display = ['flag_thumbnail_list', 'iso_name', 'official_state_name', 'iso2', 'iso3', 'get_demonyms', 'get_languages', 'get_periods', 'created_at']
+    list_display = ['flag_thumbnail_list', 'clickable_country_name', 'official_state_name', 'iso2', 'iso3', 'get_demonyms', 'get_languages', 'get_periods', 'created_at']
     search_fields = ['iso_name', 'official_state_name', 'iso2', 'iso3']
     list_filter = ['created_at']
     ordering = ['iso_name']
@@ -113,6 +113,12 @@ class CountryAdmin(admin.ModelAdmin):
         return "-"
 
     flag_thumbnail_list.short_description = "Flag"
+
+    def clickable_country_name(self, obj):
+        """ Make the country name a clickable link to edit the country. """
+        url = reverse('admin:foundation_country_change', args=[obj.pk])
+        return format_html('<a href="{}">{}</a>', url, obj.iso_name)
+    clickable_country_name.short_description = 'Country Name'
 
 
 
