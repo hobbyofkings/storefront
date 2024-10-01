@@ -2,7 +2,7 @@ from django.db import transaction, IntegrityError
 from django.contrib import admin
 from django.utils.html import format_html
 
-from .models import Language, AlternativeName, Country, CountryLanguage, Period, CurrencyPeriod, CountryPeriod
+from .models import Language, AlternativeName, Country, CountryLanguage, Period, CurrencyPeriod, CountryPeriod, Demonym
 
 
 # Inline for managing alternative names of a language
@@ -18,10 +18,31 @@ class CountryLanguageInline(admin.TabularInline):
     extra = 1
     can_delete = True
 
+    # Use select_related to optimize queries for ForeignKey fields
+    def get_queryset(self, request):
+        queryset = super().get_queryset(request)
+        queryset = queryset.select_related('language', 'country')
+        return queryset
+
 class CountryPeriodInline(admin.TabularInline):
     model = CountryPeriod
     extra = 1
     can_delete = True
+
+    # Use select_related to optimize queries for ForeignKey fields
+    def get_queryset(self, request):
+        queryset = super().get_queryset(request)
+        queryset = queryset.select_related('country', 'period')
+        return queryset
+
+
+# Inline for managing relationships between demonyms and countries
+class DemonymInline(admin.TabularInline):
+    model = Demonym
+    extra = 1
+    can_delete = True
+
+
 
 class CurrencyPeriodInline(admin.TabularInline):
     model = CurrencyPeriod
@@ -46,36 +67,56 @@ class LanguageAdmin(admin.ModelAdmin):
             return super().changelist_view(request, extra_context=extra_context)
 
 
-# Admin for managing Country with inline for language relationships
 @admin.register(Country)
 class CountryAdmin(admin.ModelAdmin):
-    list_display = ['iso_name', 'official_state_name', 'iso2', 'iso3', 'created_at']
+    list_display = ['iso_name', 'official_state_name', 'iso2', 'iso3', 'get_demonyms', 'get_languages', 'get_periods', 'flag_thumbnail_list', 'created_at']
     search_fields = ['iso_name', 'official_state_name', 'iso2', 'iso3']
     list_filter = ['created_at']
     ordering = ['iso_name']
-    inlines = [CountryLanguageInline, CountryPeriodInline]  # Add inlines for managing country-language, country-period, and currency-period relationships
+    inlines = [CountryLanguageInline, DemonymInline, CountryPeriodInline]
+    readonly_fields = ('flag_thumbnail',)
+
+
+
+    def get_queryset(self, request):
+        queryset = super().get_queryset(request)
+        # Use select_related and prefetch_related to reduce the number of queries
+        queryset = queryset.prefetch_related('countrylanguage_set__language', 'countryperiod_set__period','demonyms')
+        return queryset
+
+    def get_languages(self, obj):
+        # Use prefetch_related to get all related languages and avoid multiple queries
+        return ", ".join([cl.language.name for cl in obj.countrylanguage_set.all()])
+    get_languages.short_description = 'Languages'
+
+    def get_periods(self, obj):
+        # Use prefetch_related to get all related periods and avoid multiple queries
+        return ", ".join([cp.period.name for cp in obj.countryperiod_set.all()])
+    get_periods.short_description = 'Periods'
+
+    def get_demonyms(self, obj):
+        return ", ".join([demonym.main_demonym for demonym in obj.demonyms.all()])
+    get_demonyms.short_description = 'Demonyms'
+
+    def flag_thumbnail(self, obj):
+        # Display a larger version of the flag on the detail page
+        if obj.flag:
+            return format_html('<img src="{}" width="200" height="auto" />', obj.flag.url)
+        return "-"
+
+    flag_thumbnail.short_description = "Flag Thumbnail"
+
+    def flag_thumbnail_list(self, obj):
+        # Display a smaller version of the flag in the list view
+        if obj.flag:
+            return format_html('<img src="{}" width="50" height="auto" />', obj.flag.url)
+        return "-"
+
+    flag_thumbnail_list.short_description = "Flag"
 
 
 
 
-# @admin.register(Period)
-# class PeriodAdmin(admin.ModelAdmin):
-#     list_display = ('name', 'start_year', 'end_year', 'get_countries', 'get_currency_periods', 'created_at')
-#     search_fields = ('name',)
-#     list_filter = ('start_year', 'end_year')
-#     inlines = [CountryPeriodInline, CurrencyPeriodInline]
-#
-#     def get_countries(self, obj):
-#         """Returns a comma-separated list of countries related to the period."""
-#         return ", ".join([country.iso_name for country in obj.countries_related.all()])
-#
-#     get_countries.short_description = 'Countries'
-#
-#     def get_currency_periods(self, obj):
-#         """Returns a comma-separated list of currency periods related to the period."""
-#         return ", ".join([currency_period.name for currency_period in obj.currency_periods.all()])
-#
-#     get_currency_periods.short_description = 'Currency Periods'
 
 
 @admin.register(Period)
@@ -84,9 +125,15 @@ class PeriodAdmin(admin.ModelAdmin):
     search_fields = ('name',)
     list_filter = ('start_year', 'end_year')
     inlines = [CountryPeriodInline, CurrencyPeriodInline]
-    # readonly_fields = ('coat_of_arms_thumbnail',)
-    fields = ['name', 'alternative_names', 'description', 'coat_of_arms', 'coat_of_arms_thumbnail', 'start_year', 'end_year']
 
+    # Use this to include the thumbnail as a read-only field during editing
+    readonly_fields = ('coat_of_arms_thumbnail',)
+
+    fieldsets = (
+        (None, {
+            'fields': ('name', 'alternative_names', 'description', 'coat_of_arms', 'start_year', 'end_year', 'coat_of_arms_thumbnail'),
+        }),
+    )
 
     def get_queryset(self, request):
         queryset = super().get_queryset(request)
@@ -101,13 +148,6 @@ class PeriodAdmin(admin.ModelAdmin):
     def get_currency_periods(self, obj):
         return ", ".join([currency_period.name for currency_period in obj.currency_periods.all()])
     get_currency_periods.short_description = 'Currency Periods'
-
-    def get_readonly_fields(self, request, obj=None):
-        # Add 'coat_of_arms_thumbnail' as a readonly field if editing an existing object
-        readonly_fields = list(super().get_readonly_fields(request, obj))
-        if obj:  # Only add the thumbnail for existing objects
-            readonly_fields.append('coat_of_arms_thumbnail')
-        return readonly_fields
 
     def coat_of_arms_thumbnail(self, obj):
         # Display the thumbnail of the coat of arms

@@ -45,6 +45,12 @@ class Country(models.Model):
     native_names = models.TextField(blank=True, null=True, help_text="Native names of the country (e.g., Deutschland, Россия)")
     alternative_names = models.TextField(blank=True, null=True, help_text="Alternative names for the country (e.g., 'USA', 'UK')")
     periods = models.ManyToManyField('Period', through='CountryPeriod', related_name='countries_related', blank=True)
+    flag = models.ImageField(
+        upload_to='flags/',
+        blank=True,
+        null=True,
+        help_text="Flag of the country"
+    )
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -54,6 +60,17 @@ class Country(models.Model):
 
     def __str__(self):
         return self.iso_name
+
+
+    def country_flag_thumbnail(self):
+        if self.flag:
+            return format_html('<img src="{}" width="25px" />', self.flag.url)
+        return "-"
+
+    country_flag_thumbnail.short_description = "Flag Thumbnail"
+
+
+
 
 class CountryLanguage(models.Model):
     country = models.ForeignKey(Country, on_delete=models.CASCADE)
@@ -128,3 +145,23 @@ class CurrencyPeriod(models.Model):
 
     def __str__(self):
         return f"{self.name} ({self.start_year}-{self.end_year or 'present'})"
+
+
+class Demonym(models.Model):
+    country = models.ForeignKey(Country, on_delete=models.CASCADE, related_name='demonyms', help_text='Associated country')
+    # language = models.ForeignKey(Language, on_delete=models.SET_NULL, null=True, blank=True, related_name='demonyms', help_text='Associated language (optional)')
+    main_demonym = models.CharField(max_length=255, null=True, blank=True, unique=True, help_text='Demonym in English')
+    alternative_demonyms = models.TextField(blank=True, null=True,
+                                            help_text='Array of alternative demonym forms (e.g., adjectives in other languages)')
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        verbose_name = "Demonym"
+        verbose_name_plural = "Demonyms"
+        ordering = ['country', 'main_demonym']  # Updated ordering field
+
+    def __str__(self):
+        return self.main_demonym  # Updated to use the correct field name
+
+
+    # take a lokk to the datbase
