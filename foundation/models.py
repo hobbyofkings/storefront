@@ -45,7 +45,7 @@ class Country(models.Model):
     iso3 = models.CharField(max_length=3, unique=True, null=True, blank=True)
     native_names = models.TextField(blank=True, null=True, help_text="Native names of the country (e.g., Deutschland, Россия)")
     alternative_names = models.TextField(blank=True, null=True, help_text="Alternative names for the country (e.g., 'USA', 'UK')")
-    periods = models.ManyToManyField('Period', through='CountryPeriod', related_name='countries_related', blank=True, help_text="Historical periods associated with the country")
+    periods = models.ManyToManyField('Period', through='CountryPeriod', related_name='countries_related', blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -72,12 +72,10 @@ class CountryLanguage(models.Model):
 
 
 class Period(models.Model):
-    name = models.CharField(max_length=100, unique=True,
-                            help_text="Name of the numismatic / historical period (e.g., Third Reich, Late Soviet Union)")
+    name = models.CharField(max_length=100, unique=True, help_text="Name of the historical or numismatic period (e.g., Third Reich, Late Soviet Union)")
     alternative_names = models.TextField(blank=True, null=True, help_text="Alternative names for the period (e.g., 'Nazis', 'USSR')")
     start_year = models.IntegerField(null=True, blank=True, help_text="Year the period started (optional)")
     end_year = models.IntegerField(null=True, blank=True, help_text="Year the period ended (optional)")
-    countries = models.ManyToManyField(Country, through='CountryPeriod', related_name='periods_related', blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -91,7 +89,7 @@ class Period(models.Model):
 
 class CountryPeriod(models.Model):
     country = models.ForeignKey(Country, on_delete=models.CASCADE)
-    period = models.ForeignKey(Period, on_delete=models.CASCADE)
+    period = models.ForeignKey('Period', on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -101,3 +99,19 @@ class CountryPeriod(models.Model):
 
     def __str__(self):
         return f"{self.country} - {self.period}"
+
+class CurrencyPeriod(models.Model):
+    period = models.ForeignKey(Period, related_name='currency_periods', on_delete=models.CASCADE, null=True, blank=True)
+    name = models.CharField(max_length=100, help_text="Name of the currency period (e.g., Deutsche Mark, Euro)")
+    alternative_names = models.TextField(blank=True, null=True, help_text="Alternative names for the currency period")
+    start_year = models.IntegerField(help_text="Year the currency period started")
+    end_year = models.IntegerField(null=True, blank=True, help_text="Year the currency period ended (leave blank if ongoing)")
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        verbose_name = "Currency Period"
+        verbose_name_plural = "Currency Periods"
+        ordering = ['period', 'start_year']
+
+    def __str__(self):
+        return f"{self.name} ({self.start_year}-{self.end_year or 'present'})"
