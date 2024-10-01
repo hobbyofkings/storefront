@@ -1,6 +1,5 @@
 from django.db import models
-
-
+from django.utils.html import format_html
 
 
 class Language(models.Model):
@@ -74,6 +73,13 @@ class CountryLanguage(models.Model):
 class Period(models.Model):
     name = models.CharField(max_length=100, unique=True, help_text="Name of the historical or numismatic period (e.g., Third Reich, Late Soviet Union)")
     alternative_names = models.TextField(blank=True, null=True, help_text="Alternative names for the period (e.g., 'Nazis', 'USSR')")
+    description = models.TextField(blank=True, null=True, help_text="Description of the period")
+    coat_of_arms = models.ImageField(
+        upload_to='periods/',
+        blank=True,
+        null=True,
+        help_text="Coat of arms or emblem of the period"
+    )
     start_year = models.IntegerField(null=True, blank=True, help_text="Year the period started (optional)")
     end_year = models.IntegerField(null=True, blank=True, help_text="Year the period ended (optional)")
     created_at = models.DateTimeField(auto_now_add=True)
@@ -85,6 +91,13 @@ class Period(models.Model):
 
     def __str__(self):
         return self.name
+
+    def coat_of_arms_thumbnail(self):
+        if self.coat_of_arms:
+            return format_html('<img src="{}" width="200px" />', self.coat_of_arms.url)
+        return "-"
+
+    coat_of_arms_thumbnail.short_description = "Coat of Arms Thumbnail"
 
 
 class CountryPeriod(models.Model):

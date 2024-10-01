@@ -1,5 +1,7 @@
 from django.db import transaction, IntegrityError
 from django.contrib import admin
+from django.utils.html import format_html
+
 from .models import Language, AlternativeName, Country, CountryLanguage, Period, CurrencyPeriod, CountryPeriod
 
 
@@ -78,10 +80,13 @@ class CountryAdmin(admin.ModelAdmin):
 
 @admin.register(Period)
 class PeriodAdmin(admin.ModelAdmin):
-    list_display = ('name', 'start_year', 'end_year', 'get_countries', 'get_currency_periods', 'created_at')
+    list_display = ('name', 'start_year', 'end_year', 'get_countries', 'get_currency_periods', 'coat_of_arms_list_thumbnail', 'created_at')
     search_fields = ('name',)
     list_filter = ('start_year', 'end_year')
     inlines = [CountryPeriodInline, CurrencyPeriodInline]
+    # readonly_fields = ('coat_of_arms_thumbnail',)
+    fields = ['name', 'alternative_names', 'description', 'coat_of_arms', 'coat_of_arms_thumbnail', 'start_year', 'end_year']
+
 
     def get_queryset(self, request):
         queryset = super().get_queryset(request)
@@ -96,3 +101,24 @@ class PeriodAdmin(admin.ModelAdmin):
     def get_currency_periods(self, obj):
         return ", ".join([currency_period.name for currency_period in obj.currency_periods.all()])
     get_currency_periods.short_description = 'Currency Periods'
+
+    def get_readonly_fields(self, request, obj=None):
+        # Add 'coat_of_arms_thumbnail' as a readonly field if editing an existing object
+        readonly_fields = list(super().get_readonly_fields(request, obj))
+        if obj:  # Only add the thumbnail for existing objects
+            readonly_fields.append('coat_of_arms_thumbnail')
+        return readonly_fields
+
+    def coat_of_arms_thumbnail(self, obj):
+        # Display the thumbnail of the coat of arms
+        if obj.coat_of_arms:
+            return format_html('<img src="{}" width="200" height="auto" />', obj.coat_of_arms.url)
+        return "No image available"
+    coat_of_arms_thumbnail.short_description = "Coat of Arms Thumbnail"
+
+    def coat_of_arms_list_thumbnail(self, obj):
+        # Display a smaller version of the coat of arms in the list view
+        if obj.coat_of_arms:
+            return format_html('<img src="{}" width="50" height="auto" />', obj.coat_of_arms.url)
+        return "No image available"
+    coat_of_arms_list_thumbnail.short_description = "Coat of Arms"

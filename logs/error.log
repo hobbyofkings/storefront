@@ -2375,3 +2375,728 @@ LINE 1: EXPLAIN SELECT COUNT(*) AS "__count" FROM "foundation_period...
 2024-10-01 11:37:43,830 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2024-10-01 11:37:57,665 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
 2024-10-01 11:37:58,454 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 11:38:26,994 (WARNING) - silk.model_factory - Response to request with pk 298c1a6f-eb94-4717-851c-05bf415dd701 has content type text/javascript but was unable to parse it
+2024-10-01 11:38:40,821 (WARNING) - silk.model_factory - Response to request with pk 15e1e1f2-625f-4d4c-a48b-0d611d062b53 has content type text/javascript but was unable to parse it
+2024-10-01 11:38:44,106 (WARNING) - silk.model_factory - Response to request with pk c12f2ebd-0d2b-4c75-9659-97a0b9f7ed0c has content type text/javascript but was unable to parse it
+2024-10-01 11:38:54,297 (WARNING) - silk.model_factory - Response to request with pk 510e7015-b1bb-4b57-9a48-a4a6ca4d09ce has content type text/javascript but was unable to parse it
+2024-10-01 11:39:10,700 (WARNING) - silk.model_factory - Response to request with pk 803aeb88-3a3a-4926-8fa1-8f68ffd10624 has content type text/javascript but was unable to parse it
+2024-10-01 11:39:17,545 (WARNING) - silk.model_factory - Response to request with pk cd77f096-6d97-4803-9000-82d211ad5930 has content type text/javascript but was unable to parse it
+2024-10-01 11:39:19,915 (WARNING) - silk.model_factory - Response to request with pk c7e40e73-895f-4d45-a12a-cd08de94eec9 has content type text/javascript but was unable to parse it
+2024-10-01 11:39:29,930 (WARNING) - silk.model_factory - Response to request with pk fe1ac89b-1722-4a2b-b178-ac5cab16a6e5 has content type text/javascript but was unable to parse it
+2024-10-01 11:40:48,615 (WARNING) - silk.model_factory - Response to request with pk e78d4987-a72c-43f6-ade1-1d0b4990b5e3 has content type text/javascript but was unable to parse it
+2024-10-01 11:40:50,117 (WARNING) - silk.model_factory - Response to request with pk fbe9b5b0-d155-490b-b157-b685e819220c has content type text/javascript but was unable to parse it
+2024-10-01 11:40:51,312 (WARNING) - silk.model_factory - Response to request with pk 0dfcbe7e-513f-493f-a66a-6ac0e60dc414 has content type text/javascript but was unable to parse it
+2024-10-01 11:40:52,100 (WARNING) - silk.model_factory - Response to request with pk b2668640-cfcd-4192-8b6b-4f66b0ea2b97 has content type text/javascript but was unable to parse it
+2024-10-01 11:40:52,799 (WARNING) - silk.model_factory - Response to request with pk e2f156c0-ecd4-43c6-b07b-98334153be20 has content type text/javascript but was unable to parse it
+2024-10-01 11:40:55,745 (WARNING) - silk.model_factory - Response to request with pk 0a210917-d205-4ef9-8c9e-3e362ddbeae6 has content type text/javascript but was unable to parse it
+2024-10-01 11:40:57,472 (WARNING) - silk.model_factory - Response to request with pk 15086436-ee8f-48ef-a77d-3b9139abb22c has content type text/javascript but was unable to parse it
+2024-10-01 11:40:58,472 (WARNING) - silk.model_factory - Response to request with pk 0713967c-ec10-44f4-b4d8-3475ed5b7d91 has content type text/javascript but was unable to parse it
+2024-10-01 11:41:02,380 (WARNING) - silk.model_factory - Response to request with pk d3719117-7e7b-4f75-9ea3-cf3e98edbec6 has content type text/javascript but was unable to parse it
+2024-10-01 11:41:10,345 (WARNING) - silk.model_factory - Response to request with pk 3587fb86-1232-40f2-b7ea-c2684665bc78 has content type text/javascript but was unable to parse it
+2024-10-01 11:41:23,991 (WARNING) - silk.model_factory - Response to request with pk cdbf32c7-50af-4dd6-b1ac-bac023ee5757 has content type text/javascript but was unable to parse it
+2024-10-01 11:41:29,830 (WARNING) - silk.model_factory - Response to request with pk 3ad0879b-5def-4518-bc55-e0cc861e4a41 has content type text/javascript but was unable to parse it
+2024-10-01 11:41:43,827 (WARNING) - silk.model_factory - Response to request with pk a3a4668a-e805-47d8-93b5-5148728a5686 has content type text/javascript but was unable to parse it
+2024-10-01 11:41:48,339 (WARNING) - silk.model_factory - Response to request with pk 75237932-a0f9-4017-a605-2332c99c1f10 has content type text/javascript but was unable to parse it
+2024-10-01 11:41:50,960 (WARNING) - silk.model_factory - Response to request with pk 2b81bc99-1abf-47f1-8b3e-61ac2833039e has content type text/javascript but was unable to parse it
+2024-10-01 11:41:52,213 (WARNING) - silk.model_factory - Response to request with pk f2065667-9b63-4d01-af23-426f1db7ad20 has content type text/javascript but was unable to parse it
+2024-10-01 12:24:16,110 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 12:24:16,945 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 12:24:51,129 (WARNING) - silk.model_factory - Response to request with pk a5f62fd0-55d8-4c3a-9591-36c14e775138 has content type text/javascript but was unable to parse it
+2024-10-01 12:24:53,113 (WARNING) - silk.model_factory - Response to request with pk d3c3dfb5-5a07-46ed-9c5a-bc995de938bd has content type text/javascript but was unable to parse it
+2024-10-01 12:26:19,411 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 12:26:20,251 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 12:27:45,792 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 12:27:46,561 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 12:40:02,102 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 12:40:18,947 (WARNING) - silk.model_factory - Response to request with pk 6a9467b4-5dd0-485a-af7b-b0923badc1af has content type text/javascript but was unable to parse it
+2024-10-01 12:40:20,426 (WARNING) - silk.model_factory - Response to request with pk de4c0b20-eaef-438b-9a15-8aa56e8a5002 has content type text/javascript but was unable to parse it
+2024-10-01 12:40:27,827 (WARNING) - silk.model_factory - Response to request with pk 10a1d7f7-898d-41fc-be74-636e56fd803a has content type text/javascript but was unable to parse it
+2024-10-01 12:40:57,065 (WARNING) - silk.model_factory - Response to request with pk b8b61972-63d9-46ca-9abc-19216a133900 has content type text/javascript but was unable to parse it
+2024-10-01 12:41:10,690 (WARNING) - silk.model_factory - Response to request with pk 842b3a31-fea9-457d-a6a5-0de846b4c264 has content type text/javascript but was unable to parse it
+2024-10-01 12:41:17,282 (WARNING) - silk.model_factory - Response to request with pk c701b503-6a96-49bb-8276-c6811397d4a3 has content type text/javascript but was unable to parse it
+2024-10-01 12:44:39,504 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
+2024-10-01 12:44:40,407 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 12:45:23,315 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 12:45:24,088 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 12:45:56,338 (WARNING) - django.request - Not Found: /favicon.ico
+2024-10-01 12:45:56,585 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 12:45:57,383 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 12:46:01,401 (WARNING) - silk.model_factory - Response to request with pk 20e57b40-31d1-41f2-b320-d9df46ee882b has content type text/javascript but was unable to parse it
+2024-10-01 12:46:09,044 (ERROR) - django.request - Internal Server Error: /admin/foundation/period/2/change/
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1964, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1854, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 406, in get_fieldsets
+    return [(None, {"fields": self.get_fields(request, obj)})]
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py", line 103, in get_fields
+    fields = ('coat_of_arms_thumbnail',) + fields
+TypeError: can only concatenate tuple (not "list") to tuple
+2024-10-01 12:46:42,184 (WARNING) - silk.model_factory - Response to request with pk 3c3de38f-48ac-4e6d-a997-312aaf5fac25 has content type text/javascript but was unable to parse it
+2024-10-01 12:46:45,249 (ERROR) - django.request - Internal Server Error: /admin/foundation/period/2/change/
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1964, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1854, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 406, in get_fieldsets
+    return [(None, {"fields": self.get_fields(request, obj)})]
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py", line 103, in get_fields
+    fields = ('coat_of_arms_thumbnail',) + fields
+TypeError: can only concatenate tuple (not "list") to tuple
+2024-10-01 12:47:19,959 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 12:47:26,288 (WARNING) - silk.model_factory - Response to request with pk 99b60712-c00f-409f-911a-08b31ed17619 has content type text/javascript but was unable to parse it
+2024-10-01 12:47:28,578 (ERROR) - django.request - Internal Server Error: /admin/foundation/period/2/change/
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1964, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1854, in _changeform_view
+    fieldsets = self.get_fieldsets(request, obj)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 406, in get_fieldsets
+    return [(None, {"fields": self.get_fields(request, obj)})]
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py", line 103, in get_fields
+    fields = ('coat_of_arms_thumbnail',) + fields
+TypeError: can only concatenate tuple (not "list") to tuple
+2024-10-01 12:47:36,399 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 12:47:37,202 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 12:47:41,221 (WARNING) - silk.model_factory - Response to request with pk f89ebccc-40f2-4b73-933b-0a9168eaaaed has content type text/javascript but was unable to parse it
+2024-10-01 12:47:42,986 (WARNING) - silk.model_factory - Response to request with pk 3cc115ef-7e7e-4ccc-abe7-81e49d88c3d6 has content type text/javascript but was unable to parse it
+2024-10-01 12:49:56,473 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 12:50:00,098 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 12:50:04,041 (WARNING) - silk.model_factory - Response to request with pk 8bf02ded-fda4-4b2c-b3fb-ad090e65aea0 has content type text/javascript but was unable to parse it
+2024-10-01 12:50:08,864 (WARNING) - silk.model_factory - Response to request with pk 78de19f3-5706-402b-9fab-c5e2cbdf500f has content type text/javascript but was unable to parse it
+2024-10-01 12:50:12,300 (WARNING) - silk.model_factory - Response to request with pk d824dd66-60a2-4f05-873c-e389d50e7be5 has content type text/javascript but was unable to parse it
+2024-10-01 12:51:54,035 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 12:51:54,867 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 12:51:58,518 (WARNING) - silk.model_factory - Response to request with pk 4e63878a-ddbd-4cab-8cfb-b02d4cb93462 has content type text/javascript but was unable to parse it
+2024-10-01 12:52:00,752 (WARNING) - silk.model_factory - Response to request with pk d1111c4e-4ffb-4309-8834-b527bf4f7063 has content type text/javascript but was unable to parse it
+2024-10-01 12:52:04,394 (WARNING) - silk.model_factory - Response to request with pk e2256ab7-027f-47f1-8608-44b2ea5000e0 has content type text/javascript but was unable to parse it
+2024-10-01 12:53:03,460 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 12:53:04,243 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 12:53:14,971 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 12:53:15,793 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 12:53:18,799 (WARNING) - silk.model_factory - Response to request with pk ed06d491-bcbc-4ec5-b3d3-ef0f8d40bcfe has content type text/javascript but was unable to parse it
+2024-10-01 12:53:23,608 (WARNING) - silk.model_factory - Response to request with pk 2d01088a-119f-4950-8df1-46a96a0509e1 has content type text/javascript but was unable to parse it
+2024-10-01 12:53:26,013 (WARNING) - silk.model_factory - Response to request with pk 310eeef5-a3e4-4495-9a73-63ebcd10289e has content type text/javascript but was unable to parse it
+2024-10-01 12:53:27,713 (WARNING) - silk.model_factory - Response to request with pk 77c0a262-d086-4aba-832c-7cb349031890 has content type text/javascript but was unable to parse it
+2024-10-01 12:53:29,999 (WARNING) - silk.model_factory - Response to request with pk 39a2d615-c624-44c5-bfa8-d31bccf495c6 has content type text/javascript but was unable to parse it
+2024-10-01 12:55:05,970 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 12:55:06,843 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 12:55:10,285 (WARNING) - silk.model_factory - Response to request with pk 384afcf4-3eea-492e-8f05-fccd4d25ea78 has content type text/javascript but was unable to parse it
+2024-10-01 12:55:12,410 (WARNING) - silk.model_factory - Response to request with pk 929c635a-afe8-4347-8b8b-03c99c62514c has content type text/javascript but was unable to parse it
+2024-10-01 12:56:21,221 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 12:56:22,073 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 12:56:38,208 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 12:56:38,975 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 12:56:40,178 (ERROR) - django.request - Internal Server Error: /admin/foundation/period/2/change/
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 839, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 654, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 334, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (coat_of_arms_thumbnail) specified for Period
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1964, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1855, in _changeform_view
+    ModelForm = self.get_form(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 841, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (coat_of_arms_thumbnail) specified for Period. Check fields/fieldsets/exclude attributes of class PeriodAdmin.
+2024-10-01 12:56:43,646 (WARNING) - silk.model_factory - Response to request with pk 4aa95d9d-b44a-4640-998f-3e5290396b9b has content type text/javascript but was unable to parse it
+2024-10-01 12:56:44,815 (ERROR) - django.request - Internal Server Error: /admin/foundation/period/2/change/
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 839, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 654, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\forms\models.py", line 334, in __new__
+    raise FieldError(message)
+django.core.exceptions.FieldError: Unknown field(s) (coat_of_arms_thumbnail) specified for Period
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 718, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\sites.py", line 241, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1964, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\utils\decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1820, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 1855, in _changeform_view
+    ModelForm = self.get_form(
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\options.py", line 841, in get_form
+    raise FieldError(
+django.core.exceptions.FieldError: Unknown field(s) (coat_of_arms_thumbnail) specified for Period. Check fields/fieldsets/exclude attributes of class PeriodAdmin.
+2024-10-01 12:58:26,012 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 12:58:26,852 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 12:58:40,774 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 12:58:43,791 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 12:58:49,194 (WARNING) - silk.model_factory - Response to request with pk 365e6c19-77cc-4421-bdf7-6fb600532867 has content type text/javascript but was unable to parse it
+2024-10-01 12:58:50,835 (WARNING) - silk.model_factory - Response to request with pk 47927baa-c7af-461f-bd8f-bc3ce9cf2333 has content type text/javascript but was unable to parse it
+2024-10-01 12:59:04,981 (WARNING) - silk.model_factory - Response to request with pk a0900530-fe93-4cf4-b431-3a1b6e03af89 has content type text/javascript but was unable to parse it
+2024-10-01 13:00:37,554 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 13:00:38,375 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 13:00:50,205 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 13:00:50,967 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 13:00:52,493 (WARNING) - silk.model_factory - Response to request with pk 799d2ee7-101a-41bf-a8f7-829a95ce0966 has content type text/javascript but was unable to parse it
+2024-10-01 13:01:01,843 (WARNING) - silk.model_factory - Response to request with pk d933f989-c039-4a1e-96ff-72db699abbd1 has content type text/javascript but was unable to parse it
+2024-10-01 13:01:03,791 (WARNING) - silk.model_factory - Response to request with pk 116962f9-62ac-457e-8bc6-ae33a6e32ee5 has content type text/javascript but was unable to parse it
+2024-10-01 13:02:44,225 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 13:02:45,142 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 13:02:46,710 (WARNING) - silk.model_factory - Response to request with pk 03c6eafe-77c0-417a-a84e-fcb1c9eee09b has content type text/javascript but was unable to parse it
+2024-10-01 13:02:48,876 (WARNING) - silk.model_factory - Response to request with pk 88bdc74b-6c71-49ad-bafb-ed8c573fa334 has content type text/javascript but was unable to parse it
+2024-10-01 13:02:58,015 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 13:03:01,630 (WARNING) - silk.model_factory - Response to request with pk f5f7d903-25b6-414e-8017-88a916dc2ccc has content type text/javascript but was unable to parse it
+2024-10-01 13:03:04,810 (WARNING) - silk.model_factory - Response to request with pk 7169e399-926a-4d5f-91ef-582277702e69 has content type text/javascript but was unable to parse it
+2024-10-01 13:03:06,568 (WARNING) - silk.model_factory - Response to request with pk 21cefb54-ab43-4ac7-896e-9a58a83eb359 has content type text/javascript but was unable to parse it
+2024-10-01 13:03:09,880 (ERROR) - django.request - Internal Server Error: /admin/foundation/period/3/change/
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\options.py", line 676, in get_field
+    return self.fields_map[field_name]
+KeyError: 'coat_of_arms_thumbnail'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\utils.py", line 290, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\utils.py", line 330, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\options.py", line 678, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Period has no field named 'coat_of_arms_thumbnail'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\defaulttags.py", line 550, in render
+    return self.nodelist.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1067, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 718, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 850, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 917, in _resolve_lookup
+    current = current()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\helpers.py", line 275, in contents
+    f, attr, value = lookup_field(field, obj, model_admin)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\utils.py", line 299, in lookup_field
+    value = attr(obj)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py", line 118, in coat_of_arms_thumbnail
+    upload_url = reverse('admin:foundation_period_change', args=[obj.id])
+NameError: name 'reverse' is not defined
+2024-10-01 13:03:14,127 (ERROR) - django.request - Internal Server Error: /admin/foundation/period/1/change/
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\options.py", line 676, in get_field
+    return self.fields_map[field_name]
+KeyError: 'coat_of_arms_thumbnail'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\utils.py", line 290, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\utils.py", line 330, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\options.py", line 678, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Period has no field named 'coat_of_arms_thumbnail'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\defaulttags.py", line 550, in render
+    return self.nodelist.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1067, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 718, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 850, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 917, in _resolve_lookup
+    current = current()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\helpers.py", line 275, in contents
+    f, attr, value = lookup_field(field, obj, model_admin)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\utils.py", line 299, in lookup_field
+    value = attr(obj)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py", line 118, in coat_of_arms_thumbnail
+    upload_url = reverse('admin:foundation_period_change', args=[obj.id])
+NameError: name 'reverse' is not defined
+2024-10-01 13:03:16,975 (WARNING) - silk.model_factory - Response to request with pk aa8ba5d3-5793-487b-ba3b-0f4799289c62 has content type text/javascript but was unable to parse it
+2024-10-01 13:03:29,065 (WARNING) - silk.model_factory - Response to request with pk a3a68e46-854d-4a5a-af49-880b3ab9bf61 has content type text/javascript but was unable to parse it
+2024-10-01 13:03:31,431 (WARNING) - silk.model_factory - Response to request with pk e1164bdc-a868-4b27-ac99-e8a6bd3b726f has content type text/javascript but was unable to parse it
+2024-10-01 13:03:38,618 (WARNING) - silk.model_factory - Response to request with pk e99e816d-c539-4a2c-85b9-509d668d46d7 has content type text/javascript but was unable to parse it
+2024-10-01 13:04:07,551 (ERROR) - django.request - Internal Server Error: /admin/foundation/period/3/change/
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\options.py", line 676, in get_field
+    return self.fields_map[field_name]
+KeyError: 'coat_of_arms_thumbnail'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\utils.py", line 290, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\utils.py", line 330, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\db\models\options.py", line 678, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Period has no field named 'coat_of_arms_thumbnail'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\defaulttags.py", line 550, in render
+    return self.nodelist.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 1067, in render
+    output = self.filter_expression.resolve(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 718, in resolve
+    obj = self.var.resolve(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 850, in resolve
+    value = self._resolve_lookup(context)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\template\base.py", line 917, in _resolve_lookup
+    current = current()
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\helpers.py", line 275, in contents
+    f, attr, value = lookup_field(field, obj, model_admin)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\env\lib\site-packages\django\contrib\admin\utils.py", line 299, in lookup_field
+    value = attr(obj)
+  File "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py", line 118, in coat_of_arms_thumbnail
+    upload_url = reverse('admin:foundation_period_change', args=[obj.id])
+NameError: name 'reverse' is not defined
+2024-10-01 13:04:47,194 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 13:04:48,124 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 13:04:49,703 (WARNING) - silk.model_factory - Response to request with pk b8b68874-98c3-4e22-85be-c81f8977762a has content type text/javascript but was unable to parse it
+2024-10-01 13:04:51,993 (WARNING) - silk.model_factory - Response to request with pk f1fb0632-8cdb-40c5-bccf-724c5a287dd6 has content type text/javascript but was unable to parse it
+2024-10-01 13:05:03,740 (WARNING) - silk.model_factory - Response to request with pk 9faebacb-df72-4b02-93bb-4470fcb437ec has content type text/javascript but was unable to parse it
+2024-10-01 13:05:06,226 (WARNING) - silk.model_factory - Response to request with pk f7c4671a-9d4d-4976-beb9-b2458aa843a7 has content type text/javascript but was unable to parse it
+2024-10-01 13:07:05,814 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\admin.py changed, reloading.
+2024-10-01 13:07:06,629 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-10-01 13:07:12,008 (WARNING) - silk.model_factory - Response to request with pk 8973cd5f-f1a5-4a57-b8dc-bb47b966e9d5 has content type text/javascript but was unable to parse it
+2024-10-01 13:07:13,651 (WARNING) - silk.model_factory - Response to request with pk 00dc9d32-86cc-4ced-8bd5-f8477e9fd388 has content type text/javascript but was unable to parse it
+2024-10-01 13:07:16,028 (WARNING) - silk.model_factory - Response to request with pk e75700dc-0c5f-4da0-bb57-7b6802e0bb2a has content type text/javascript but was unable to parse it
+2024-10-01 13:07:20,112 (WARNING) - silk.model_factory - Response to request with pk f4a1d01b-e728-47cc-bab3-fc819fcabbde has content type text/javascript but was unable to parse it
+2024-10-01 13:07:21,885 (WARNING) - silk.model_factory - Response to request with pk a498ebed-153a-4886-b367-b47b0eefbfd9 has content type text/javascript but was unable to parse it
+2024-10-01 13:07:31,963 (WARNING) - silk.model_factory - Response to request with pk b58b5e95-7ea2-47e2-ba4d-aa4872f0739c has content type text/javascript but was unable to parse it
+2024-10-01 13:07:36,033 (WARNING) - silk.model_factory - Response to request with pk 84c2c934-4ff5-4b51-abfd-2dac78e4704c has content type text/javascript but was unable to parse it
+2024-10-01 13:07:37,695 (WARNING) - silk.model_factory - Response to request with pk 5cebae5f-5e10-432f-b640-dc830ce4ab42 has content type text/javascript but was unable to parse it
+2024-10-01 13:07:40,992 (WARNING) - silk.model_factory - Response to request with pk 1655ae46-de17-43f8-bca2-e2c2f0ffea66 has content type text/javascript but was unable to parse it

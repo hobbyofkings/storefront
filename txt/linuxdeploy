@@ -18,7 +18,7 @@ git stash apply
 tmux new-session
 tmux list-sessions
 tmux a -t gunicornas
-tmux attach-session -t 0
+tmux attach-session -t gunicornas
 ctr +b D (to detach)
 allow to mark the text and copy it with ctr + c
 ctr + b [ (to enter the scroll mode) and then ctr + b ] (to exit the scroll mode)
