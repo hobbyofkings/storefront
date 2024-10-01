@@ -69,7 +69,7 @@ class LanguageAdmin(admin.ModelAdmin):
 
 @admin.register(Country)
 class CountryAdmin(admin.ModelAdmin):
-    list_display = ['iso_name', 'official_state_name', 'iso2', 'iso3', 'get_demonyms', 'get_languages', 'get_periods', 'flag_thumbnail_list', 'created_at']
+    list_display = ['flag_thumbnail_list', 'iso_name', 'official_state_name', 'iso2', 'iso3', 'get_demonyms', 'get_languages', 'get_periods', 'created_at']
     search_fields = ['iso_name', 'official_state_name', 'iso2', 'iso3']
     list_filter = ['created_at']
     ordering = ['iso_name']
@@ -101,7 +101,7 @@ class CountryAdmin(admin.ModelAdmin):
     def flag_thumbnail(self, obj):
         # Display a larger version of the flag on the detail page
         if obj.flag:
-            return format_html('<img src="{}" width="200" height="auto" />', obj.flag.url)
+            return format_html('<img src="{}" width="50" height="auto" />', obj.flag.url)
         return "-"
 
     flag_thumbnail.short_description = "Flag Thumbnail"
@@ -109,7 +109,7 @@ class CountryAdmin(admin.ModelAdmin):
     def flag_thumbnail_list(self, obj):
         # Display a smaller version of the flag in the list view
         if obj.flag:
-            return format_html('<img src="{}" width="50" height="auto" />', obj.flag.url)
+            return format_html('<img src="{}" width="30" height="auto" />', obj.flag.url)
         return "-"
 
     flag_thumbnail_list.short_description = "Flag"

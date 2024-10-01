@@ -17,8 +17,8 @@ git stash apply
 # tmux (for the session, tmux is an open-source terminal multiplexer for Unix-like operating systems. It allows multiple terminal sessions to be accessed simultaneously in a single window
 tmux new-session
 tmux list-sessions
-tmux a -t gunicornas
-tmux attach-session -t gunicornas
+tmux a -t 0
+tmux attach-session -t 0
 ctr +b D (to detach)
 allow to mark the text and copy it with ctr + c
 ctr + b [ (to enter the scroll mode) and then ctr + b ] (to exit the scroll mode)
