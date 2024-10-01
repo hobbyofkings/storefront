@@ -4,7 +4,7 @@ scp -i "C:\Users\Kompiuteris\Desktop\SSH\amadesa.pem" "C:\Users\Kompiuteris\Desk
 ssh -i "C:\Users\Kompiuteris\Desktop\SSH\amadesa.pem" ubuntu@67.202.22.239
 
 set DJANGO_ENV=production
-
+export DJANGO_ENV=production
 
 
 source venv/bin/activate

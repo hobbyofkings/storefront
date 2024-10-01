@@ -1,6 +1,6 @@
 from django.db import transaction, IntegrityError
 from django.contrib import admin
-from .models import Language, AlternativeName, Country, CountryLanguage
+from .models import Language, AlternativeName, Country, CountryLanguage, Period, CountryPeriod
 
 
 # Inline for managing alternative names of a language
@@ -15,6 +15,12 @@ class CountryLanguageInline(admin.TabularInline):
     model = CountryLanguage
     extra = 1
     can_delete = True
+
+class CountryPeriodInline(admin.TabularInline):
+    model = CountryPeriod
+    extra = 1
+    can_delete = True
+
 
 
 # Admin for managing Language with inlines for alternative names and country relationships
@@ -42,4 +48,14 @@ class CountryAdmin(admin.ModelAdmin):
     search_fields = ['iso_name', 'official_state_name', 'iso2', 'iso3']
     list_filter = ['created_at']
     ordering = ['iso_name']
-    inlines = [CountryLanguageInline]  # Add inline for managing country-language relationships
+    inlines = [CountryLanguageInline, CountryPeriodInline]  # Add inline for managing country-language and country-period relationships
+
+
+
+
+@admin.register(Period)
+class PeriodAdmin(admin.ModelAdmin):
+    list_display = ('name', 'start_year', 'end_year', 'created_at')
+    search_fields = ('name',)
+    list_filter = ('start_year', 'end_year')
+    inlines = [CountryPeriodInline]  # Add inline for managing period-country relationships
