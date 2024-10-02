@@ -3,7 +3,8 @@ from django.contrib import admin
 from django.utils.html import format_html
 from django.urls import reverse
 from .models import Language, AlternativeName, Country, CountryLanguage, Period, CurrencyPeriod, CountryPeriod, Demonym
-
+from django.core.cache import cache
+from django import forms
 
 # Inline for managing alternative names of a language
 class AlternativeNameInline(admin.TabularInline):
@@ -17,6 +18,9 @@ class CountryLanguageInline(admin.TabularInline):
     model = CountryLanguage
     extra = 1
     can_delete = True
+    readonly_fields = ['get_iso2', 'get_iso3', 'get_native_name']
+    max_num = 5  # Limit to 5 inline rows
+
 
     # Use select_related to optimize queries for ForeignKey fields
     def get_queryset(self, request):
@@ -24,10 +28,47 @@ class CountryLanguageInline(admin.TabularInline):
         queryset = queryset.select_related('language', 'country')
         return queryset
 
+    def get_period_start_year(self, obj):
+        return obj.period.start_year
+
+    get_period_start_year.short_description = 'Start Year'
+
+    def get_period_end_year(self, obj):
+        return obj.period.end_year
+
+    get_period_end_year.short_description = 'End Year'
+
+    def get_currency_periods(self, obj):
+        return ", ".join(
+            [f"{cp.name} ({cp.start_year} - {cp.end_year or 'present'})" for cp in obj.period.currency_periods.all()])
+
+    get_currency_periods.short_description = 'Currency Periods'
+
+    def get_iso2(self, obj):
+        return obj.language.iso2
+
+    get_iso2.short_description = 'ISO2'
+
+    def get_iso3(self, obj):
+        return obj.language.iso3
+
+    get_iso3.short_description = 'ISO3'
+
+    def get_native_name(self, obj):
+        return obj.language.native_name
+
+    get_native_name.short_description = 'Native Name'
+
+
+
+
+
 class CountryPeriodInline(admin.TabularInline):
     model = CountryPeriod
     extra = 1
     can_delete = True
+    readonly_fields = ['get_period_name', 'get_period_start_year', 'get_period_end_year', 'get_currency_periods']
+
 
     # Use select_related to optimize queries for ForeignKey fields
     def get_queryset(self, request):
@@ -35,10 +76,41 @@ class CountryPeriodInline(admin.TabularInline):
         queryset = queryset.select_related('country', 'period')
         return queryset
 
+    def get_period_name(self, obj):
+        return obj.period.name
+
+    get_period_name.short_description = 'Period Name'
+
+    def get_period_start_year(self, obj):
+        return obj.period.start_year
+
+    get_period_start_year.short_description = 'Start Year'
+
+    def get_period_end_year(self, obj):
+        return obj.period.end_year
+
+    get_period_end_year.short_description = 'End Year'
+
+    def get_currency_periods(self, obj):
+        # Show detailed information for each currency period (name, start year, end year)
+        return ", ".join(
+            [f"{cp.name} ({cp.start_year} - {cp.end_year or 'present'})" for cp in obj.period.currency_periods.all()])
+
+    get_currency_periods.short_description = 'Currency Periods'
+
+class DemonymInlineForm(forms.ModelForm):
+    class Meta:
+        model = Demonym
+        fields = '__all__'
+        widgets = {
+            'main_demonym': forms.TextInput(attrs={'size': 30}),
+            'alternative_demonyms': forms.Textarea(attrs={'rows': 2, 'cols': 50, 'style': 'resize: vertical;'}),
+        }
 
 # Inline for managing relationships between demonyms and countries
 class DemonymInline(admin.TabularInline):
     model = Demonym
+    form = DemonymInlineForm
     extra = 1
     can_delete = True
 
@@ -67,8 +139,30 @@ class LanguageAdmin(admin.ModelAdmin):
             return super().changelist_view(request, extra_context=extra_context)
 
 
+class CountryAdminForm(forms.ModelForm):
+    class Meta:
+        model = Country
+        fields = '__all__'
+        widgets = {
+            'native_names': forms.Textarea(attrs={'rows': 2, 'cols': 60, 'style': 'resize: vertical;'}),
+            'alternative_names': forms.Textarea(attrs={'rows': 2, 'cols': 60, 'style': 'resize: vertical;'}),
+        }
+
+class DemonymAdminForm(forms.ModelForm):
+    class Meta:
+        model = Demonym
+        fields = '__all__'
+        widgets = {
+            'alternative_demonyms': forms.Textarea(attrs={'rows': 2, 'cols': 60, 'style': 'resize: vertical;'}),
+        }
+
+# @admin.register(Demonym)
+# class DemonymAdmin(admin.ModelAdmin):
+#     form = DemonymAdminForm
+
 @admin.register(Country)
 class CountryAdmin(admin.ModelAdmin):
+    form = CountryAdminForm
     list_display = ['flag_thumbnail_list', 'clickable_country_name', 'official_state_name', 'iso2', 'iso3', 'get_demonyms', 'get_languages', 'get_periods', 'created_at']
     search_fields = ['iso_name', 'official_state_name', 'iso2', 'iso3']
     list_filter = ['created_at']
@@ -76,12 +170,14 @@ class CountryAdmin(admin.ModelAdmin):
     inlines = [CountryLanguageInline, DemonymInline, CountryPeriodInline]
     readonly_fields = ('flag_thumbnail',)
 
-
-
     def get_queryset(self, request):
         queryset = super().get_queryset(request)
-        # Use select_related and prefetch_related to reduce the number of queries
-        queryset = queryset.prefetch_related('countrylanguage_set__language', 'countryperiod_set__period','demonyms')
+        queryset = queryset.prefetch_related(
+            'countrylanguage_set__language',
+            'countryperiod_set__period__currency_periods',
+            # Be mindful of depth here; try removing currency_periods if too many queries
+            'demonyms'
+        )
         return queryset
 
     def get_languages(self, obj):
@@ -90,9 +186,12 @@ class CountryAdmin(admin.ModelAdmin):
     get_languages.short_description = 'Languages'
 
     def get_periods(self, obj):
-        # Use prefetch_related to get all related periods and avoid multiple queries
-        return ", ".join([cp.period.name for cp in obj.countryperiod_set.all()])
-    get_periods.short_description = 'Periods'
+        cache_key = f"country_{obj.id}_periods"
+        periods = cache.get(cache_key)
+        if not periods:
+            periods = ", ".join([cp.period.name for cp in obj.countryperiod_set.all()])
+            cache.set(cache_key, periods, timeout=60 * 60)  # Cache for 1 hour
+        return periods
 
     def get_demonyms(self, obj):
         return ", ".join([demonym.main_demonym for demonym in obj.demonyms.all()])

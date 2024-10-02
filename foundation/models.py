@@ -116,6 +116,11 @@ class CountryLanguage(models.Model):
         verbose_name = "Country Language"
         verbose_name_plural = "Country Languages"
         ordering = ['country']
+        indexes = [
+            models.Index(fields=['country']),
+            models.Index(fields=['language']),
+            models.Index(fields=['country', 'language']),  # Composite index for faster lookups
+        ]
 
     def __str__(self):
         return f"{self.country} - {self.language}"
@@ -197,5 +202,3 @@ class Demonym(models.Model):
     def __str__(self):
         return self.main_demonym  # Updated to use the correct field name
 
-
-    # take a lokk to the datbase
