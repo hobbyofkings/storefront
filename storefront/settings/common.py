@@ -3,12 +3,27 @@ from pathlib import Path
 import os
 from dotenv import load_dotenv
 from django.core.exceptions import ImproperlyConfigured
-
+from django.http import HttpResponseForbidden
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent  # Points to storefront3/storefront/
 
 # Load the .env file
 load_dotenv(os.path.join(BASE_DIR, 'settings', '.env'))
+ALLOWED_ADMIN_IPS = os.getenv('ALLOWED_ADMIN_IPS', '').split(',')
+
+class AdminIPRestrictionMiddleware:
+    def __init__(self, get_response):
+        self.get_response = get_response
+
+    def __call__(self, request):
+        ip = request.META.get('REMOTE_ADDR')
+        print(f"Request IP: {ip}")  # Debug print to see the IP address
+        if request.path.startswith('/admin/'):
+            if ip not in ALLOWED_ADMIN_IPS:
+                return HttpResponseForbidden("You are not allowed to access this page.")
+        return self.get_response(request)
+
+
 
 
 
@@ -74,7 +89,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'silk.middleware.SilkyMiddleware'
+    'silk.middleware.SilkyMiddleware',
+    'storefront.settings.common.AdminIPRestrictionMiddleware',
+
 ]
 
 
@@ -238,45 +255,6 @@ LOGGING = {
     },
 }
 
-
-
-
-
-
-
-
-#
-#
-#
-# LOGGING = {
-#     'version': 1,
-#     'disable_existing_loggers': False,
-#     'formatters': {  # Moved this outside of 'loggers'
-#         'verbose': {
-#             'format': '{asctime} ({levelname}) - {name} - {message}',
-#             'style': '{',
-#         },
-#     },
-#     'handlers': {
-#         'console': {
-#             'level': 'DEBUG',  # Uncomment this if you want to log DEBUG messages to the console
-#             'class': 'logging.StreamHandler',
-#         },
-#         'file': {
-#             'level': 'DEBUG',  # Uncomment this if you want to log DEBUG messages to a file
-#             'class': 'logging.FileHandler',
-#             'filename': 'general.log',
-#             'formatter': 'verbose',  # Use the verbose formatter for file logs
-#         },
-#     },
-#     'loggers': {
-#         '': {  # Root logger; captures all logs
-#             'handlers': ['console', 'file'],
-#             'level': os.environ.get('DJANGO_LOG_LEVEL', 'INFO'),  # Default to INFO
-#             'propagate': True,  # Ensures logs propagate to parent loggers
-#         },
-#     },
-# }
 
 
 
