@@ -2,9 +2,11 @@ from django.db import transaction, IntegrityError
 from django.contrib import admin
 from django.utils.html import format_html
 from django.urls import reverse
-from .models import Language, AlternativeName, Country, CountryLanguage, Period, CurrencyPeriod, CountryPeriod, Demonym
+from .models import Language, AlternativeName, Country, CountryLanguage, Period, CurrencyPeriod, CountryPeriod, Demonym, \
+    HistoricalPeriod, AdministrativeUnit
 from django.core.cache import cache
 from django import forms
+from django.utils.safestring import mark_safe
 
 # Inline for managing alternative names of a language
 class AlternativeNameInline(admin.TabularInline):
@@ -59,6 +61,30 @@ class CountryLanguageInline(admin.TabularInline):
 
     get_native_name.short_description = 'Native Name'
 
+
+
+class HistoricalPeriodInline(admin.TabularInline):
+    model = HistoricalPeriod
+    extra = 1
+    can_delete = True
+    readonly_fields = ['get_currency_periods']
+
+    def get_queryset(self, request):
+        queryset = super().get_queryset(request)
+        queryset = queryset.select_related('country')
+        return queryset
+
+    def get_currency_periods(self, obj):
+        return ", ".join([f"{cp.name} ({cp.start_year} - {cp.end_year or 'present'})" for cp in obj.currency_periods.all()])
+
+    get_currency_periods.short_description = 'Currency Periods'
+
+
+# Inline for managing administrative units of a country
+class AdministrativeUnitInline(admin.TabularInline):
+    model = AdministrativeUnit
+    extra = 1
+    can_delete = True
 
 
 
@@ -162,19 +188,36 @@ class DemonymAdminForm(forms.ModelForm):
 
 @admin.register(Country)
 class CountryAdmin(admin.ModelAdmin):
+    # write annotation here
     form = CountryAdminForm
-    list_display = ['flag_thumbnail_list', 'clickable_country_name', 'official_state_name', 'iso2', 'iso3', 'get_demonyms', 'get_languages', 'get_periods', 'created_at']
+    # list_display = ['flag_thumbnail_list', 'clickable_country_name', 'official_state_name', 'iso2', 'iso3', 'get_demonyms', 'get_languages', 'get_periods', 'created_at']
+    list_display = [
+        'flag_thumbnail_list',
+        'clickable_country_name',
+        'official_state_name',
+        'iso2',
+        'iso3',
+        'get_languages',
+        'get_historical_periods',
+        'get_administrative_units',
+        'created_at'
+    ]
     search_fields = ['iso_name', 'official_state_name', 'iso2', 'iso3']
     list_filter = ['created_at']
     ordering = ['iso_name']
-    inlines = [CountryLanguageInline, DemonymInline, CountryPeriodInline]
+    # inlines = [CountryLanguageInline, DemonymInline, CountryPeriodInline]
+    inlines = [CountryLanguageInline, DemonymInline, HistoricalPeriodInline, AdministrativeUnitInline]
+
     readonly_fields = ('flag_thumbnail',)
 
     def get_queryset(self, request):
         queryset = super().get_queryset(request)
         queryset = queryset.prefetch_related(
+            'historical_periods',
+            'administrative_units',
+
             'countrylanguage_set__language',
-            'countryperiod_set__period__currency_periods',
+
             # Be mindful of depth here; try removing currency_periods if too many queries
             'demonyms'
         )
@@ -219,9 +262,15 @@ class CountryAdmin(admin.ModelAdmin):
         return format_html('<a href="{}">{}</a>', url, obj.iso_name)
     clickable_country_name.short_description = 'Country Name'
 
+    def get_historical_periods(self, obj):
+        return ", ".join([hp.name for hp in obj.historical_periods.all()])
 
+    get_historical_periods.short_description = 'Historical Periods'
 
+    def get_administrative_units(self, obj):
+        return ", ".join([au.name for au in obj.administrative_units.all()])
 
+    get_administrative_units.short_description = 'Administrative Units'
 
 
 @admin.register(Period)
@@ -229,7 +278,7 @@ class PeriodAdmin(admin.ModelAdmin):
     list_display = ('name', 'start_year', 'end_year', 'get_countries', 'get_currency_periods', 'coat_of_arms_list_thumbnail', 'created_at')
     search_fields = ('name',)
     list_filter = ('start_year', 'end_year')
-    inlines = [CountryPeriodInline, CurrencyPeriodInline]
+    inlines = [CountryPeriodInline] # CurrencyPeriodInline
 
     # Use this to include the thumbnail as a read-only field during editing
     readonly_fields = ('coat_of_arms_thumbnail',)
@@ -267,3 +316,74 @@ class PeriodAdmin(admin.ModelAdmin):
             return format_html('<img src="{}" width="50" height="auto" />', obj.coat_of_arms.url)
         return "No image available"
     coat_of_arms_list_thumbnail.short_description = "Coat of Arms"
+
+@admin.register(HistoricalPeriod)
+class HistoricalPeriodAdmin(admin.ModelAdmin):
+    list_display = ('name', 'start_year', 'end_year', 'get_countries', 'get_currency_periods', 'coat_of_arms_list_thumbnail', 'created_at')
+    search_fields = ('name',)
+    list_filter = ('start_year', 'end_year')
+    inlines = [CurrencyPeriodInline]
+
+    readonly_fields = ('coat_of_arms_thumbnail',)
+
+    def get_queryset(self, request):
+        queryset = super().get_queryset(request)
+        queryset = queryset.prefetch_related('country', 'currency_periods')
+        return queryset
+
+    def get_countries(self, obj):
+        return obj.country.iso_name
+    get_countries.short_description = 'Country'
+
+    def get_currency_periods(self, obj):
+        return ", ".join([currency_period.name for currency_period in obj.currency_periods.all()])
+    get_currency_periods.short_description = 'Currency Periods'
+
+    def coat_of_arms_thumbnail(self, obj):
+        if obj.coat_of_arms:
+            return format_html('<img src="{}" width="200px" />', obj.coat_of_arms.url)
+        return "-"
+    coat_of_arms_thumbnail.short_description = "Coat of Arms Thumbnail"
+
+    def coat_of_arms_list_thumbnail(self, obj):
+        if obj.coat_of_arms:
+            return format_html('<img src="{}" width="50px" />', obj.coat_of_arms.url)
+        return "-"
+    coat_of_arms_list_thumbnail.short_description = "Coat of Arms"
+
+
+@admin.register(AdministrativeUnit)
+class AdministrativeUnitAdmin(admin.ModelAdmin):
+    list_display = ('name', 'country', 'type', 'start_year', 'end_year', 'created_at')
+    search_fields = ('name', 'country__iso_name')
+    list_filter = ('country',)
+    inlines = [CurrencyPeriodInline]
+
+    change_list_template = "admin/foundation/change_list.html"
+    add_form_template = "admin/foundation/change_form.html"
+
+    custom_message = (
+            "<div style='margin-bottom: 20px; padding: 10px; border-left: 3px solid #007bff; background-color: #e9ecef;'>"
+            "<strong>Administrative Unit:</strong> Administrative Unit is a smaller, distinct part of a country that can have "
+            "unique characteristics like separate currency periods or historical periods. For example: Germany, throughout its history, "
+            "was made up of many states, principalities, and territories, especially before unification in 1871."
+            "</div>"
+    )
+
+    def changelist_view(self, request, extra_context=None):
+        extra_context = extra_context or {}
+        extra_context['custom_message'] = mark_safe(self.custom_message)
+        return super().changelist_view(request, extra_context=extra_context)
+
+    def add_view(self, request, form_url='', extra_context=None):
+        # Adding custom descriptive message to the add view for Administrative Unit
+        extra_context = extra_context or {}
+        extra_context['custom_message'] = mark_safe(self.custom_message)
+        return super().add_view(request, form_url, extra_context=extra_context)
+
+
+
+    def get_queryset(self, request):
+        queryset = super().get_queryset(request)
+        queryset = queryset.select_related('country').prefetch_related('currency_periods')
+        return queryset

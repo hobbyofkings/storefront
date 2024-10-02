@@ -169,21 +169,31 @@ class CountryPeriod(models.Model):
     def __str__(self):
         return f"{self.country} - {self.period}"
 
-class CurrencyPeriod(models.Model):
-    period = models.ForeignKey(Period, related_name='currency_periods', on_delete=models.CASCADE, null=True, blank=True)
-    name = models.CharField(max_length=100, help_text="Name of the currency period (e.g., Deutsche Mark, Euro)")
-    alternative_names = models.TextField(blank=True, null=True, help_text="Alternative names for the currency period")
-    start_year = models.IntegerField(help_text="Year the currency period started")
-    end_year = models.IntegerField(null=True, blank=True, help_text="Year the currency period ended (leave blank if ongoing)")
-    created_at = models.DateTimeField(auto_now_add=True)
+# class CurrencyPeriod(models.Model):
+#     period = models.ForeignKey(Period, related_name='currency_periods', on_delete=models.CASCADE, null=True, blank=True)
+#     name = models.CharField(max_length=100, help_text="Name of the currency period (e.g., Deutsche Mark, Euro)")
+#     alternative_names = models.TextField(blank=True, null=True, help_text="Alternative names for the currency period")
+#     start_year = models.IntegerField(help_text="Year the currency period started")
+#     end_year = models.IntegerField(null=True, blank=True, help_text="Year the currency period ended (leave blank if ongoing)")
+#     created_at = models.DateTimeField(auto_now_add=True)
+#
+#     class Meta:
+#         verbose_name = "Currency Period"
+#         verbose_name_plural = "Currency Periods"
+#         ordering = ['period', 'start_year']
+#
+#     def __str__(self):
+#         return f"{self.name} ({self.start_year}-{self.end_year or 'present'})"
 
-    class Meta:
-        verbose_name = "Currency Period"
-        verbose_name_plural = "Currency Periods"
-        ordering = ['period', 'start_year']
 
-    def __str__(self):
-        return f"{self.name} ({self.start_year}-{self.end_year or 'present'})"
+
+
+
+
+
+
+
+
 
 
 class Demonym(models.Model):
@@ -201,4 +211,88 @@ class Demonym(models.Model):
 
     def __str__(self):
         return self.main_demonym  # Updated to use the correct field name
+
+
+
+
+
+class HistoricalPeriod(models.Model):
+    country = models.ForeignKey(Country, on_delete=models.CASCADE, related_name='historical_periods')
+    name = models.CharField(max_length=100, unique=True, help_text="Name of the historical period")
+    start_year = models.IntegerField(null=True, blank=True, help_text="Year the period started (optional)")
+    end_year = models.IntegerField(null=True, blank=True, help_text="Year the period ended (optional)")
+    description = models.TextField(blank=True, null=True, help_text="Description of the period")
+    coat_of_arms = models.ImageField(upload_to='periods/', blank=True, null=True, help_text="Coat of arms or emblem of the period")
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        verbose_name = "Historical Period"
+        verbose_name_plural = "Historical Periods"
+        ordering = ['name']
+
+    def __str__(self):
+        return self.name
+
+    def coat_of_arms_thumbnail(self):
+        if self.coat_of_arms:
+            return format_html('<img src="{}" width="200px" />', self.coat_of_arms.url)
+        return "-"
+
+    coat_of_arms_thumbnail.short_description = "Coat of Arms Thumbnail"
+
+
+class AdministrativeUnit(models.Model):
+    country = models.ForeignKey(Country, on_delete=models.CASCADE, related_name='administrative_units')
+    name = models.CharField(max_length=100, unique=False, help_text="Name of the administrative unit")
+    type = models.CharField(max_length=100, help_text="Type of administrative unit (e.g., state, territory)")
+    start_year = models.IntegerField(null=True, blank=True, help_text="Year the administrative unit was established")
+    end_year = models.IntegerField(null=True, blank=True, help_text="Year the administrative unit was dissolved")
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        verbose_name = "Administrative Unit"
+        verbose_name_plural = "Administrative Units"
+        ordering = ['name']
+
+    def __str__(self):
+        return f"{self.name} ({self.type})"
+
+
+class CurrencyPeriod(models.Model):
+    administrative_unit = models.ForeignKey(AdministrativeUnit, on_delete=models.CASCADE, related_name='currency_periods', null=True, blank=True)
+    historical_period = models.ForeignKey(HistoricalPeriod, on_delete=models.CASCADE, related_name='currency_periods', null=True, blank=True)
+    name = models.CharField(max_length=100, help_text="Name of the currency period (e.g., Deutsche Mark, Euro)")
+    type = models.CharField(max_length=50, help_text="Type of currency (e.g., coin, banknote)", default='coin')
+    start_year = models.IntegerField(help_text="Year the currency period started")
+    end_year = models.IntegerField(null=True, blank=True, help_text="Year the currency period ended (leave blank if ongoing)")
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        verbose_name = "Currency Period"
+        verbose_name_plural = "Currency Periods"
+        ordering = ['start_year']
+
+    def __str__(self):
+        return f"{self.name} ({self.start_year}-{self.end_year or 'present'})"
+
+
+class Currency(models.Model):
+    currency_period = models.ForeignKey(CurrencyPeriod, on_delete=models.CASCADE, related_name='currencies')
+    name = models.CharField(max_length=100, help_text="Name of the currency (e.g., Mark, Euro)")
+    denomination = models.DecimalField(max_digits=10, decimal_places=2, help_text="Denomination of the currency")
+    issue_date = models.DateField(help_text="Date the currency was issued")
+    type = models.CharField(max_length=50, help_text="Type of currency (e.g., coin, banknote)")
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        verbose_name = "Currency"
+        verbose_name_plural = "Currencies"
+        ordering = ['name']
+
+    def __str__(self):
+        return f"{self.name} - {self.denomination} ({self.issue_date})"
+
+
+
+
 

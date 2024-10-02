@@ -14,10 +14,9 @@ ALLOWED_ADMIN_IPS = os.getenv('ALLOWED_ADMIN_IPS', '').split(',')
 class AdminIPRestrictionMiddleware:
     def __init__(self, get_response):
         self.get_response = get_response
-
     def __call__(self, request):
         ip = request.META.get('REMOTE_ADDR')
-        print(f"Request IP: {ip}")  # Debug print to see the IP address
+        # print(f"Request IP: {ip}")  # Debug print to see the IP address
         if request.path.startswith('/admin/'):
             if ip not in ALLOWED_ADMIN_IPS:
                 return HttpResponseForbidden("You are not allowed to access this page.")
