@@ -1,3 +1,5 @@
+from datetime import datetime
+from django import forms
 from django.core.files.base import ContentFile
 from django.db import models
 from django.utils.html import format_html
@@ -8,6 +10,21 @@ import boto3
 from django.conf import settings
 import os
 import io
+from django.core.exceptions import ValidationError
+from django.utils import timezone
+
+
+
+
+class EntityClassification(models.Model):
+    type = models.CharField(max_length=255)  # e.g., Kingdom, State, City
+    sovereignty = models.CharField(max_length=255)  # e.g., Sovereign State, Semi-Sovereign, Autonomous
+
+    def __str__(self):
+        return f"{self.type} ({self.sovereignty})"
+
+
+
 
 class Language(models.Model):
     name = models.CharField(max_length=100, unique=True)
@@ -38,35 +55,63 @@ class AlternativeName(models.Model):
 
 
 
+class Continent(models.Model):
+    name = models.CharField(max_length=50, unique=True)
 
+    class Meta:
+        verbose_name = "Continent"
+        verbose_name_plural = "Continents"
+        ordering = ['name']
+
+    def __str__(self):
+        return self.name
 
 
 
 
 
 class Country(models.Model):
-    iso_name = models.CharField(max_length=100, unique=True, help_text="ISO name of the country (e.g., United States, United Kingdom)")
-    official_state_name = models.CharField(max_length=100, unique=False, null=True, blank=True, help_text="Official name of the country (e.g., United States of America, United Kingdom of Great Britain and Northern Ireland)")
+    CONTINENT_CHOICES = [
+        ('AF', 'Africa'),
+        ('AN', 'Antarctica'),
+        ('AS', 'Asia'),
+        ('EU', 'Europe'),
+        ('NA', 'North America'),
+        ('OC', 'Oceania'),
+        ('SA', 'South America'),
+    ]
+    name = models.CharField(max_length=100, unique=True, help_text="ISO name of the country (e.g., United States, United Kingdom). A Country represents a sovereign state—an independent nation with defined borders, a permanent population, a government, and the capacity to enter into relations with other states. Countries can span various historical periods, maintaining continuity despite changes in governance, leadership, or political systems.")
+    # official_state_name = models.CharField(max_length=100, unique=False, null=True, blank=True, help_text="Official name of the country (e.g., United States of America, United Kingdom of Great Britain and Northern Ireland)")
     iso2 = models.CharField(max_length=2, unique=True, null=True, blank=True)
     iso3 = models.CharField(max_length=3, unique=True, null=True, blank=True)
     native_names = models.TextField(blank=True, null=True, help_text="Native names of the country (e.g., Deutschland, Россия)")
     alternative_names = models.TextField(blank=True, null=True, help_text="Alternative names for the country (e.g., 'USA', 'UK')")
-    periods = models.ManyToManyField('Period', through='CountryPeriod', related_name='countries_related', blank=True)
+    # continent = models.CharField(max_length=2, choices=CONTINENT_CHOICES, help_text="Continent of the country", null=True, blank=True)
+    continent = models.ForeignKey(Continent, on_delete=models.CASCADE, related_name='countries')
+
+    start_date = models.DateField(null=True, blank=True)
+    end_date = models.DateField(null=True, blank=True)
+
+
+
+
     flag = models.ImageField(
         upload_to='flags/',
         blank=True,
         null=True,
         help_text="Flag of the country"
     )
+
+
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         verbose_name = "Country"
         verbose_name_plural = "Countries"
-        ordering = ['iso_name']
+        ordering = ['name']
 
     def __str__(self):
-        return self.iso_name
+        return self.name
 
     def save(self, *args, **kwargs):
         if self.flag:
@@ -94,8 +139,6 @@ class Country(models.Model):
 
         super().save(*args, **kwargs)
 
-    def __str__(self):
-        return self.iso_name
 
     def country_flag_thumbnail(self):
         if self.flag:
@@ -126,70 +169,6 @@ class CountryLanguage(models.Model):
         return f"{self.country} - {self.language}"
 
 
-class Period(models.Model):
-    name = models.CharField(max_length=100, unique=True, help_text="Name of the historical or numismatic period (e.g., Third Reich, Late Soviet Union)")
-    alternative_names = models.TextField(blank=True, null=True, help_text="Alternative names for the period (e.g., 'Nazis', 'USSR')")
-    description = models.TextField(blank=True, null=True, help_text="Description of the period")
-    coat_of_arms = models.ImageField(
-        upload_to='periods/',
-        blank=True,
-        null=True,
-        help_text="Coat of arms or emblem of the period"
-    )
-    start_year = models.IntegerField(null=True, blank=True, help_text="Year the period started (optional)")
-    end_year = models.IntegerField(null=True, blank=True, help_text="Year the period ended (optional)")
-    created_at = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        verbose_name = "Period"
-        verbose_name_plural = "Periods"
-        ordering = ['name']
-
-    def __str__(self):
-        return self.name
-
-    def coat_of_arms_thumbnail(self):
-        if self.coat_of_arms:
-            return format_html('<img src="{}" width="200px" />', self.coat_of_arms.url)
-        return "-"
-
-    coat_of_arms_thumbnail.short_description = "Coat of Arms Thumbnail"
-
-
-class CountryPeriod(models.Model):
-    country = models.ForeignKey(Country, on_delete=models.CASCADE)
-    period = models.ForeignKey('Period', on_delete=models.CASCADE)
-    created_at = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        verbose_name = "Country Period"
-        verbose_name_plural = "Country Periods"
-        unique_together = ('country', 'period')
-
-    def __str__(self):
-        return f"{self.country} - {self.period}"
-
-# class CurrencyPeriod(models.Model):
-#     period = models.ForeignKey(Period, related_name='currency_periods', on_delete=models.CASCADE, null=True, blank=True)
-#     name = models.CharField(max_length=100, help_text="Name of the currency period (e.g., Deutsche Mark, Euro)")
-#     alternative_names = models.TextField(blank=True, null=True, help_text="Alternative names for the currency period")
-#     start_year = models.IntegerField(help_text="Year the currency period started")
-#     end_year = models.IntegerField(null=True, blank=True, help_text="Year the currency period ended (leave blank if ongoing)")
-#     created_at = models.DateTimeField(auto_now_add=True)
-#
-#     class Meta:
-#         verbose_name = "Currency Period"
-#         verbose_name_plural = "Currency Periods"
-#         ordering = ['period', 'start_year']
-#
-#     def __str__(self):
-#         return f"{self.name} ({self.start_year}-{self.end_year or 'present'})"
-
-
-
-
-
-
 
 
 
@@ -213,86 +192,53 @@ class Demonym(models.Model):
         return self.main_demonym  # Updated to use the correct field name
 
 
-
-
-
-class HistoricalPeriod(models.Model):
-    country = models.ForeignKey(Country, on_delete=models.CASCADE, related_name='historical_periods')
-    name = models.CharField(max_length=100, unique=True, help_text="Name of the historical period")
-    start_year = models.IntegerField(null=True, blank=True, help_text="Year the period started (optional)")
-    end_year = models.IntegerField(null=True, blank=True, help_text="Year the period ended (optional)")
-    description = models.TextField(blank=True, null=True, help_text="Description of the period")
-    coat_of_arms = models.ImageField(upload_to='periods/', blank=True, null=True, help_text="Coat of arms or emblem of the period")
-    created_at = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        verbose_name = "Historical Period"
-        verbose_name_plural = "Historical Periods"
-        ordering = ['name']
+class SovereignStatus(models.Model):
+    name = models.CharField(max_length=255)
 
     def __str__(self):
         return self.name
 
-    def coat_of_arms_thumbnail(self):
-        if self.coat_of_arms:
-            return format_html('<img src="{}" width="200px" />', self.coat_of_arms.url)
-        return "-"
-
-    coat_of_arms_thumbnail.short_description = "Coat of Arms Thumbnail"
 
 
-class AdministrativeUnit(models.Model):
-    country = models.ForeignKey(Country, on_delete=models.CASCADE, related_name='administrative_units')
-    name = models.CharField(max_length=100, unique=False, help_text="Name of the administrative unit")
-    type = models.CharField(max_length=100, help_text="Type of administrative unit (e.g., state, territory)")
-    start_year = models.IntegerField(null=True, blank=True, help_text="Year the administrative unit was established")
-    end_year = models.IntegerField(null=True, blank=True, help_text="Year the administrative unit was dissolved")
-    created_at = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        verbose_name = "Administrative Unit"
-        verbose_name_plural = "Administrative Units"
-        ordering = ['name']
+class Entity(models.Model):
+    country = models.ForeignKey(Country, on_delete=models.CASCADE, related_name='entities', help_text='An Entity refers to a subnational division or historical administrative unit within a country. Entities can vary in their degree of autonomy and governance structure. They can be provinces, states, kingdoms, duchies, cities, or other administrative regions.')
+    classification = models.ForeignKey(EntityClassification, on_delete=models.CASCADE, related_name='entities')
+    name = models.CharField(max_length=255)
+    start_date = models.DateField(null=True, blank=True)
+    end_date = models.DateField(null=True, blank=True)
 
     def __str__(self):
-        return f"{self.name} ({self.type})"
+        return self.name
 
 
-class CurrencyPeriod(models.Model):
-    administrative_unit = models.ForeignKey(AdministrativeUnit, on_delete=models.CASCADE, related_name='currency_periods', null=True, blank=True)
-    historical_period = models.ForeignKey(HistoricalPeriod, on_delete=models.CASCADE, related_name='currency_periods', null=True, blank=True)
-    name = models.CharField(max_length=100, help_text="Name of the currency period (e.g., Deutsche Mark, Euro)")
-    type = models.CharField(max_length=50, help_text="Type of currency (e.g., coin, banknote)", default='coin')
-    start_year = models.IntegerField(help_text="Year the currency period started")
-    end_year = models.IntegerField(null=True, blank=True, help_text="Year the currency period ended (leave blank if ongoing)")
-    created_at = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        verbose_name = "Currency Period"
-        verbose_name_plural = "Currency Periods"
-        ordering = ['start_year']
+class HistoricalPeriod(models.Model):
+    country = models.ForeignKey(Country, on_delete=models.CASCADE, related_name='historical_periods')
+    name = models.CharField(max_length=255)
+    start_date = models.DateField(null=True, blank=True)
+    end_date = models.DateField(null=True, blank=True)
+    description = models.TextField(blank=True)
 
     def __str__(self):
-        return f"{self.name} ({self.start_year}-{self.end_year or 'present'})"
+        return f"{self.name} ({self.country.name})"
+
+
+
+
+
+
 
 
 class Currency(models.Model):
-    currency_period = models.ForeignKey(CurrencyPeriod, on_delete=models.CASCADE, related_name='currencies')
-    name = models.CharField(max_length=100, help_text="Name of the currency (e.g., Mark, Euro)")
-    denomination = models.DecimalField(max_digits=10, decimal_places=2, help_text="Denomination of the currency")
-    issue_date = models.DateField(help_text="Date the currency was issued")
-    type = models.CharField(max_length=50, help_text="Type of currency (e.g., coin, banknote)")
-    created_at = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        verbose_name = "Currency"
-        verbose_name_plural = "Currencies"
-        ordering = ['name']
+    entity = models.ForeignKey(Entity, on_delete=models.CASCADE, related_name='currencies')
+    currency_type = models.CharField(max_length=255)  # e.g., Coin, Banknote
+    name = models.CharField(max_length=255)
+    start_date = models.DateField(null=True, blank=True)
+    end_date = models.DateField(null=True, blank=True)
+    denominations = models.CharField(max_length=255, blank=True)  # e.g., "1 Mark, 5 Mark"
+    issuance_reason = models.TextField(blank=True)  # e.g., "War Effort"
+    historical_context = models.TextField(blank=True)  # e.g., "Impact of WWI"
 
     def __str__(self):
-        return f"{self.name} - {self.denomination} ({self.issue_date})"
-
-
-
+        return self.name
 
 

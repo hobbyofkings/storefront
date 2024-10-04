@@ -1,0 +1,91 @@
+
+{% extends "admin/change_form.html" %}
+{% load static %}
+
+{% block content %}
+    {{ block.super }}
+
+    {% if country %}
+        <h2>Timeline Visualization</h2>
+        <div id="timeline-container" style="width: 100%; height: auto;"></div>
+
+        <script src="https://code.highcharts.com/gantt/highcharts-gantt.js"></script>
+        <script src="https://code.highcharts.com/gantt/highcharts-gantt-more.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const timelineData = {{ timeline_data|safe }};
+                const categories = {{ categories|safe }};
+
+                if (timelineData.length > 0 && categories.length > 0) {
+                    const todayUTC = Date.UTC(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
+                    const countryEndDate = {% if country.end_date %}"{{ country.end_date|date:"Y-m-d" }}" {% else %}null{% endif %};
+                    const maxDate = countryEndDate ? Date.UTC(...countryEndDate.split('-')) : todayUTC;
+
+                    const chartHeight = Math.max(categories.length * 60, 300);
+
+                    Highcharts.ganttChart('timeline-container', {
+                        tooltip: {
+                            pointFormat: `<span style="color:{point.color}; font-weight:bold;">{point.name}</span><br/>
+                                          Start: {point.start:%e %b %Y}<br/>
+                                          End: {point.end:%e %b %Y}`
+                        },
+                        xAxis: {
+                            currentDateIndicator: true,
+                            min: Math.min(...timelineData.map(e => e.start)),
+                            max: maxDate,
+                            scrollbar: { enabled: true }
+                        },
+                        yAxis: {
+                            categories: categories,
+                            uniqueNames: true,
+                            reversed: true,
+                            labels: {
+                                useHTML: true,
+                                align: 'left',
+                                formatter: function () {
+                                    let indent = { 'Currency: ': 3, 'Entity: ': 2, 'Historical Period: ': 1 }[this.value.split(': ')[0]] || 0;
+                                    return `<span style="padding-left: ${indent * 20}px;">${this.value.trim()}</span>`;
+                                }
+                            }
+                        },
+                        series: [{
+                            name: 'Timeline',
+                            data: timelineData.map(item => ({
+                                name: item.name,
+                                start: item.start,
+                                end: item.end,
+                                color: item.color,
+                                y: item.y
+                            })),
+                            point: {
+                                events: {
+                                    click: function () {
+                                        const match = this.name.match(/\((\d+)\)$/);
+                                        if (match) {
+                                            const eventType = this.name.split(":")[0].trim().toLowerCase().replace(' ', '_');
+                                            window.location.href = `/admin/foundation_${eventType}/change/${match[1]}/`;
+                                        }
+                                    }
+                                }
+                            }
+                        }],
+                        chart: { height: chartHeight, zoomType: 'x' },
+                        credits: { enabled: false },
+                        responsive: {
+                            rules: [{
+                                condition: { maxWidth: 600 },
+                                chartOptions: {
+                                    yAxis: { labels: { style: { fontSize: '12px' } } },
+                                    series: [{ dataLabels: { style: { fontSize: '12px' } } }]
+                                }
+                            }]
+                        },
+                        accessibility: { enabled: true }
+                    });
+                } else {
+                    document.getElementById('timeline-container').innerHTML = "<p>No timeline data available for this country.</p>";
+                }
+            });
+        </script>
+    {% endif %}
+{% endblock %}

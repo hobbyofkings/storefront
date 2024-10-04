@@ -1,18 +1,94 @@
+import json
+import datetime
+from django.utils import timezone
 from django.db import transaction, IntegrityError
 from django.contrib import admin
 from django.utils.html import format_html
 from django.urls import reverse
-from .models import Language, AlternativeName, Country, CountryLanguage, Period, CurrencyPeriod, CountryPeriod, Demonym, \
-    HistoricalPeriod, AdministrativeUnit
+from .models import (
+    Country,
+    Entity,
+    SovereignStatus,
+    HistoricalPeriod,
+    Currency,
+    AlternativeName, Demonym, CountryLanguage, Language, Continent, EntityClassification)
+
 from django.core.cache import cache
 from django import forms
 from django.utils.safestring import mark_safe
+from django.contrib import admin
+from .models import Currency
+from django.contrib import admin
+from django.urls import path
+from django.utils.html import format_html
+from django.urls import reverse
+from django.shortcuts import render
+from django.shortcuts import get_object_or_404
+from django.utils import timezone
 
-# Inline for managing alternative names of a language
+
+
+
+
 class AlternativeNameInline(admin.TabularInline):
     model = AlternativeName
     extra = 1
     can_delete = True
+
+
+@admin.register(SovereignStatus)
+class SovereignStatusAdmin(admin.ModelAdmin):
+    list_display = ['name']
+    search_fields = ['name']
+
+
+@admin.register(HistoricalPeriod)
+class HistoricalPeriodAdmin(admin.ModelAdmin):
+    list_display = ('name', 'country', 'start_date', 'end_date')
+    search_fields = ('name', 'country__name',)
+    list_filter = ('country',)
+
+@admin.register(Continent)
+class ContinentAdmin(admin.ModelAdmin):
+    list_display = ('name',)
+    search_fields = ('name',)
+
+@admin.register(EntityClassification)
+class EntityClassificationAdmin(admin.ModelAdmin):
+    list_display = ('type', 'sovereignty')
+    search_fields = ('type', 'sovereignty',)
+
+
+@admin.register(Currency)
+class CurrencyAdmin(admin.ModelAdmin):
+    list_display = ('name', 'entity', 'currency_type', 'start_date', 'end_date')
+    search_fields = ('name', 'entity__name', 'currency_type')
+    list_filter = ('currency_type', 'entity')
+
+class HistoricalPeriodInline(admin.TabularInline):
+    model = HistoricalPeriod
+    extra = 1
+    can_delete = True
+
+class EntityInline(admin.TabularInline):
+    model = Entity
+    extra = 1
+    can_delete = True
+
+class CurrencyInline(admin.TabularInline):
+    model = Currency
+    fields = ['name', 'currency_type', 'start_date', 'end_date']
+    readonly_fields = ['name', 'currency_type', 'start_date', 'end_date']
+    extra = 0
+
+    def get_queryset(self, request):
+        # Modify the queryset to fetch currencies related to entities within the country
+        country_id = request.resolver_match.kwargs.get('object_id')
+        if country_id:
+            country = Country.objects.get(pk=country_id)
+            return Currency.objects.filter(entity__country=country)
+        return Currency.objects.none()
+
 
 
 # Inline for managing relationships between countries and languages
@@ -30,21 +106,6 @@ class CountryLanguageInline(admin.TabularInline):
         queryset = queryset.select_related('language', 'country')
         return queryset
 
-    def get_period_start_year(self, obj):
-        return obj.period.start_year
-
-    get_period_start_year.short_description = 'Start Year'
-
-    def get_period_end_year(self, obj):
-        return obj.period.end_year
-
-    get_period_end_year.short_description = 'End Year'
-
-    def get_currency_periods(self, obj):
-        return ", ".join(
-            [f"{cp.name} ({cp.start_year} - {cp.end_year or 'present'})" for cp in obj.period.currency_periods.all()])
-
-    get_currency_periods.short_description = 'Currency Periods'
 
     def get_iso2(self, obj):
         return obj.language.iso2
@@ -62,67 +123,6 @@ class CountryLanguageInline(admin.TabularInline):
     get_native_name.short_description = 'Native Name'
 
 
-
-class HistoricalPeriodInline(admin.TabularInline):
-    model = HistoricalPeriod
-    extra = 1
-    can_delete = True
-    readonly_fields = ['get_currency_periods']
-
-    def get_queryset(self, request):
-        queryset = super().get_queryset(request)
-        queryset = queryset.select_related('country')
-        return queryset
-
-    def get_currency_periods(self, obj):
-        return ", ".join([f"{cp.name} ({cp.start_year} - {cp.end_year or 'present'})" for cp in obj.currency_periods.all()])
-
-    get_currency_periods.short_description = 'Currency Periods'
-
-
-# Inline for managing administrative units of a country
-class AdministrativeUnitInline(admin.TabularInline):
-    model = AdministrativeUnit
-    extra = 1
-    can_delete = True
-
-
-
-
-class CountryPeriodInline(admin.TabularInline):
-    model = CountryPeriod
-    extra = 1
-    can_delete = True
-    readonly_fields = ['get_period_name', 'get_period_start_year', 'get_period_end_year', 'get_currency_periods']
-
-
-    # Use select_related to optimize queries for ForeignKey fields
-    def get_queryset(self, request):
-        queryset = super().get_queryset(request)
-        queryset = queryset.select_related('country', 'period')
-        return queryset
-
-    def get_period_name(self, obj):
-        return obj.period.name
-
-    get_period_name.short_description = 'Period Name'
-
-    def get_period_start_year(self, obj):
-        return obj.period.start_year
-
-    get_period_start_year.short_description = 'Start Year'
-
-    def get_period_end_year(self, obj):
-        return obj.period.end_year
-
-    get_period_end_year.short_description = 'End Year'
-
-    def get_currency_periods(self, obj):
-        # Show detailed information for each currency period (name, start year, end year)
-        return ", ".join(
-            [f"{cp.name} ({cp.start_year} - {cp.end_year or 'present'})" for cp in obj.period.currency_periods.all()])
-
-    get_currency_periods.short_description = 'Currency Periods'
 
 class DemonymInlineForm(forms.ModelForm):
     class Meta:
@@ -142,10 +142,6 @@ class DemonymInline(admin.TabularInline):
 
 
 
-class CurrencyPeriodInline(admin.TabularInline):
-    model = CurrencyPeriod
-    extra = 1
-    can_delete = True
 
 # Admin for managing Language with inlines for alternative names and country relationships
 @admin.register(Language)
@@ -182,44 +178,39 @@ class DemonymAdminForm(forms.ModelForm):
             'alternative_demonyms': forms.Textarea(attrs={'rows': 2, 'cols': 60, 'style': 'resize: vertical;'}),
         }
 
-# @admin.register(Demonym)
-# class DemonymAdmin(admin.ModelAdmin):
-#     form = DemonymAdminForm
 
 @admin.register(Country)
 class CountryAdmin(admin.ModelAdmin):
-    # write annotation here
     form = CountryAdminForm
-    # list_display = ['flag_thumbnail_list', 'clickable_country_name', 'official_state_name', 'iso2', 'iso3', 'get_demonyms', 'get_languages', 'get_periods', 'created_at']
     list_display = [
         'flag_thumbnail_list',
         'clickable_country_name',
-        'official_state_name',
         'iso2',
         'iso3',
         'get_languages',
-        'get_historical_periods',
-        'get_administrative_units',
+        'continent',
+        'start_date',
+        'end_date',
         'created_at'
     ]
-    search_fields = ['iso_name', 'official_state_name', 'iso2', 'iso3']
+
+    search_fields = ['name', 'iso2', 'iso3']
     list_filter = ['created_at']
-    ordering = ['iso_name']
-    # inlines = [CountryLanguageInline, DemonymInline, CountryPeriodInline]
-    inlines = [CountryLanguageInline, DemonymInline, HistoricalPeriodInline, AdministrativeUnitInline]
+    ordering = ['name']
+    inlines = [CountryLanguageInline, DemonymInline, HistoricalPeriodInline, EntityInline]  # Removed CurrencyInline
 
     readonly_fields = ('flag_thumbnail',)
+    change_form_template = 'admin/foundation/country/change_form.html'
+
 
     def get_queryset(self, request):
         queryset = super().get_queryset(request)
         queryset = queryset.prefetch_related(
-            'historical_periods',
-            'administrative_units',
-
             'countrylanguage_set__language',
-
-            # Be mindful of depth here; try removing currency_periods if too many queries
-            'demonyms'
+            'demonyms',
+            'historical_periods',
+            'entities__currencies',
+            'entities__classification'
         )
         return queryset
 
@@ -228,13 +219,7 @@ class CountryAdmin(admin.ModelAdmin):
         return ", ".join([cl.language.name for cl in obj.countrylanguage_set.all()])
     get_languages.short_description = 'Languages'
 
-    def get_periods(self, obj):
-        cache_key = f"country_{obj.id}_periods"
-        periods = cache.get(cache_key)
-        if not periods:
-            periods = ", ".join([cp.period.name for cp in obj.countryperiod_set.all()])
-            cache.set(cache_key, periods, timeout=60 * 60)  # Cache for 1 hour
-        return periods
+
 
     def get_demonyms(self, obj):
         return ", ".join([demonym.main_demonym for demonym in obj.demonyms.all()])
@@ -259,131 +244,282 @@ class CountryAdmin(admin.ModelAdmin):
     def clickable_country_name(self, obj):
         """ Make the country name a clickable link to edit the country. """
         url = reverse('admin:foundation_country_change', args=[obj.pk])
-        return format_html('<a href="{}">{}</a>', url, obj.iso_name)
+        return format_html('<a href="{}">{}</a>', url, obj.name)
     clickable_country_name.short_description = 'Country Name'
 
-    def get_historical_periods(self, obj):
-        return ", ".join([hp.name for hp in obj.historical_periods.all()])
+    # def changeform_view(self, request, object_id=None, form_url='', extra_context=None):
+    #     if not extra_context:
+    #         extra_context = {}
+    #
+    #     if object_id:
+    #         # Existing object (Change view)
+    #         country = get_object_or_404(Country, pk=object_id)
+    #
+    #         # Fetch related historical periods
+    #         historical_periods = country.historical_periods.all()
+    #
+    #         # Fetch related entities
+    #         entities = country.entities.all()
+    #
+    #         # Fetch related currencies
+    #         currencies = Currency.objects.filter(entity__in=entities)
+    #
+    #         # Prepare timeline data
+    #         timeline_data, categories = self.prepare_timeline_data(country, historical_periods, entities, currencies)
+    #
+    #         # Add timeline data and categories to context as JSON
+    #         extra_context['timeline_data'] = json.dumps(timeline_data)
+    #         extra_context['categories'] = json.dumps(categories)
+    #         extra_context['country'] = country
+    #     else:
+    #         # Add view
+    #         extra_context['timeline_data'] = json.dumps([])
+    #         extra_context['categories'] = json.dumps([])
+    #         extra_context['country'] = None
+    #
+    #     return super().changeform_view(
+    #         request, object_id, form_url, extra_context=extra_context
+    #     )
+    #
+    # def changeform_view(self, request, object_id=None, form_url='', extra_context=None):
+    #     if not extra_context:
+    #         extra_context = {}
+    #
+    #     if object_id:
+    #         # Existing object (Change view)
+    #         country = get_object_or_404(Country, pk=object_id)
+    #
+    #         # Fetch related historical periods
+    #         historical_periods = country.historical_periods.all()
+    #
+    #         # Fetch related entities
+    #         entities = country.entities.all()
+    #
+    #         # Fetch related currencies via entities
+    #         currencies = Currency.objects.filter(entity__in=entities)
+    #
+    #         # Prepare timeline data
+    #         timeline_data, categories = self.prepare_timeline_data(country, historical_periods, entities, currencies)
+    #
+    #         # Add timeline data and categories to context as JSON
+    #         extra_context['timeline_data'] = json.dumps(timeline_data)
+    #         extra_context['categories'] = json.dumps(categories)
+    #         extra_context['country'] = country
+    #     else:
+    #         # Add view
+    #         extra_context['timeline_data'] = json.dumps([])
+    #         extra_context['categories'] = json.dumps([])
+    #         extra_context['country'] = None
+    #
+    #     return super().changeform_view(
+    #         request, object_id, form_url, extra_context=extra_context
+    #     )
+    #
+    # def prepare_timeline_data(self, country, historical_periods, entities, currencies):
+    #     timeline_data = []
+    #     categories = []
+    #     current_timestamp = int(timezone.now().timestamp()) * 1000  # Current timestamp in milliseconds
+    #
+    #     # Determine the timeline's end date
+    #     timeline_end_date = country.end_date if country.end_date else timezone.now().date()
+    #
+    #     # Helper function to convert date to UTC timestamp in milliseconds
+    #     def date_to_utc(date_obj):
+    #         if date_obj:
+    #             # Combine the date with midnight time to create a datetime object
+    #             dt = datetime.datetime.combine(date_obj, datetime.time.min)
+    #             # Make the datetime object timezone-aware in UTC
+    #             dt = timezone.make_aware(dt, datetime.timezone.utc)
+    #             # Return timestamp in milliseconds
+    #             return int(dt.timestamp()) * 1000
+    #         return None
+    #
+    #     # Collect all events with their start_date and end_date
+    #     events = []
+    #
+    #     # Add Country event if it has both start and end dates
+    #     if country.start_date and country.end_date:
+    #         events.append({
+    #             'name': f"Country: {country.name}",
+    #             'unique_name': f"Country: {country.name} ({country.id})",  # Ensure uniqueness
+    #             'start': date_to_utc(country.start_date),
+    #             'end': date_to_utc(country.end_date),
+    #             'level': 0,
+    #             'color': '#4CAF50'  # Updated color for Country
+    #         })
+    #     elif country.start_date:
+    #         events.append({
+    #             'name': f"Country: {country.name}",
+    #             'unique_name': f"Country: {country.name} ({country.id})",
+    #             'start': date_to_utc(country.start_date),
+    #             'end': current_timestamp,  # Set to current date if no end_date
+    #             'level': 0,
+    #             'color': '#4CAF50'
+    #         })
+    #
+    #     # Add Historical Periods if they have both start and end dates
+    #     for period in historical_periods:
+    #         if period.start_date and period.end_date:
+    #             events.append({
+    #                 'name': f"Historical Period: {period.name}",
+    #                 'unique_name': f"Historical Period: {period.name} ({period.id})",
+    #                 'start': date_to_utc(period.start_date),
+    #                 'end': date_to_utc(period.end_date),
+    #                 'level': 1,
+    #                 'color': '#2196F3'  # Updated color for Historical Period
+    #             })
+    #
+    #     # Add Entities and their Currencies if they have both start and end dates
+    #     for entity in entities:
+    #         if entity.start_date and entity.end_date:
+    #             events.append({
+    #                 'name': f"Entity: {entity.name}",
+    #                 'unique_name': f"Entity: {entity.name} ({entity.id})",
+    #                 'start': date_to_utc(entity.start_date),
+    #                 'end': date_to_utc(entity.end_date),
+    #                 'level': 2,
+    #                 'color': '#FFC107'  # Updated color for Entity
+    #             })
+    #
+    #             # Fetch currencies related to the entity that have both start and end dates
+    #             entity_currencies = entity.currencies.filter(start_date__isnull=False, end_date__isnull=False)
+    #             for currency in entity_currencies:
+    #                 events.append({
+    #                     'name': f"Currency: {currency.name}",
+    #                     'unique_name': f"Currency: {currency.name} ({currency.id})",
+    #                     'start': date_to_utc(currency.start_date),
+    #                     'end': date_to_utc(currency.end_date),
+    #                     'level': 3,
+    #                     'color': '#E91E63'  # Updated color for Currency
+    #                 })
+    #
+    #     if not events:
+    #         # No valid events to display
+    #         return timeline_data, categories
+    #
+    #     # Sort events by start_date
+    #     events.sort(key=lambda x: x['start'] if x['start'] else 0)
+    #
+    #     # Assign categories and y index
+    #     for event in events:
+    #         categories.append(event['unique_name'])  # Use unique_name to ensure uniqueness
+    #         timeline_data.append(event)
+    #
+    #     # Remove duplicates in categories while preserving order
+    #     seen = set()
+    #     categories = [x for x in categories if not (x in seen or seen.add(x))]
+    #
+    #     # Assign y index to each category
+    #     category_indices = {category: index for index, category in enumerate(categories)}
+    #
+    #     # Now, update timeline_data with 'y' index
+    #     for event in timeline_data:
+    #         event['y'] = category_indices[event['unique_name']]
+    #
+    #     return timeline_data, categories
 
-    get_historical_periods.short_description = 'Historical Periods'
 
-    def get_administrative_units(self, obj):
-        return ", ".join([au.name for au in obj.administrative_units.all()])
+    def changeform_view(self, request, object_id=None, form_url='', extra_context=None):
+        if not extra_context:
+            extra_context = {}
 
-    get_administrative_units.short_description = 'Administrative Units'
+        if object_id:
+            country = get_object_or_404(Country, pk=object_id)
 
+            # Fetch related data in one go to reduce repeated queries
+            historical_periods = country.historical_periods.all()
+            entities = country.entities.all()
+            currencies = Currency.objects.filter(entity__in=entities)
 
-@admin.register(Period)
-class PeriodAdmin(admin.ModelAdmin):
-    list_display = ('name', 'start_year', 'end_year', 'get_countries', 'get_currency_periods', 'coat_of_arms_list_thumbnail', 'created_at')
-    search_fields = ('name',)
-    list_filter = ('start_year', 'end_year')
-    inlines = [CountryPeriodInline] # CurrencyPeriodInline
+            # Prepare timeline data
+            timeline_data, categories = self.prepare_timeline_data(country, historical_periods, entities, currencies)
 
-    # Use this to include the thumbnail as a read-only field during editing
-    readonly_fields = ('coat_of_arms_thumbnail',)
+            # Add prepared data to the context
+            extra_context.update({
+                'timeline_data': json.dumps(timeline_data),
+                'categories': json.dumps(categories),
+                'country': country
+            })
+        else:
+            # For add view
+            extra_context.update({
+                'timeline_data': json.dumps([]),
+                'categories': json.dumps([]),
+                'country': None
+            })
 
-    fieldsets = (
-        (None, {
-            'fields': ('name', 'alternative_names', 'description', 'coat_of_arms', 'start_year', 'end_year', 'coat_of_arms_thumbnail'),
-        }),
-    )
+        return super().changeform_view(request, object_id, form_url, extra_context=extra_context)
 
-    def get_queryset(self, request):
-        queryset = super().get_queryset(request)
-        # Prefetch countries and currency periods for efficiency
-        queryset = queryset.prefetch_related('countries_related', 'currency_periods')
-        return queryset
+    def prepare_timeline_data(self, country, historical_periods, entities, currencies):
+        import logging
+        logger = logging.getLogger(__name__)
 
-    def get_countries(self, obj):
-        return ", ".join([country.iso_name for country in obj.countries_related.all()])
-    get_countries.short_description = 'Countries'
+        timeline_data = []
+        categories = []
+        current_timestamp = int(timezone.now().timestamp()) * 1000  # Current timestamp in milliseconds
 
-    def get_currency_periods(self, obj):
-        return ", ".join([currency_period.name for currency_period in obj.currency_periods.all()])
-    get_currency_periods.short_description = 'Currency Periods'
+        # Helper function to convert date to UTC timestamp in milliseconds
+        def date_to_utc(date_obj):
+            if date_obj:
+                # Combine the date with midnight time to create a datetime object
+                dt = datetime.datetime.combine(date_obj, datetime.time.min)
+                # Make the datetime object timezone-aware in UTC using datetime.timezone.utc
+                dt = timezone.make_aware(dt, datetime.timezone.utc)
+                # Return timestamp in milliseconds
+                return int(dt.timestamp()) * 1000
+            return None
 
-    def coat_of_arms_thumbnail(self, obj):
-        # Display the thumbnail of the coat of arms
-        if obj.coat_of_arms:
-            return format_html('<img src="{}" width="200" height="auto" />', obj.coat_of_arms.url)
-        return "No image available"
-    coat_of_arms_thumbnail.short_description = "Coat of Arms Thumbnail"
+        # Collect all events with their start_date and end_date
+        events = []
 
-    def coat_of_arms_list_thumbnail(self, obj):
-        # Display a smaller version of the coat of arms in the list view
-        if obj.coat_of_arms:
-            return format_html('<img src="{}" width="50" height="auto" />', obj.coat_of_arms.url)
-        return "No image available"
-    coat_of_arms_list_thumbnail.short_description = "Coat of Arms"
+        # Add Country event if it has both start and end dates
+        if country.start_date:
+            events.append({
+                'name': f"Country: {country.name}",
+                'unique_name': f"Country: {country.name} ({country.id})",
+                'start': date_to_utc(country.start_date),
+                'end': date_to_utc(country.end_date) if country.end_date else current_timestamp,
+                'level': 0,
+                'color': '#4CAF50'
+            })
 
-@admin.register(HistoricalPeriod)
-class HistoricalPeriodAdmin(admin.ModelAdmin):
-    list_display = ('name', 'start_year', 'end_year', 'get_countries', 'get_currency_periods', 'coat_of_arms_list_thumbnail', 'created_at')
-    search_fields = ('name',)
-    list_filter = ('start_year', 'end_year')
-    inlines = [CurrencyPeriodInline]
+        # Helper function to add events
+        def add_events(items, level, color, label_prefix):
+            for item in items:
+                if item.start_date:
+                    events.append({
+                        'name': f"{label_prefix}: {item.name}",
+                        'unique_name': f"{label_prefix}: {item.name} ({item.id})",
+                        'start': date_to_utc(item.start_date),
+                        'end': date_to_utc(item.end_date) if item.end_date else current_timestamp,
+                        'level': level,
+                        'color': color
+                    })
+                else:
+                    logger.warning(f"Skipping {label_prefix} '{item.name}' because it lacks a valid start date.")
 
-    readonly_fields = ('coat_of_arms_thumbnail',)
+        # Add Historical Periods, Entities, and Currencies
+        add_events(historical_periods, 1, '#2196F3', 'Historical Period')
+        add_events(entities, 2, '#FFC107', 'Entity')
+        add_events(currencies, 3, '#E91E63', 'Currency')
 
-    def get_queryset(self, request):
-        queryset = super().get_queryset(request)
-        queryset = queryset.prefetch_related('country', 'currency_periods')
-        return queryset
+        if not events:
+            return [], []
 
-    def get_countries(self, obj):
-        return obj.country.iso_name
-    get_countries.short_description = 'Country'
+        # Sort events by start date and assign unique y index
+        events.sort(key=lambda x: x['start'])
+        categories = [event['unique_name'] for event in events]
+        category_indices = {category: index for index, category in enumerate(categories)}
 
-    def get_currency_periods(self, obj):
-        return ", ".join([currency_period.name for currency_period in obj.currency_periods.all()])
-    get_currency_periods.short_description = 'Currency Periods'
+        # Assign y index to events
+        for event in events:
+            event['y'] = category_indices[event['unique_name']]
 
-    def coat_of_arms_thumbnail(self, obj):
-        if obj.coat_of_arms:
-            return format_html('<img src="{}" width="200px" />', obj.coat_of_arms.url)
-        return "-"
-    coat_of_arms_thumbnail.short_description = "Coat of Arms Thumbnail"
+        return events, categories
 
-    def coat_of_arms_list_thumbnail(self, obj):
-        if obj.coat_of_arms:
-            return format_html('<img src="{}" width="50px" />', obj.coat_of_arms.url)
-        return "-"
-    coat_of_arms_list_thumbnail.short_description = "Coat of Arms"
-
-
-@admin.register(AdministrativeUnit)
-class AdministrativeUnitAdmin(admin.ModelAdmin):
-    list_display = ('name', 'country', 'type', 'start_year', 'end_year', 'created_at')
-    search_fields = ('name', 'country__iso_name')
-    list_filter = ('country',)
-    inlines = [CurrencyPeriodInline]
-
-    change_list_template = "admin/foundation/change_list.html"
-    add_form_template = "admin/foundation/change_form.html"
-
-    custom_message = (
-            "<div style='margin-bottom: 20px; padding: 10px; border-left: 3px solid #007bff; background-color: #e9ecef;'>"
-            "<strong>Administrative Unit:</strong> Administrative Unit is a smaller, distinct part of a country that can have "
-            "unique characteristics like separate currency periods or historical periods. For example: Germany, throughout its history, "
-            "was made up of many states, principalities, and territories, especially before unification in 1871."
-            "</div>"
-    )
-
-    def changelist_view(self, request, extra_context=None):
-        extra_context = extra_context or {}
-        extra_context['custom_message'] = mark_safe(self.custom_message)
-        return super().changelist_view(request, extra_context=extra_context)
-
-    def add_view(self, request, form_url='', extra_context=None):
-        # Adding custom descriptive message to the add view for Administrative Unit
-        extra_context = extra_context or {}
-        extra_context['custom_message'] = mark_safe(self.custom_message)
-        return super().add_view(request, form_url, extra_context=extra_context)
-
-
-
-    def get_queryset(self, request):
-        queryset = super().get_queryset(request)
-        queryset = queryset.select_related('country').prefetch_related('currency_periods')
-        return queryset
+@admin.register(Entity)
+class EntityAdmin(admin.ModelAdmin):
+    list_display = ('name', 'country', 'classification', 'start_date', 'end_date')
+    search_fields = ('name', 'country__name', 'classification__type')
+    list_filter = ('country', 'classification')
+    inlines = [CurrencyInline]
