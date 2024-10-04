@@ -86,8 +86,8 @@ class Country(models.Model):
     iso3 = models.CharField(max_length=3, unique=True, null=True, blank=True)
     native_names = models.TextField(blank=True, null=True, help_text="Native names of the country (e.g., Deutschland, Россия)")
     alternative_names = models.TextField(blank=True, null=True, help_text="Alternative names for the country (e.g., 'USA', 'UK')")
-    # continent = models.CharField(max_length=2, choices=CONTINENT_CHOICES, help_text="Continent of the country", null=True, blank=True)
-    continent = models.ForeignKey(Continent, on_delete=models.CASCADE, related_name='countries')
+    continent = models.ForeignKey(Continent, on_delete=models.CASCADE, related_name='countries', null=True, blank=True)
+    # continent = models.ForeignKey(Continent, on_delete=models.CASCADE, related_name='countries')
 
     start_date = models.DateField(null=True, blank=True)
     end_date = models.DateField(null=True, blank=True)

@@ -83,9 +83,6 @@ sudo systemctl daemon-reload
 
 Open the Nginx configuration file
 sudo nano /etc/nginx/sites-available/storefront
-
-
-
 Check Nginx Status
 Check if Nginx is running:
 sudo systemctl status nginx

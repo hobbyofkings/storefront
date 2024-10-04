@@ -2,12 +2,16 @@
 to connect to the server:
 scp -i "C:\Users\Kompiuteris\Desktop\SSH\amadesa.pem" "C:\Users\Kompiuteris\Desktop\SSH\amadesa.pem" ubuntu@67.202.22.239:~
 ssh -i "C:\Users\Kompiuteris\Desktop\SSH\amadesa.pem" ubuntu@67.202.22.239
+psql -h amadesadb.cp8a808oguxu.us-east-1.rds.amazonaws.com -p 5432 -U amadesa -d amadesadb
 
 set DJANGO_ENV=production
 export DJANGO_ENV=production
 
 
 source venv/bin/activate
+
+set DJANGO_ENV=production
+export DJANGO_ENV=production
 
 git pull origin amazon
 git stash
