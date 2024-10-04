@@ -16,8 +16,6 @@ export DJANGO_ENV=production
 export DJANGO_ENV=development
 echo $DJANGO_ENV
 
-
-
 On Your Linux Server for Production: Set DJANGO_ENV=production:
 export DJANGO_ENV=production then run the server
 Alternatively, you can set the DJANGO_ENV in your .env files or use a system-level configuration like Supervisor or systemd for production.
