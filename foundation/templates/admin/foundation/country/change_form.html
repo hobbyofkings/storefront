@@ -1,4 +1,3 @@
-
 {% extends "admin/change_form.html" %}
 {% load static %}
 
@@ -10,82 +9,147 @@
         <div id="timeline-container" style="width: 100%; height: auto;"></div>
 
         <script src="https://code.highcharts.com/gantt/highcharts-gantt.js"></script>
-        <script src="https://code.highcharts.com/gantt/highcharts-gantt-more.js"></script>
         <script>
             document.addEventListener('DOMContentLoaded', function () {
-                const timelineData = {{ timeline_data|safe }};
-                const categories = {{ categories|safe }};
+                try {
+                    // Parse timeline data and categories from Django context
+                    const timelineData = {{ timeline_data|safe }};
+                    const categories = {{ categories|safe }};
 
-                if (timelineData.length > 0 && categories.length > 0) {
-                    const todayUTC = Date.UTC(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
-                    const countryEndDate = {% if country.end_date %}"{{ country.end_date|date:"Y-m-d" }}" {% else %}null{% endif %};
-                    const maxDate = countryEndDate ? Date.UTC(...countryEndDate.split('-')) : todayUTC;
+                    // Debugging the data
+                    console.log('Timeline Data:', timelineData);
+                    console.log('Categories:', categories);
 
-                    const chartHeight = Math.max(categories.length * 60, 300);
+                    // Build a mapping from categories to their model types, unique IDs, and colors for linking and styling
+                    const categoryMapping = {};
+                    timelineData.forEach(item => {
+                        categoryMapping[item.name] = {
+                            modelType: item.model_type,
+                            uniqueId: item.unique_id,
+                            color: item.color,
+                            startDate: item.start,
+                            endDate: item.end
+                        };
+                    });
 
-                    Highcharts.ganttChart('timeline-container', {
-                        tooltip: {
-                            pointFormat: `<span style="color:{point.color}; font-weight:bold;">{point.name}</span><br/>
-                                          Start: {point.start:%e %b %Y}<br/>
-                                          End: {point.end:%e %b %Y}`
-                        },
-                        xAxis: {
-                            currentDateIndicator: true,
-                            min: Math.min(...timelineData.map(e => e.start)),
-                            max: maxDate,
-                            scrollbar: { enabled: true }
-                        },
-                        yAxis: {
-                            categories: categories,
-                            uniqueNames: true,
-                            reversed: true,
-                            labels: {
-                                useHTML: true,
-                                align: 'left',
-                                formatter: function () {
-                                    let indent = { 'Currency: ': 3, 'Entity: ': 2, 'Historical Period: ': 1 }[this.value.split(': ')[0]] || 0;
-                                    return `<span style="padding-left: ${indent * 20}px;">${this.value.trim()}</span>`;
-                                }
-                            }
-                        },
-                        series: [{
-                            name: 'Timeline',
-                            data: timelineData.map(item => ({
-                                name: item.name,
-                                start: item.start,
-                                end: item.end,
-                                color: item.color,
-                                y: item.y
-                            })),
-                            point: {
+                    // Check if data is available
+                    if (timelineData.length > 0 && categories.length > 0) {
+                        const todayUTC = Date.UTC(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
+                        const countryEndDate = {% if country.end_date %}"{{ country.end_date|date:"Y-m-d" }}" {% else %}null{% endif %};
+                        const maxDate = countryEndDate ? Date.UTC(...countryEndDate.split('-')) : todayUTC;
+
+                        // Set chart height dynamically based on the number of categories
+                        const chartHeight = Math.max(categories.length * 60, 300);
+
+                        // Render Highcharts Gantt chart
+                        Highcharts.ganttChart('timeline-container', {
+                            chart: {
+                                height: chartHeight,
+                                zoomType: 'x',
                                 events: {
-                                    click: function () {
-                                        const match = this.name.match(/\((\d+)\)$/);
-                                        if (match) {
-                                            const eventType = this.name.split(":")[0].trim().toLowerCase().replace(' ', '_');
-                                            window.location.href = `/admin/foundation_${eventType}/change/${match[1]}/`;
+                                    load: function () {
+                                        console.log("Chart successfully loaded");
+                                    }
+                                }
+                            },
+                            title: {
+                                text: 'Country Timeline'
+                            },
+                            tooltip: {
+                                pointFormat: `<span style="color:{point.color}; font-weight:bold;">{point.name}</span><br/>
+                                              Start: {point.start:%e %b %Y}<br/>
+                                              End: {point.end:%e %b %Y}`
+                            },
+                            xAxis: {
+                                currentDateIndicator: true,
+                                min: Math.min(...timelineData.map(e => e.start)),
+                                max: maxDate,
+                                scrollbar: { enabled: true }
+                            },
+                            yAxis: {
+                                categories: categories,
+                                uniqueNames: true,
+                                reversed: true,
+                                labels: {
+                                    useHTML: true,
+                                    align: 'left',
+                                    formatter: function () {
+                                        const category = this.value.trim();
+                                        const data = categoryMapping[category];
+                                        if (data && data.uniqueId && data.modelType) {
+                                            const link = `/admin/foundation/${data.modelType}/${data.uniqueId}/change/`;
+                                            const color = data.color || 'rgb(0, 0, 0)'; // Default to black if color is not defined
+                                            return `<a href="${link}" target="_blank" style="color: ${color}; text-decoration: none;">${category}</a>`;
+                                        } else {
+                                            let indent = { 'Currency: ': 3, 'Entity: ': 2, 'Historical Period: ': 1 }[category.split(': ')[0]] || 0;
+                                            return `<span style="padding-left: ${indent * 20}px;">${category}</span>`;
                                         }
                                     }
                                 }
-                            }
-                        }],
-                        chart: { height: chartHeight, zoomType: 'x' },
-                        credits: { enabled: false },
-                        responsive: {
-                            rules: [{
-                                condition: { maxWidth: 600 },
-                                chartOptions: {
-                                    yAxis: { labels: { style: { fontSize: '12px' } } },
-                                    series: [{ dataLabels: { style: { fontSize: '12px' } } }]
+                            },
+                            series: [{
+                                name: 'Timeline',
+                                data: timelineData.map(item => ({
+                                    name: item.name,
+                                    start: item.start,
+                                    end: item.end,
+                                    color: item.color,
+                                    y: item.y,
+                                    uniqueId: item.unique_id, // Using unique_id from backend
+                                    modelType: item.model_type  // Using model type to create correct link
+                                })),
+                                point: {
+                                    events: {
+                                        click: function () {
+                                            if (this.options.uniqueId && this.options.modelType) {
+                                                const link = `/admin/foundation/${this.options.modelType}/${this.options.uniqueId}/change/`;
+                                                window.location.href = link;
+                                            } else {
+                                                console.error("Invalid unique ID or model type", this.options);
+                                            }
+                                        }
+                                    }
+                                },
+                                dataLabels: {
+                                    enabled: true,
+                                    useHTML: true,
+                                    formatter: function () {
+                                        if (this.point.uniqueId && this.point.modelType) {
+                                            const link = `/admin/foundation/${this.point.modelType}/${this.point.uniqueId}/change/`;
+                                            const startDate = Highcharts.dateFormat('%e %b %Y', this.point.start);
+                                            const endDate = Highcharts.dateFormat('%e %b %Y', this.point.end);
+                                            const labelText = `${this.point.name} (${startDate} - ${endDate})`;
+                                            return `<a href="${link}" target="_blank" style="color: black; text-decoration: none; font-size: 1em; font-weight: bold;">${labelText}</a>`;
+                                        } else {
+                                            console.error("Invalid unique ID or model type for label", this.point);
+                                            return this.point.name;
+                                        }
+                                    }
                                 }
-                            }]
-                        },
-                        accessibility: { enabled: true }
-                    });
-                } else {
-                    document.getElementById('timeline-container').innerHTML = "<p>No timeline data available for this country.</p>";
+                            }],
+                            credits: { enabled: false },
+                            responsive: {
+                                rules: [{
+                                    condition: { maxWidth: 600 },
+                                    chartOptions: {
+                                        yAxis: { labels: { style: { fontSize: '12px' } } },
+                                        series: [{ dataLabels: { style: { fontSize: '12px' } } }]
+                                    }
+                                }]
+                            },
+                            accessibility: { enabled: true }
+                        });
+                    } else {
+                        document.getElementById('timeline-container').innerHTML = "<p>No timeline data available for this country.</p>";
+                    }
+                } catch (e) {
+                    console.error("Error loading timeline chart:", e);
+                    document.getElementById('timeline-container').innerHTML = "<p>An error occurred while loading the timeline.</p>";
                 }
             });
         </script>
     {% endif %}
 {% endblock %}
+
+
+
