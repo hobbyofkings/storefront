@@ -11,15 +11,46 @@
 
 Collectibles Database is your all-in-one platform for everything collectible: coins, banknotes, stamps, cameras, and more. Designed for enthusiasts, researchers, and collectors, our mission is clear: provide the most comprehensive, accurate, and user-friendly resource in the collectibles world.
 
+It will make a huge impact for these segments: ***Researchers, Collectors, Investors, and Dealers***.
+
+### 1. Scholars, Students, and Researchers
+Platform isn’t just a database; it’s a resource hub designed for in-depth exploration. From meticulously cataloged coins and banknotes to AI-powered image recognition and real sales data, we offer tools to elevate your research. Whether you're studying history, analyzing trends, or training cutting-edge AI models, our platform equips you with:
+
+- Precise Data: Explore clean, structured data free of duplicates, enriched with detailed tags and specifications.
+- Research-Ready Images: Download labeled, high-quality images for experiments or training datasets.
+- Trends and Insights: Access real sales data to uncover historical trends and valuation patterns.
+- With us, history meets innovation, making Amadesa.com the ultimate ally for curious minds.
+
+### 2. Businesses (Dealers, Auction Houses, Museums, and Numismatists)
+Revolutionize how you operate in the collectibles industry with Amadesa.com. Our platform offers businesses the tools they need to thrive in a competitive market:
+
+- Market Intelligence: Analyze real sales data to understand pricing trends, demand, and rarity metrics, empowering informed decisions.
+- Efficient Cataloging: Leverage our AI-powered tools to manage inventory, enhance product listings, and attract discerning buyers.
+- Enhanced Exposure: Connect with a global community of collectors, researchers, and enthusiasts.
+- Credibility and Trust: Provide transparent valuations backed by historical data, bolstering customer confidence.
+- Whether you're auctioning a rare coin, managing a museum collection, or selling online, Amadesa.com is your partner in precision and profitability.
+
+### 3. Enthusiasts and Everyday Collectors
+Step into the world of collectibles with confidence, backed by Amadesa.com. Whether you're just starting out or looking to assess the value of a cherished item, we make it simple and rewarding:
+
+- Know Your Treasure: Discover the true worth of your collectibles with real sales data and detailed rarity insights.
+- Learn and Grow: Dive into trends, historical contexts, and market values to become a more informed collector.
+- No More Guesswork: Our app transforms collecting into a tech-driven, stress-free hobby with all the knowledge you need at your fingertips.
+- Join the Community: Connect with like-minded individuals, share stories, and grow your passion.
+
+
+
+
 ## What Makes Us Different?
+
+### Real Sales Data, Real Insights ###
+Forget speculative asking prices. Our platform tracks real sales, providing historical prices, trends, and dates of transactions. Whether you’re a collector or an investor, our insights will empower you to make informed decisions. Auctions won’t feel like a gamble anymore; you’ll know exactly what to bid, why, and when. From rarity metrics to price recommendations and risk factors, we make collectibles investing as precise as stock trading.
+
 ### Rich Data & Powerful Scraping ###
 Imagine a database that consolidates data from auctions, catalogs, and countless other sources. Our platform scrapes images, specifications, and sales data to build an organized, tag-rich library. Every collectible will be meticulously cataloged, free of duplicates or mistakes. And to achieve near-perfect accuracy, we pair cutting-edge automation with human expertise because even the best AI needs a keen eye for details like text, names, and inscriptions.
 
 ### AI-Powered Image Recognition ###
 With clean, well structured data and tons of labeled images, we aim to build the most efficient neural networks for image recognition. Our API will enable developers, students, and researchers to tap into this treasure trove. Need a batch of images with precise tags and labels? Download them effortlessly - ready for experiments or training AI models. This isn’t just a tool; it’s a launchpad for innovation.
-
-### Real Sales Data, Real Insights ###
-Forget speculative asking prices. Our platform tracks real sales, providing historical prices, trends, and dates of transactions. Whether you’re a collector or an investor, our insights will empower you to make informed decisions. Auctions won’t feel like a gamble anymore; you’ll know exactly what to bid, why, and when. From rarity metrics to price recommendations and risk factors, we make collectibles investing as precise as stock trading.
 
 ### Simplifying Collecting for Everyone ###
 Coin collecting used to be a daunting hobby, requiring deep knowledge and expertise. Not anymore. Our app transforms the experience, delivering everything you need - facts, values, trends - at your fingertips. No more guesswork, no more barriers. With us, anyone can confidently dive into the world of collectibles.
@@ -110,9 +141,27 @@ To set up the project locally. We will call it **storefront***:
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    
 3. **Install dependencies:**
-
+if you are willing to deploy it to ubuntu server, please mute 'psycopg2' or change it to 'psycopg2-binary' in the requirements.txt file because it may cause some issues with the installation on the ubuntu server.
     ```bash
     pip install -r requirements.txt
+
+if you forget to mute 'psycopg2' or change it to 'psycopg2-binary' in the requirements.txt file, you can write this command
+
+```bash
+    pip install psycopg2-binary
+   ```
+and this one
+```bash
+while read line; do
+    if [[ $line != *"psycopg2"* ]]; then
+        pip install "$line"
+    fi
+done < requirements.txt
+```
+
+
+
+
    
 4. **Setup Environment Variables: Create a two .env files (.env and .env.dev) in the main app folder inside settings (storefront/settings) with the following configuration:**
 
@@ -252,6 +301,88 @@ Congrats! now you are connected to the Ubuntu server. it should look like this:
 ```bash
 ubuntu@ip-172-31-87-241:~$
    ```
+
+2. ### Update the system (Ubuntu):
+to update the system, I need to run the following commands:
+    
+```bash
+sudo apt-get update
+sudo apt-get upgrade
+   ```
+3. ### Activate the virtual environment:
+to activate the virtual environment, I need to run the following commands:
+    
+```bash
+cd ~/storefront
+source venv/bin/activate
+   ```
+
+if the django server is running we can check the status of the server using the following command:
+    
+```bash
+sudo systemctl status gunicorn
+   ```
+if not working, try this one:
+        
+```bash
+   ps aux | grep gunicorn
+   ```
+
+logs can be checked using the following command:
+    
+```bash
+sudo cat /var/log/syslog
+  ```
+        
+to check if tmux is running
+
+```bash
+    ps aux | grep tmux
+```
+
+should be Tmux session running with name gunicorn (if not, you can start it using the following command)
+    
+```bash
+tmux new-session -s gunicorn
+   ```
+to attach to the session
+        
+```bash
+    tmux attach-session -t gunicorn
+  ```
+to detach from the session**
+        
+```bash
+    Ctrl+b, then d
+  ```
+
+list of all tmux sessions
+        
+```bash
+    tmux list-sessions
+  ```
+
+## run gunicon server in the tmux session
+to start the gunicorn server, I need to run the following command:
+    
+```bash
+  /home/ubuntu/storefront/venv/bin/gunicorn --env DJANGO_SETTINGS_MODULE=storefront.settings.prod storefront.wsgi:application --bind 0.0.0.0:8000 --log-level debug --workers 3
+  ```
+
+## Github updates
+to update the project from the github, I need to run the following commands:
+    
+```bash
+cd ~/storefront
+git pull origin amazon
+  ```
+if there are any changes, I need to restart the gunicorn server using the following command:
+        
+```bash
+    sudo systemctl restart gunicorn
+```
+
+
 
 
 
