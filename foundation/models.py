@@ -12,6 +12,7 @@ import os
 import io
 from django.core.exceptions import ValidationError
 from django.utils import timezone
+from django.core.validators import MinLengthValidator
 
 
 
@@ -28,8 +29,10 @@ class EntityClassification(models.Model):
 
 class Language(models.Model):
     name = models.CharField(max_length=100, unique=True)
-    iso2 = models.CharField(max_length=2, unique=True, null=True, blank=True)
-    iso3 = models.CharField(max_length=3, unique=True, null=True, blank=True)
+
+    iso2 = models.CharField(max_length=2, unique=True, null=True, blank=True, validators=[MinLengthValidator(2)])
+    iso3 = models.CharField(max_length=3, unique=True, null=True, blank=True, validators=[MinLengthValidator(3)])
+
     native_name = models.CharField(max_length=100, unique=True, null=True, blank=True, help_text="Name of the language in its native script")
     created_at = models.DateTimeField(auto_now_add=True)
 
@@ -82,8 +85,8 @@ class Country(models.Model):
     ]
     name = models.CharField(max_length=100, unique=True, help_text="ISO name of the country (e.g., United States, United Kingdom). A Country represents a sovereign state—an independent nation with defined borders, a permanent population, a government, and the capacity to enter into relations with other states. Countries can span various historical periods, maintaining continuity despite changes in governance, leadership, or political systems.")
     # official_state_name = models.CharField(max_length=100, unique=False, null=True, blank=True, help_text="Official name of the country (e.g., United States of America, United Kingdom of Great Britain and Northern Ireland)")
-    iso2 = models.CharField(max_length=2, unique=True, null=True, blank=True)
-    iso3 = models.CharField(max_length=3, unique=True, null=True, blank=True)
+    iso2 = models.CharField(max_length=2, unique=True, null=True, blank=True, validators=[MinLengthValidator(2)])
+    iso3 = models.CharField(max_length=3, unique=True, null=True, blank=True, validators=[MinLengthValidator(3)])
     native_names = models.TextField(blank=True, null=True, help_text="Native names of the country (e.g., Deutschland, Россия)")
     alternative_names = models.TextField(blank=True, null=True, help_text="Alternative names for the country (e.g., 'USA', 'UK')")
     continent = models.ForeignKey(Continent, on_delete=models.CASCADE, related_name='countries', null=True, blank=True)
@@ -113,11 +116,20 @@ class Country(models.Model):
     def __str__(self):
         return self.name
 
+    def clean(self):
+        """Custom validation logic for the model."""
+        # Check if start_date is after end_date
+        if self.start_date and self.end_date and self.start_date > self.end_date:
+            raise ValidationError("Start date must be before or equal to the end date.")
+        # Additional custom validation can go here if needed.
+
+
+
     def save(self, *args, **kwargs):
+        """Save method with flag resizing logic."""
         if self.flag:
             print("Flag detected, starting resizing process...")  # Debug statement
             img = Image.open(self.flag)
-
             print(f"Original image size: {img.size}")  # Debug statement
 
             # Resize image to 50 width, maintaining aspect ratio
@@ -125,7 +137,6 @@ class Country(models.Model):
             aspect_ratio = img.height / img.width
             height = int(width * aspect_ratio)
             img = img.resize((width, height), Image.LANCZOS)  # Use LANCZOS instead of ANTIALIAS
-
             print(f"Resized image size: {img.size}")  # Debug statement
 
             # Save the resized image in memory
@@ -137,7 +148,22 @@ class Country(models.Model):
             # Update the image field with the resized image
             self.flag = img_content
 
+        # Call the clean method to perform validations
+        self.clean()
+
         super().save(*args, **kwargs)
+
+    def country_flag_thumbnail(self):
+        """Generate a thumbnail for the country flag."""
+        if self.flag:
+            return format_html('<img src="{}" width="50px" />', self.flag.url)
+        return "-"
+
+    country_flag_thumbnail.short_description = "Flag Thumbnail"
+
+
+
+
 
 
     def country_flag_thumbnail(self):
@@ -212,15 +238,40 @@ class Entity(models.Model):
 
 
 class HistoricalPeriod(models.Model):
-    country = models.ForeignKey(Country, on_delete=models.CASCADE, related_name='historical_periods')
-    name = models.CharField(max_length=255)
-    start_date = models.DateField(null=True, blank=True)
-    end_date = models.DateField(null=True, blank=True)
-    description = models.TextField(blank=True)
+    country = models.ForeignKey(
+        Country,
+        on_delete=models.CASCADE,
+        related_name='historical_periods',
+        help_text="Country associated with this historical period."
+    )
+    name = models.CharField(max_length=255, help_text="Name of the historical period.")
+    start_date = models.DateField(
+        null=True,
+        blank=True,
+        help_text="The starting date of the historical period (optional)."
+    )
+    end_date = models.DateField(
+        null=True,
+        blank=True,
+        help_text="The ending date of the historical period (optional)."
+    )
+    description = models.TextField(
+        blank=True,
+        help_text="Optional description providing additional context about the historical period."
+    )
+
+    class Meta:
+        verbose_name = "Historical Period"
+        verbose_name_plural = "Historical Periods"
+        ordering = ['start_date', 'name']  # Order by start date first, then by name
 
     def __str__(self):
         return f"{self.name} ({self.country.name})"
 
+    def clean(self):
+        # Ensure start_date is before end_date
+        if self.start_date and self.end_date and self.start_date > self.end_date:
+            raise ValidationError("Start date must be before end date.")
 
 
 
