@@ -19891,3 +19891,9 @@ AttributeError: 'CountryAdmin' object has no attribute 'prepare_timeline_data'
 2024-12-04 19:28:41,584 (INFO) - django.utils.autoreload - C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3\foundation\models.py changed, reloading.
 2024-12-04 19:28:42,110 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
 2024-12-04 19:28:58,035 (INFO) - django.utils.autoreload - Watching for file changes with StatReloader
+2024-12-04 19:29:44,674 (WARNING) - silk.model_factory - Response to request with pk 2800f1b0-0506-4576-aa19-26650bb9ba7f has content type text/javascript but was unable to parse it
+2024-12-04 19:29:48,656 (WARNING) - silk.model_factory - Response to request with pk 81df2cdd-a5f2-436b-a63f-d6626fcbe739 has content type text/javascript but was unable to parse it
+2024-12-04 19:29:57,763 (WARNING) - silk.model_factory - Response to request with pk 7b32d95c-53b8-4ccf-b785-da5ec0625643 has content type text/javascript but was unable to parse it
+2024-12-04 19:30:54,482 (WARNING) - silk.model_factory - Response to request with pk d8507687-b5e9-4384-82c1-acf5296ca14d has content type text/javascript but was unable to parse it
+2024-12-04 19:30:57,248 (WARNING) - silk.model_factory - Response to request with pk 6d9be5b1-904c-48d1-8f4e-270cf39bc0c7 has content type text/javascript but was unable to parse it
+2024-12-04 19:31:09,734 (WARNING) - silk.model_factory - Response to request with pk 23d94715-b9bd-46f2-8ba8-8833fe1b9637 has content type text/javascript but was unable to parse it
