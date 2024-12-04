@@ -9,3 +9,8 @@ ENV/
 env_new/
 .venv/
 .env
+storefrront/settings/.env
+storefront/settings/.env.dev
+storefront/settings/.env.prod
+/txt
+

@@ -78,37 +78,23 @@ Because with us, the future of collecting is now.
 While we talk about the world chaning ideas, we need to pass the exam first. So, let's start with the requirements.
 ### Final Full-Stack with Python Project (max grade 10)
 #### Functionality:
-- Register
-- Log in
-- Create a new category (only when logged in)
-- Edit a category (only when logged in)
-- Delete a category (only when logged in)
-- Create a new note (only when logged in)
-- A note should have a title and note text.
-- There should also be an option to add images to the note.
-- It should allow assigning the note to a specific category.
-- Edit a note (only when logged in)
-- Delete a note (only when logged in)
-- Search for notes by title (only when logged in)
-- Filter notes by category (only when logged in)
+- Register () -> not implemented because the project is private
+- Log in (inplemented, inside django)
+- Create a new category (only when logged in) -> implemented
+- Edit a category (only when logged in) -> implemented
+- Delete a category (only when logged in) -> implemented
+- Create a new note (only when logged in) -> implemented
+- A note should have a title and note text. -> implemented
+- There should also be an option to add images to the note. -> implemented
+- It should allow assigning the note to a specific category. -> implemented
+- Edit a note (only when logged in) -> implemented
+- Delete a note (only when logged in) -> implemented
+- Search for notes by title (only when logged in) -> implemented
+- Filter notes by category (only when logged in) -> implemented
 
 
-## Technology Stack
+## Technology Stack short description
 This private project is hosted on Amazon Web Services (AWS) with a scalable architecture, leveraging Amazon EC2 for application deployment, Amazon RDS (PostgreSQL) for database management, and Route 53 for domain management. To handle large storage requirements, images are stored on a cost-effective SAS/NAS server, ensuring affordability for massive datasets exceeding 100 TB.
-
-
-
-## Features
-
-📚 Extensive Database: Detailed information and specifications for coins, banknotes, postage stamps, cameras, and more.
-
-🖼️ Massive Image Library: High-quality images hosted on an SAS/NAS server for cost-efficient storage.
-
-🔍 Search & Filter: Robust search and filtering capabilities for narrowing down collectibles.
-
-🗂️ Category Organization: Collectibles organized by categories, periods, and types.
-
-🌐 Scalable Infrastructure: Hosted on AWS with support for high traffic and large datasets.
 
 
 ## Architecture
@@ -120,7 +106,19 @@ This private project is hosted on Amazon Web Services (AWS) with a scalable arch
 
 **Storage**: Images stored on SAS/NAS servers for cost-effective large-scale storage. (not implemented yet)
 
+**Backend**: Django REST framework for API development
 
+
+# Libraries used in the project (only the most important ones)
+- Django Debug Toolbar: For debugging and performance optimization
+- Django REST framework: For building APIs
+- Redis: For caching and session management
+- Celery: For task scheduling and background processing
+- PostgreSQL: For the database
+- Gunicorn: For running the Django application
+- Nginx: For serving static files and reverse proxying
+- Docker: For containerization and deployment
+- Djoser: For user authentication and registration
 
 
 
@@ -219,11 +217,30 @@ before starting the server we need to set the environment variable (it will be u
    export DJANGO_ENV=development
    echo $DJANGO_ENV
    ```
+While I'm doing this text for me, I will use my privilege to leave personal notes for myself. I will use the following command to set the environment variable in my machine
+in powershell: (run as administrator)
+
+   ```bash   
+   cd "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3"
+   .\env\Scripts\Activate  
+   # Set the environment variable, only one of the following. Comment out 
+   $env:DJANGO_ENV = "production" # For production 
+   $env:DJANGO_ENV = "development" # For development
+   echo $env:DJANGO_ENV
+   python manage.py runserver      
+```
+   
+iMac / Linux
+   ```bash
+   export DJANGO_ENV=production
+   echo $DJANGO_ENV  
+   ```
 
 9. **Start the development server:**
 
-    ```bash
-    python manage.py runserver
+```bash
+python manage.py runserver
+ ```
    
 Access the application at http://127.0.0.1:8000/.
 
@@ -286,7 +303,7 @@ While this overview highlights the essential steps, you’ll need to conduct det
 
 
 1. ### Connect to the server:
-to do this properly I am using the SSH key, so I need to send the key to the server first. My SSH is saved in my desktop, so I need to send it to the server. I am using the scp command to send the key to the server.
+I am using the SSH key, so I need to send the key to the server first. My SSH is saved in my desktop, so I need to send it to the server. I am using the scp command to send the key to the server.
 
 ```bash
 scp -i "C:\Users\Kompiuteris\Desktop\SSH\amadesa.pem" "C:\Users\Kompiuteris\Desktop\SSH\amadesa.pem" ubuntu@67.202.22.239:~
@@ -317,242 +334,76 @@ cd ~/storefront
 source venv/bin/activate
    ```
 
-if the django server is running we can check the status of the server using the following command:
-    
-```bash
-sudo systemctl status gunicorn
-   ```
-if not working, try this one:
-        
-```bash
-   ps aux | grep gunicorn
-   ```
 
 logs can be checked using the following command:
     
 ```bash
 sudo cat /var/log/syslog
   ```
+
+### 4. Run Tmux (To run multiple terminals in one terminal)
+tmux (for the session, tmux is an open-source terminal multiplexer for Unix-like operating systems. It allows multiple terminal sessions to be accessed simultaneously in a single window
         
+list of all tmux sessions
+        
+```bash
+tmux list-sessions
+ ```
+
+
 to check if tmux is running
 
 ```bash
-    ps aux | grep tmux
+ps aux | grep tmux
 ```
 
 should be Tmux session running with name gunicorn (if not, you can start it using the following command)
     
 ```bash
 tmux new-session -s gunicorn
-   ```
+ ```
 to attach to the session
         
 ```bash
-    tmux attach-session -t gunicorn
+tmux attach-session -t gunicorn
   ```
 to detach from the session**
         
 ```bash
-    Ctrl+b, then d
-  ```
+Ctrl+b, then d
+```
 
-list of all tmux sessions
-        
-```bash
-    tmux list-sessions
-  ```
 
-## run gunicon server in the tmux session
+### 5. Start the Gunicorn server:
 to start the gunicorn server, I need to run the following command:
     
 ```bash
-  /home/ubuntu/storefront/venv/bin/gunicorn --env DJANGO_SETTINGS_MODULE=storefront.settings.prod storefront.wsgi:application --bind 0.0.0.0:8000 --log-level debug --workers 3
-  ```
-
-## Github updates
-to update the project from the github, I need to run the following commands:
-    
-```bash
-cd ~/storefront
-git pull origin amazon
-  ```
-if there are any changes, I need to restart the gunicorn server using the following command:
-        
-```bash
-    sudo systemctl restart gunicorn
-```
-
-
-
-
-
-
-
-
-
-
-1. Run Server with Gunicorn:
-    ```bash          
-    gunicorn --env DJANGO_SETTINGS_MODULE=storefront.settings.prod storefront.wsgi:application --bind 0.0.0.0:8000 --workers 3
-
-2. NGINX Configuration: 
-
-    Configure **/etc/nginx/sites-available/amadesa.com** to serve as a reverse proxy.
-  
-3. Database Connection:
-
-    ```bash
-    psql -h amadesadb.cp8a808oguxu.us-east-1.rds.amazonaws.com -U amadesa -d amadesadb -p 5432
-
-4. Certbot SSL:
-
-    ```bash 
-    sudo certbot --nginx -d amadesa.com -d www.amadesa.com
-   
-
-5. Docker Images and ECS:
-
-    Build Docker images:
-    
-   ```bash   
-    docker-compose up --build  
-
-   
-**Tag and push to Amazon ECR:**
-
-
-    ```bash  
-
-    docker tag app:latest 479296291493.dkr.ecr.us-east-1.amazonaws.com/django2:latest
-
-        docker push 479296291493.dkr.ecr.us-east-1.amazonaws.com/django2:latest
-
-
-
-
-
-## My personal things to run the project:
-   Developer PC
-   in powershell: (run as administrator)
-
-   ```bash   
-   cd "C:\Users\Kompiuteris\Downloads\Django 3- Resources\storefront3"
-   .\env\Scripts\Activate  
-   # Set the environment variable, only one of the following. Comment out 
-   $env:DJANGO_ENV = "production" # For production 
-   $env:DJANGO_ENV = "development" # For development
-   echo $env:DJANGO_ENV
-   python manage.py runserver      
-```
-   
-   In iMac / linux
-
-   connect with the database using a terminal
-
-   ```bash
-   export DJANGO_ENV=production
-   echo $DJANGO_ENV  
-   ```
-
-## Connect to server
-ssh is used to connect to the server. this command is sending the pem file to the server
-    
-   ```bash
-scp -i "C:\Users\Kompiuteris\Desktop\SSH\amadesa.pem" "C:\Users\Kompiuteris\Desktop\SSH\amadesa.pem" ubuntu@67.202.22.239:~
-```
-this command is used to copy the pem file to the server
-```bash
-ssh -i "C:\Users\Kompiuteris\Desktop\SSH\amadesa.pem" ubuntu@67.202.22.239
-````
-
-
-## Tmux commands (To run multiple terminals in one terminal)
-tmux (for the session, tmux is an open-source terminal multiplexer for Unix-like operating systems. It allows multiple terminal sessions to be accessed simultaneously in a single window
-   
-Create a new session
-```bash
-   tmux new-session -s 0
-```
-List all sessions
-```bash
-   tmux list-sessions
-```
-Attach to a session
-```bash
-   tmux attach-session -t 0
-```
-Detach from a session
-```bash
-   Ctrl+b, then d
-```
-
-Other commands
-ctr + b [ (to enter the scroll mode) and then ctr + b ] (to exit the scroll mode)
-ctr + b " (to split the terminal horizontally)
-ctr + b % (to split the terminal vertically)
-ctr + b arrow keys (to navigate between the terminals)
-ctr + b c (to create a new terminal)
-ctr + c  (to kill the terminal)
-
-
-## Gunicorn commands
-
-to start the gunicorn server
-```bash
 /home/ubuntu/storefront/venv/bin/gunicorn --env DJANGO_SETTINGS_MODULE=storefront.settings.prod storefront.wsgi:application --bind 0.0.0.0:8000 --log-level debug --workers 3
- ```
-or
-```bash
-gunicorn --env DJANGO_SETTINGS_MODULE=storefront.settings.prod storefront.wsgi:application --bind 0.0.0.0:8000
-  ```
-
-
-
-to restart the gunicorn server
-```bash    
-sudo systemctl restart gunicorn
- ```
-to restart the nginx server
-  
-```bash
-sudo systemctl restart nginx
- ```
-
-to check the gunicorn logs
-```bash
-sudo journalctl -u gunicorn
- ```
-
-to check the nginx logs
-```bash
-sudo tail -f /var/log/nginx/error.log
- ```
-to check the active connections
-```bash
-sudo netstat -tuln
- ```
-to check the firewall rules
-```bash
-sudo ufw status
  ```
 
 check if gunicorn is running
+    
 ```bash
 ps aux | grep gunicorn
-```
+  ```
+restart the gunicorn server
+    
+```bash
+sudo systemctl restart gunicorn
+  ```
 
 
-     
+Now while Gunicon is running inside you can detach from the session (Ctrl+b, then d) and you can run the following command to check if the server is running
 
-
-
+------------------------------
+  
 
 ## Database commands (RDS and Postgres)
 ***RDS (Relational Database Service)*** is a managed service that makes it easy to set up, operate, and scale a relational database in the cloud. It provides cost-efficient and resizable capacity while automating time-consuming administration tasks such as hardware provisioning, database setup, patching, and backups.
 
 to test if database is running (Amazon RDS)
 ```bash
-   Test-NetConnection -ComputerName amadesadb.cp8a808oguxu.us-east-1.rds.amazonaws.com -Port 5432
+Test-NetConnection -ComputerName amadesadb.cp8a808oguxu.us-east-1.rds.amazonaws.com -Port 5432
  ```
 
 to connect to database
@@ -562,7 +413,8 @@ to connect to database
   ```
 
 
-### For development (local database)
+
+### For local development (Postgres)
 to start from scratch with the Postgres database using terminal
 we need to login to enter the Postgres shell
    ```bash
@@ -576,25 +428,22 @@ to create a new user (username will be postgres)
 
 to create a new database
 
-   ```bash
-    CREATE DATABASE amadesadb_local WITH OWNER postgres;
-  ```
+```bash
+CREATE DATABASE amadesadb_local WITH OWNER postgres;
+ ```
    
       
 to grant all privileges to the user
 ```bash
-    GRANT ALL PRIVILEGES ON DATABASE amadesadb_local TO postgres;
+GRANT ALL PRIVILEGES ON DATABASE amadesadb_local TO postgres;
  ```
     
 to connect to the database
 ```bash
-    \c amadesadb_local
-  ```
+\c amadesadb_local
+ ```
 
  
-
-
-
 ### Postgres commands
 list all databases
 
@@ -619,29 +468,19 @@ list all rows in a table
     SELECT * FROM foundation_country;
   ```
 
-
-
-      
+--------------------------
     
     
 
 
 
-## Github commands
+## Main Github commands (for me)
    ```bash   
-   git pull origin amazon
-   git stash
-   git stash apply
+   git pull origin amazon # pull the latest changes from the amazon branch
+   git stash # save the changes
+   git stash apply # apply the changes
    
    ```
-
-## Linux (ubuntu commands)
-
-update the system
-```bash
-  sudo apt-get update
-  sudo apt-get upgrade
- ```
 
 
 ## Django commands
@@ -649,80 +488,80 @@ update the system
 
 to create a new project
 ```bash
-    django-admin startproject storefront
+django-admin startproject storefront
   ```
 
 create superuser
 ```bash
-    python manage.py createsuperuser
+python manage.py createsuperuser
   ```
 
 to create a new app
 ```bash   
-    python manage.py startapp storefront
+python manage.py startapp storefront
   ```
 
 After creating a new app, add the app to the installed apps in the settings.py file
 ```bash   
-    INSTALLED_APPS = [
-    'storefront',
-    ]
-  ```
+ INSTALLED_APPS = [
+ 'storefront',
+ ]
+ ```
 we create a new model in the storefront/models.py file
 Django will create a table in the database for this model automatically
 It will do a lot of behind the scenes work like creating a table, creating a primary key, creating a foreign key, etc.
 Create a model for coins
 
 ```bash   
-    class Coin(models.Model):
-        name = models.CharField(max_length=100)
-        description = models.TextField()
-        year = models.IntegerField()
-        country = models.ForeignKey(Country, on_delete=models.CASCADE)
-        denomination = models.ForeignKey(Denomination, on_delete=models.CASCADE)
-        metal = models.ForeignKey(Metal, on_delete=models.CASCADE)
-        weight = models.DecimalField(max_digits=10, decimal_places=2)
-        diameter = models.DecimalField(max_digits=10, decimal_places=2)
-        thickness = models.DecimalField(max_digits=10, decimal_places=2)
-        obverse = models.ImageField(upload_to='coins/')
-        reverse = models.ImageField(upload_to='coins/')
-        created_at = models.DateTimeField(auto_now_add=True)
-        updated_at = models.DateTimeField(auto_now=True)
-        def __str__(self):
-            return self.name
+ class Coin(models.Model):
+     name = models.CharField(max_length=100)
+     description = models.TextField()
+     year = models.IntegerField()
+     country = models.ForeignKey(Country, on_delete=models.CASCADE)
+     denomination = models.ForeignKey(Denomination, on_delete=models.CASCADE)
+     metal = models.ForeignKey(Metal, on_delete=models.CASCADE)
+     weight = models.DecimalField(max_digits=10, decimal_places=2)
+     diameter = models.DecimalField(max_digits=10, decimal_places=2)
+     thickness = models.DecimalField(max_digits=10, decimal_places=2)
+     obverse = models.ImageField(upload_to='coins/')
+     reverse = models.ImageField(upload_to='coins/')
+     created_at = models.DateTimeField(auto_now_add=True)
+     updated_at = models.DateTimeField(auto_now=True)
+     def __str__(self):
+         return self.name
   ```
 
 to apply the changes
 ```bash   
-    python manage.py makemigrations
-    python manage.py migrate
+ python manage.py makemigrations
+ python manage.py migrate
   ```
 views are used to handle the request and return the response
 create a view in the storefront/views.py file
 lets create a health check view (Amazons health check service will check this view to see if the server is running)
 ```bash   
-    from django.shortcuts import render
-    from django.http import HttpResponse
-    def health_check(request):
-        return HttpResponse('OK')
+ from django.shortcuts import render
+ from django.http import HttpResponse
+ def health_check(request):
+     return HttpResponse('OK')
   ```
 to create a url for the view
 create a new file in the storefront folder called urls.py
 ```bash   
-    from django.urls import path
-    from . import views
-    urlpatterns = [
-        path('health/', views.health_check),
-    ]
+ from django.urls import path
+ from . import views
+ urlpatterns = [
+     path('health/', views.health_check),
+ ]
   ```
 to include the urls in the main project
 add the following line to the urlpatterns in the storefront/urls.py file
 ```bash   
-    path('', include('storefront.urls')),
+path('', include('storefront.urls')),
   ```
 to run the server
 ```bash   
-    python manage.py runserver
+python manage.py runserver
   ```
 **to check the health check view**
 endpoint ends with health_check, example: https://amadesa.com/health/
@@ -731,22 +570,3 @@ in local development, the endpoint will be http://
 
 to check the admin panel
 endpoint ends with /admin, example: http://amadesa.com/admin/
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
-
-
-
-!
-
